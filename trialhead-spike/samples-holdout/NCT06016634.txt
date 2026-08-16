@@ -1,0 +1,14 @@
+Inclusion Criteria:
+
+* Age 18-80 years with SCD (any genotype, confirmed by hemoglobin electrophoresis or high performance liquid chromatography)
+* Ability to provide written informed consent
+* Ability to lay on a dual-energy X-ray absorptiometry (DXA) scanner
+* Negative urine pregnancy test for anyone of childbearing potential at study entry
+
+Exclusion Criteria:
+
+* Pregnant women
+* Adults unable to consent
+* Individuals who are not yet adults (infants, children, teenagers)
+* Prisoners
+* Hospitalizations (for any cause) within 2 weeks of study entry

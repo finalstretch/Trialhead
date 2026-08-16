@@ -1,0 +1,53 @@
+Inclusion Criteria:
+
+1. ≥ 18 years old at the time of informed consent
+2. Ability to provide written informed consent and HIPAA authorization CTO-IUSCC-0864
+3. Histologically confirmed HER2 positive breast cancer
+
+   1. Any Estrogen Receptor/Progesterone Receptor status is allowed.
+   2. HER2 positive is defined as HER2 3+ by immunohistochemistry (IHC) or 2+ by IHC associated with a fluorescence in situ hybridization (FISH) ratio of \> 2.0 or \> 6 total HER2 gene copies per cell.
+4. High-risk disease defined as one of the following:
+
+   1. Any residual invasive carcinoma in the breast or axillary nodes in the final pathology from resected tumor following neoadjuvant taxane and trastuzumab-based chemotherapy
+   2. Inflammatory phenotype at the time of diagnosis per the treating physician
+   3. Clinical stage III disease at the time of diagnosis per the treating physician and/or clinical imaging
+   4. Locally recurrent disease and have undergone definitive local therapy
+5. Received at least six months of HER2 targeted therapy with trastuzmab +/- pertuzumab TDM-1, or others in the neoadjuvant or adjuvant setting
+
+   a. Any combination of HER2 targeted therapy in the curative setting is allowed, including neratinib or others on a clinical trial
+6. Completed last dose of HER2 targeted therapy no more than 6 months prior to registration
+7. Completed last dose of cytotoxic chemotherapy or radiation at least 30 days prior to registration with resolution of any prior toxicity to ≤ 2 with the exception of alopecia
+8. ECOG performance status of 0 to 2
+9. Adequate organ function as indicated by:
+
+   1. Total bilirubin \< 1.5 mg/dL (except in patients with documented Gilbert's disease, who must have a total bilirubin \< 3.0 mg/dL)
+   2. Aspartate aminotransferase (AST) and alanine aminotransferase (ALT) \< 2.0 x ULN
+   3. Calculated creatinine clearance of \> 60 mL/min using the Cockcroft-Gault formula
+   4. Absolute neutrophil count (ANC) \> 1.0 K/mm3
+   5. Platelets \> 100 K/ mm3
+10. Adequate cardiac function defined as left ventricular ejection fraction (LVEF) above the institutional lower limit of normal by echocardiogram or MUGA obtained within 90 days of registration
+11. Women of childbearing potential must have a negative serum pregnancy test within 14 days of protocol registration. Women are considered to have childbearing potential (regardless of sexual orientation, having undergone a tubal ligation, or remaining celibate by choice) unless they meet one of the following criteria:
+
+    1. Has undergone a hysterectomy or bilateral oophorectomy; or
+    2. Has been naturally amenorrheic for at least 12 consecutive months.
+12. Women of childbearing potential and men must agree to use one effective contraception throughout the study and for 6 months after the last study treatment.
+
+Note: Acceptable methods of birth control include abstinence, partner with previous vasectomy, placement of an intrauterine device (IUD), condom with spermicidal foam/gel/film/cream/suppository, diaphragm or cervical vault cap, or hormonal birth control (pills or injections).
+
+Exclusion Criteria:
+
+1. Any distant disease recurrence.
+2. Patients with active malignancy other than breast cancer. Note: Patients with prior malignancies without recurrence after standard treatment will not be excluded.
+3. Patients receiving or planned to receive adjuvant CDK4/6 inhibitor therapy
+4. Patients who are {MVF-HER-2(266-296) and MVF-HER-2 (597-626)} immediate hypersensitivity skin test positive.
+5. Patients who require or likely to require corticosteroids or other immunosuppressives
+6. Patients with active autoimmune diseases including rheumatoid arthritis, systemic lupus erythematosus, scleroderma, polymyositis dermato-myositis, or a vasculitic syndrome.
+
+   Note: At the discretion of the treating physician, patients who show disease control for at least 6 months and do not require immunosuppressives may be enrolled.
+7. Patients who have developed anaphylactic responses to other vaccines.
+8. Patients who have evidence of active infection that requires antibiotic therapy. Patients must have been off antibiotic treatment for at least 3 weeks prior to initiating treatment and must be confirmed to be clear of the infection.
+9. Known seropositive or active viral infection with human immunodeficiency virus (HIV), hepatitis B (HBV), or hepatitis C (HCV). Seropositivity due to vaccination are eligible.
+10. Uncontrolled illness that would limit safety or compliance with study procedures including, but not limited to, active infection, congestive heart failure, unstable angina, or cardiac arrhythmia.
+11. Patients with serious uncontrolled cardiopulmonary disorders, including congestive heart failure, symptomatic coronary artery disease, serious cardiac arrhythmia, and symptomatic chronic obstructive pulmonary disease or patients with other serious uncontrolled medical diseases. At the discretion of the treating physician, patients who show disease control for at least 6 months may be enrolled.
+12. History of splenectomy
+13. Pregnant or breast feeding.

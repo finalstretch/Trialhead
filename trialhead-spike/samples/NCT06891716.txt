@@ -1,0 +1,48 @@
+Inclusion Criteria for all Participants:
+
+* Subject is able to provide written informed consent (IC), which must be obtained before any assessment is performed.
+* Female subjects must not be of childbearing potential, or if they are of childbearing potential to agree to use reliable contraception method(s) and not donate eggs for 30 days after the PET scan. Subjects without documentation of non-childbearing potential will perform serum pregnancy testing at screening and urine pregnancy test before the PET scan. A woman is considered to be of childbearing potential if she is postmenarchal, has not reached a postmenopausal state (12 continuous months of amenorrhea with no identified cause other than menopause), and is not permanently infertile due to surgery (i.e., removal of ovaries, fallopian tubes, and/or uterus) or another cause as determined by the PI (e.g., Müllerian agenesis). Women of childbearing potential must commit to remain abstinent (refrain from heterosexual intercourse) or use a reliable form of birth control (e.g. a barrier, hormonal contraception method or intrauterine device), during the study and until 30 days after the last PET scan. Periodic abstinence (e.g., calendar, ovulation, symptothermal, or postovulation methods) and withdrawal are not adequate methods of contraception. Women of childbearing potential must commit to not donate ovum during the study and until 30 days after the last PET scan.
+* Male subjects with their partners of childbearing potential must commit to the use of a barrier method of contraception during the study and until 90 days after the last PET scan.
+* Male subjects must commit to not donate sperm during the study and until 90 days after the last PET scan.
+* Willing and able to cooperate with study procedures.
+* Ability to tolerate lying in the scanner for up to 90 minutes without excessive movements sufficient to cause significant motion artifact on the PET scans, or if necessary up to 120 minutes with a break.
+* For subjects receiving arterial cannulation, adequate circulation to the hand for safe placement of arterial line and coagulation (International Normalized Ratio \[INR\], Prothrombin Time \[PT\] and Partial Thromboplastin Time \[PTT\]).
+
+Additional Inclusion Criteria for Healthy Controls:
+
+* Males and females aged 40-70 years.
+* Healthy with no clinically relevant finding on physical and neurological examination at Screening and upon reporting to the clinic for the \[18F\]ACI-19626 Imaging Visit.
+* No family history of TDP-43 proteinopathies, including FTD, ALS, or other early-onset neurological disease associated with dementia and/or movement disorders.
+* No personal history of clinically significant neurological and/or psychiatric disorders.
+* No evidence of neurodegeneration or other neurological pathology on magnetic resonance imaging (MRI) performed either as part of Screening or on previously acquired MRI scan (within 6 months prior to signing consent).
+* Montreal Cognitive Assessment (MoCA) score ≥ 26.
+* No cognitive or behavioural impairment as judged by the PI.
+
+Additional Inclusion Criteria for Participants with TDP-43 proteinopathies:
+
+* Males and females aged ≥ 40 years.
+* Subjects diagnosed with any of the following: GRN, C9Orf72 or other mutation carriers with the CDR® plus NACC FTLD-GS of ≥ 0.5; sporadic probable behavioral FTD per International consensus criteria or primary progressive aphasia, with or without clinical or electrophysiological indications of MND; ALS meeting the El Escorial criteria of probable or possible ALS; Other neurodegenerative diseases, e.g. AD or suspected LATE pathology
+* Confirmed genetic status for the subjects with genetic FTD, FTD-MND or ALS (e.g. GRN, C9orf72 or other mutations)
+* For sporadic FTD / FTD-MND subjects: brain MRI consistent with a diagnosis of FTD, with no evidence of focal disease to account for the subject's neurological, cognitive or behavioral symptoms.
+
+Exclusion Criteria for All Participants:
+
+* Current or prior history of any alcohol or drug abuse in the past 2 years.
+* Laboratory tests with clinically significant abnormalities and/or clinically significant unstable medical condition.
+* Known history of hypersensitivity, including hypersensitivity to the active substances used for \[18F\]ACI-19626 or derivatives, or to any of the associated excipients.
+* Prior participation in other research protocols or clinical care during the past year that would result in radiation exposure to an effective radiation dose exceeding the acceptable annual limit (including the procedures in this clinical protocol).
+* Pregnant or lactating.
+* Evidence of clinically significant gastrointestinal, cardiovascular, hepatic, renal, hematological, neoplastic, endocrine, alternative neurological, immunodeficiency, pulmonary, or other disorder or disease.
+* Unsuitable veins for repeated venipuncture.
+* Implants such as implanted cardiac pacemakers or defibrillators, insulin pumps, cochlear implants, metallic ocular foreign body, implanted neural stimulators, CNS aneurysm clips and other medical implants that have not been certified for MRI, or history of claustrophobia in MRI.
+* Treatment with any antihemostasis medication (e.g., warfarin, heparin, thrombin inhibitors, Factor Xa inhibitors, streptokinase, urokinase, tissue plasminogen activators) within 2 weeks of the planned arterial cannula placement (if performed) of either the baseline or retest imaging.
+* Anaemia (for subjects undergoing arterial cannulation) considered clinically significant by the PI
+* Coagulopathies
+* Loss or donation of blood over 500 mL within four months prior to study visits for subjects undergoing arterial cannulation
+* Subject has received an investigational drug within the last 30 days or 5 half-lives prior to the screening assessments, whichever is longer unless there is documented evidence that the subject was treated with placebo only.
+
+Additional Exclusion Criteria for Participants with TDP-43 proteinopathies:
+
+* Prior participation in DMT clinical trials which could interfere with the TDP-43 protein itself or its metabolism, including but not limited to gene therapy, unless there is documented evidence that the subject was treated with placebo only.
+* MRI scan showing structural evidence of alternative pathology not consistent with TDP-43 proteinopathies which could cause the subject's symptoms.
+* Mutations with known absence of TDP-43 pathology, e.g. SOD1 or FUS.

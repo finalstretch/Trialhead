@@ -1,0 +1,34 @@
+Inclusion Criteria:
+
+* Have a diagnosis of SCD, with either βS/βS, βS/β0, or βS/β+ genotype.
+* Be ≥2 and ≤50 years of age at time of consent.
+* Weigh a minimum of 6 kg.
+* Have a Karnofsky performance status of ≥60 (≥16 years of age) or a Lansky performance status of ≥60 (\<16 years of age).
+* Be treated and followed for at least the past 24 months prior to Informed Consent in medical center(s) that maintained detailed records on sickle cell disease history.
+* In the setting of appropriate supportive care measures (e.g., pain management plan), have experienced at least 4 protocol-defined VOEs in the 24 months prior to informed consent.
+* Have either experienced HU failure at any point in the past or must have intolerance to HU (intolerance is defined as the patient being unable to continue to take HU per PI judgment).
+* Female and male subjects of childbearing potential agree to use 1 method of highly effective contraception from Screening to at least 6 months after drug product infusion.
+* Provision of written informed consent for this study by subject, or as applicable, subject's parent(s)/legal guardian(s).
+
+Exclusion Criteria:
+
+* Subjects for whom allogeneic hematopoietic stem cell transplantation (allo-HSCT) is medically appropriate per PI judgment and a willing, human leukocyte antigen (HLA)-matched related hematopoietic stem cell donor is available.
+* Severe cerebral vasculopathy, defined by any history of overt ischemic or hemorrhagic stroke, a history of abnormal transcranial Doppler (TCD) or TCD imaging (TCDI) for subjects ≤ 16 years of age (e.g. TCD velocity \>200 cm/sec) requiring ongoing chronic transfusions, a Screening TCD or TCDI velocity \> 200 cm/sec (central read), a Screening MRA showing \> 50% stenosis or occlusion in the circle of Willis (central read), or a Screening MRA showing the presence of Moyamoya (central read).
+* Positive for presence of human immunodeficiency virus type 1 or 2 (HIV-1 or HIV-2), hepatitis B, hepatitis C, human T-lymphotropic virus-1 (HTLV-1), active syphilis.
+* Clinically significant, active bacterial, viral, fungal, or parasitic infection
+* Advanced liver disease, such as
+* clear evidence of liver cirrhosis, active hepatitis or significant fibrosis (based on MRI or liver biopsy)
+* liver iron concentration ≥15 mg/g unless liver biopsy shows no evidence of cirrhosis, active hepatitis or significant fibrosis
+* Inadequate bone marrow function, as defined by an absolute neutrophil count of \<1×10\^9/L (\<0.5×10\^9/L for subjects on hydroxyurea treatment) or a platelet count \<100×10\^9/L.
+* Any contraindications to the use of plerixafor during the mobilization of hematopoietic stem cells and any contraindications to the use of busulfan and any other medicinal products required during the myeloablative conditioning, including hypersensitivity to the active substances or to any of the excipients.
+* Patients needing therapeutic anticoagulation treatment during the period of conditioning through platelet engraftment
+* Unable to receive pRBC transfusion.
+* Prior receipt of an allogeneic transplant.
+* Prior receipt of gene therapy.
+* Any prior or current malignancy or immunodeficiency disorder, except previously treated, non-life threatening, cured tumors such as squamous cell carcinoma of the skin.
+* Immediate family member with a known or suspected Familial Cancer Syndrome.
+* Female subject is breastfeeding, pregnant or will attempt to become pregnant from Screening to at least 6 months after drug product infusion.
+* Any other condition that would render the subject ineligible for HSCT.
+* Participation in another clinical study with an investigational drug within 30 days of screening.
+* Presence of a chromosomal abnormality or genetic mutation that may put the subject at an increased risk of myelodysplastic syndrome (MDS) or acute myeloid leukemia (AML) per Investigator's judgment.
+* Presence of genetic mutations that result in the inactivation of 2 or more α-globin genes

@@ -1,0 +1,32 @@
+Cancer Survivor Inclusion Criteria:
+
+* Grandmother
+* Self-identifies as Hispanic
+* Diagnosis of breast cancer (stages I-III), endometrial or ovarian cancer (stages I-II)
+* Completed active treatment (i.e., surgery, chemotherapy, and/or radiation)
+* Body Mass Index (BMI) ≥ 25 (overweight range)
+* Engages in \<150 minutes/week of moderate physical activity
+* English or Spanish speaking
+* Owns a mobile device with internet access (e.g., smartphone, tablet)
+* Lives in South Florida
+
+Daughter of Cancer Survivor Inclusion Criteria:
+
+* Adult daughter of the identified cancer survivor (21 years of age or older)
+* Has at least 1 living child ages ≤16 years old
+* Body Mass Index (BMI) ≥ 25 (overweight range) OR engages in \<150 minutes/week of moderate physical activity
+* English or Spanish speaking
+* Owns a mobile device with internet access (e.g., smartphone, tablet)
+* Lives in South Florida
+
+Daughter of Cancer Survivor Exclusion Criteria:
+
+* Has been diagnosed with distant metastatic cancer
+* Has not completed active treatment (i.e., surgery, chemotherapy, and/or radiation)
+* Has uncontrolled schizophrenia or bipolar disorder
+* Has a preexisting medical condition that precludes unsupervised physical activity (e.g., severe orthopedic conditions,wheelchair bound).
+
+Cancer Survivor Exclusion Criteria:
+
+* Has uncontrolled schizophrenia or bipolar disorder
+* Has a preexisting medical condition that precludes unsupervised physical activity (e.g., severe orthopedic conditions, wheelchair bound)

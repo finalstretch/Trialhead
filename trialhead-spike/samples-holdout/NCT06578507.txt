@@ -1,0 +1,23 @@
+Inclusion Criteria:
+
+* Written informed consent, signed and dated by both parents or by the legally acceptable representative(s) of the children, and, if possible, assent from the children,
+* HbSS or HbSβ0 SCD,
+* Aged between 9 months and 11 years old,
+* Hydroxycarbamide naïve,
+* Parent(s) or legally acceptable representative(s) capable of communicating with the investigator and understanding the requirements and constraints of the study protocol and willing to comply with the study requirements,
+* Contraception criterion, if applicable: for patients who are sexually active
+* Affiliated to a social security plan or beneficiary of a similar insurance plan,
+* Patient must meet the following laboratory values : Absolute Neutrophil Count ≥ 1.0x109/L, Platelets ≥ 75x109/L and Haemoglobin (Hgb) \> 5.5 g/dL,
+* Transcranial Doppler (TCD) in the last 12 months indicating low risk for stroke is required for children over 18 months of age.
+
+Exclusion Criteria:
+
+* Participation in any other clinical study for any other pharmaceutical product within 4 weeks preceding the inclusion visit,
+* Patients who have had chronic blood transfusion or transfusion in the last 3 months preceding the inclusion visit,
+* Patients treated with other SCD-modifying therapies,
+* Patient with a stage 3, 4 or 5 chronic kidney disease,
+* Patients known to be infected with human immunodeficiency virus, hepatitis B virus, or hepatitis C virus,
+* Known hypersensitivity or allergy to the excipients,
+* Any surgical or medical condition or any significant illness that, in the opinion of the investigator, constitutes a risk or a contraindication to the participation of the patient to the study, or that may interfere with the objectives, conduct or evaluation of the study,
+* Female patients who are pregnant or lactating,
+* Any documented history of a clinical stroke or intracranial haemorrhage, or an uninvestigated neurologic finding within the past 12 months.

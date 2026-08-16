@@ -1,0 +1,20 @@
+Inclusion Criteria:
+
+* 1\) Stable CAD (over 60 days post-myocardial infarction).
+* 2\) Diabetes
+* 3\) given informed consent.
+
+Exclusion Criteria:
+
+1. severe LV dysfunction (EF\<50%);
+2. decompensated heart failure;
+3. active infection (e.g. pneumonia, active skin infections, and on antibiotics);
+4. active inflammatory conditions (e.g. rheumatoid arthritis, chronic inflammatory bowel disease, SLE, systemic anti-inflammatory therapy (e.g. prednisone, methotrexate));
+5. pregnancy (all women of child bearing potential will have a negative BHCG test;
+6. breastfeeding;
+7. Women of childbearing potential who refuse to use two forms of contraception (this includes at least one form of highly effective and one effective method of contraception) throughout the study OR men capable of fathering a child who refuse to use contraception.
+8. glomerular filtration rate (GFR) \<50 ml/min/1.72m2;
+9. Use of p-glycoprotein inhibitor (e.g. cyclosporine, verapamil, or quinidine) or a strong CYP3A4 inhibitor (e.g. ritonavir, clarithromycin, or ketoconazole);
+10. Hemoglobin \< 105(women) \<110 (men) g/L; WBC \< 3.0x 10(9)/L, platelet count\< 110x 10(9)/L;
+11. Patient with a history of cirrhosis, chronic active hepatitis or severe hepatic disease or with alanine aminotransferase (ALT) levels greater than 3 times the upper limit of normal.
+12. unable to give informed consent;

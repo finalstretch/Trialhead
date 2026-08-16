@@ -1,0 +1,14 @@
+Inclusion Criteria:
+
+* Adults aged greater than or equal to (\>=) 18 years on the day of signing the informed consent form.
+* Confirmed diagnosis of SCD of any genotype.
+* Experienced 1 to 12 VOCs requiring a visit to a medical facility and treatment with parenteral opioids or a parenteral nonsteroidal anti-inflammatory drug within the 12 months before Screening.
+* HU Regimen:
+* a. On stable and well-tolerated Hydroxyurea (HU) regimen for at least 30 days before Screening.
+* or
+* b. HU was discontinued or refused (eg, due to concern of side effects or lack of effect).
+
+Exclusion Criteria:
+
+* Absolute neutrophil count less than (\<) 2.5 ×10\^9 cells/Litre at Screening or Baseline (Week 1 Day 1).
+* If on SCD preventive medication, dose is not stable in the 30 days before Screening.

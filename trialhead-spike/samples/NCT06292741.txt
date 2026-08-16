@@ -1,0 +1,17 @@
+Inclusion Criteria:
+
+* male and females between 50 and 85 years
+* cognitive decline (dementia, lewy's body dementia, Parkinson dementia, Alzheimer dementia)
+* mild cognitive decline ( lewy's body MCI, Parkinson MCI and Alzheimer MCI)
+* Ability to assume the upright position
+
+Exclusion Criteria:
+
+* diabetes mellitus
+* eye problems
+* severe cognitive decline
+* heart disease
+* peripheral neuropathy
+* language barrier
+* oncological disease
+* medical pathologies associated with cognitive deficits

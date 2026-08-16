@@ -1,0 +1,36 @@
+Cohort Healthy Participants
+
+Inclusion Criteria:
+
+* Age: Adults aged 18-35 years.
+* Health Status: Healthy individuals with no diagnosed chronic diseases, including diabetes, cardiovascular disease, or gastrointestinal disorders.
+* Body Mass Index (BMI): 18.5-27 kg/m² (normal to overweight range).
+* Fasting Glucose: Normal fasting plasma glucose (\<100 mg/dL or \<5.6 mmol/L).
+* No regular use of medications known to affect glucose metabolism (e.g., insulin, metformin, corticosteroids).
+* Ability and willingness to comply with study procedures, including continuous glucose monitoring and standardized test meals.
+* Informed Consent: Ability to understand and provide written informed consent.
+
+Exclusion Criteria:
+
+* Diagnosed chronic diseases: Diabetes (type 1 or type 2), cardiovascular disease, kidney or liver disease, gastrointestinal disorders (e.g., celiac disease, inflammatory bowel disease).
+* Abnormal glucose metabolism: Fasting plasma glucose ≥100 mg/dL (≥5.6 mmol/L) or HbA1c ≥5.7%.
+* Medication use: Regular use of medications that affect glucose metabolism, insulin sensitivity, or digestion (e.g., metformin, corticosteroids, GLP-1 analogs).
+* Allergies or intolerances: Allergy or intolerance to wheat, chickpeas, gluten, or other ingredients used in the study foods.
+* Pregnancy or lactation: Women who are pregnant, breastfeeding, or planning pregnancy during the study period.
+* Recent major weight change: Significant weight loss or gain (\>5% body weight) in the past 3 months.
+* Extreme physical activity: Competitive athletes or individuals engaging in extreme exercise regimens that could influence glucose metabolism.
+* Inability to comply: Individuals unable or unwilling to follow study procedures, including continuous glucose monitoring and standardized test meals.
+
+Cohort 2: Participants with Type 2 Diabetes Mellitus
+
+Men and women aged 40-75 years. Body mass index (BMI) \< 31 kg/m². Fasting plasma glucose \> 125 mg/dL. HbA1c \< 8.5%. Diagnosis of type 2 diabetes mellitus (T2DM) for at least 1 year before enrolment.
+
+Stable treatment with hypoglycaemic, lipid-lowering, and/or antihypertensive medications for at least 3 months prior to enrolment.
+
+Most participants will be recruited from the Diabetes Clinic of the 1st Propaedeutic Department of Internal Medicine, Laiko General Hospital.
+
+Exclusion criteria
+
+Endocrine, cardiovascular, pulmonary, renal, or gastrointestinal disorders that could affect study outcomes.
+
+Sensitivity, intolerance, or allergy to any ingredients of the study breads. Pregnancy or breastfeeding. Eating disorders. Use of medications or dietary supplements considered incompatible with the study protocol.

@@ -1,0 +1,48 @@
+Inclusion Criteria:
+
+Aged 18-75 years old. Histologically confirmed HER2-positive invasive breast cancer with clinical stages T1c-4, N0-3, and M0 (excluding T1cN0M0), according to the 8th American Joint Committee on Cancer (AJCC) edition BC staging system HER2 overexpression was defined as immunohistochemistry (IHC) 3+ or 2+ with HER2 gene amplification, determined by fluorescence in situ hybridization (FISH).
+
+Baseline left ventricular ejection fraction (LVEF) of ≥50%. Eastern Cooperative Oncology Group (ECOG) Performance Status 0 or 1.
+
+The functional level of major organs must meet the following requirements (no blood transfusion and no use of white blood cell, red blood cell and platelet-raising drugs within 2 weeks before the first dose):
+
+* Absolute neutrophil count ≥ 1,500/mcL
+* Platelets ≥ 100,000/mcL
+* Hemoglobin ≥ 9.0 g/dL
+* Total bilirubin ≤ 1.5 x upper limit of normal (ULN)
+* Alanine aminotransferase and aspartate aminotransferase (ALT/AST) ≤1.5×ULN
+* Blood urea nitrogen and serum creatinine ≤1.5×ULN
+* Creatinine clearance (Ccr) ≥50 ml/min (Cockcroft-Gault formula) Signature of informed consent
+
+Exclusion Criteria:
+
+* History of invasive breast cancer. Bilateral breast cancer or inflammatory breast cancer . Prior excisional and/or incisional biopsy of the primary tumor and/or axillary lymph nodes.
+
+Prior systemic therapy for breast cancer. History of life-threatening hypersensitivity reactions or known hypersensitivity to any component of the investigational drug.
+
+Participation in another clinical trial of a drug or medical device within 4 weeks prior to the first dose and/or receipt of investigational drug/device during the trial.
+
+Major surgery within 28 days prior to the first dose or planned major surgery during the study period.
+
+History of other malignancies within the past 5 years, except for carcinoma in situ of the cervix, non-melanoma skin cancer, localized prostate cancer, or ductal carcinoma in situ.
+
+Active tuberculosis or other severe infectious diseases requiring systemic treatment, including but not limited to bacteremia, severe pneumonia, and other serious infections.
+
+History of immunodeficiency or autoimmune diseases, including but not limited to HIV infection (HIV antibody positive), systemic lupus erythematosus, rheumatoid arthritis, or history of organ transplantation.
+
+History of cardiovascular or cerebrovascular diseases, including:
+
+* Unstable angina;
+* Clinically significant arrhythmias requiring medication;
+* Myocardial infarction within the past 6 months;
+* Heart failure or second-degree or higher atrioventricular block;
+* Cerebral infarction (excluding lacunar infarction) or cerebral hemorrhage within the past 6 months.
+
+Poorly controlled hypertension (systolic blood pressure \>160 mmHg and/or diastolic blood pressure \>100 mmHg despite regular medication), or history of hypertensive crisis or hypertensive encephalopathy.
+
+Unsuitability for oral administration of the investigational drug, as judged by the investigator, including:
+
+* Clinically significant or uncontrolled congenital or acquired gastrointestinal diseases;
+* Diseases that may affect drug administration, gastric entry, or absorption (e.g., intestinal obstruction, Crohn's disease, ulcerative colitis).
+
+Pregnant or breastfeeding women; women of childbearing potential with a positive pregnancy test at screening; or those unwilling to use effective contraception during the study and for 6 months after the last dose.

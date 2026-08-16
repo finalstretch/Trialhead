@@ -1,0 +1,24 @@
+Inclusion Criteria:
+
+1. Female aged 18-70 years old;
+2. Histological confirmed with unilateral invasive carcinoma (all pathological types are applicable), clinical stage IIA-IIIA;
+3. Definite reports on ER/PR/HER2 receptor showing all HER2 negative (HER2 is 0\~1+ or 2+ but determined negative via fluorescence in situ hybridization (FISH) or chemiluminescent in situ hybridization (CISH) detected (no amplification) is defined as HER2 negative);
+4. According to RECIST 1.1, there is at least one measurable objective focus, tumor size \> 2cm;
+5. Eastern Cooperative Oncology Group (ECOG) performance score is 0 or 1;
+6. Cardiac function: left ventricular ejection fraction (LVEF)≥55%;
+7. Normal bone marrow function: White blood cell count \> 4 × 10\^9/l, neutrophil count \> 1.5 × 10\^9/l, platelet count \> 100 × 10\^9/l and hemoglobin 9g/dl;
+8. Normal liver and renal function: aspartate aminotransferase (AST) and ALT ≤2.5 folds of the upper limit of normal values, total bilirubin ≤1.5 folds of the upper limit of normal values; Serum creatinine ≤1.5 folds of the upper limit of normal value.
+9. Informed consent form signed.
+
+Exclusion Criteria:
+
+1. HER2 is positive;
+2. Metastasis at any location;
+3. Previous neoadjuvant therapy, including chemotherapy, radiotherapy and hormone therapy;
+4. Severe systemic disease and/or uncontrollable infection, unable to be enrolled in this study;
+5. Known allergic or intolerable to chemotherapeutic agents;
+6. Previously suffering from malignant tumors within 5 years (except for basal cell carcinoma and cervical carcinoma in situ), including contralateral breast cancer;
+7. Cardiovascular disease: LVEF \<50% (echocardiography) of New York Heart Association (NYHA) ≥ grade 2;
+8. Pregnant and breast-feeding women; Pregnancy test showed positive results before drug administration after enrolling in to the study; Women at childbearing age refuse to take contraception measures during the treatment and 8 weeks after completion of treatment;
+9. Already enrolled into other clinical trials;
+10. The researchers judged the patients who were not suitable for this study.

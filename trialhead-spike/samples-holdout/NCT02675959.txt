@@ -1,0 +1,30 @@
+Inclusion Criteria:
+
+* Disease: Homozygous Hemoglobin S Disease, or Hemoglobin S B0/+ thalassemia, or Hemoglobin SC Disease, or Beta thalassemia intermedia/majora
+* Patients must demonstrate one or more of the following Sickle Cell Disease Complications
+* Clinically significant neurologic event (stroke) or any neurologic deficit lasting \>24 hours that is accompanied by an infarct on cerebral MRI
+* Acute chest syndrome in the preceding two year period prior to enrollment that have failed, been non-compliant or declined hydroxyurea treatment, or prior to chronic RBC transfusion therapy, exchange transfusion or erythrocyte pheresis.
+* Recurrent painful events (at least 3 in the 2 years prior to enrollment or prior to chronic RBC transfusion therapy, exchange transfusion or erythrocyte pheresis).
+* Abnormal TCD study requiring starting on chronic transfusion therapy and/or exchange transfusions.
+* At least one silent infarct lesion on a MRI scan of the head. Or (directly or probably related to SCD)
+* Sickle Cell nephropathy;
+* Splenic sequestration requiring RBC transfusion;
+* Aplastic crisis requiring RBC transfusion;
+* Avascular necrosis of the hip diagnosed by MRI;
+* Two episodes or more of leg ulcerations;
+* Recurrent priapism .
+* Infant dactylitis.
+* all patients must meet disease, age, organ function and donor criteria;
+
+Exclusion Criteria:
+
+* Patients who are receiving concomitant systemic anticoagulants and/or fibrinolytic therapies.
+* Patients with a previously known hypersensitivity reaction to defibrotide.
+* Females who are pregnant or breast-feeding are not eligible
+* Patients with documented uncontrolled infection at the time of study entry are not eligible.
+* Patients who have an unaffected HLA matched sibling donor willing to proceed to donation will not be eligible for this study.
+* Karnofsky or Lansky (age appropriate) Performance Score \<50% (hemiplegia alone secondary to a previous stroke is not an exclusion)
+* Demonstrated lack of compliance with medical care.
+* Patients with clinically significant fibrosis or cirrhosis of the liver will not be eligible.
+* Patients who have previously received a HSCT will not be eligible.
+* Patients with contraindications to the use of defibrotide

@@ -1,0 +1,38 @@
+Inclusion Criteria:
+
+DYAD
+
+* Patient age 60+
+* Care partner 18+
+* Has care partner who will participate ("someone you have a reciprocal relationship with who provides you with emotional or physical support and helps with decision-making. This could be a spouse or significant other, relative, or close friend whom you spend a significant amount of time with.")
+* Has smartphone or access to Wi-Fi
+
+EITHER
+
+* Score of 20 or above on the PROMIS-Anxiety short form (patient only) OR
+* Score of 5 or above on SSASI (patient only) OR
+* Score of 31 or above on NIH Toolbox Perceived Stress Scale score (patient only)
+
+AND EITHER
+
+1. Participant MoCA score is between 17 to 26
+
+   OR
+2. Participant Memory Complaint Scale score 3 or greater
+
+   OR
+3. Care partner quick dementia rating scale score between 2 to 12.5
+
+Exclusion Criteria:
+
+PATIENT
+
+* Issues with seeing or hearing that would prevent reading or listening to computer presentations
+* Medical conditions that would preclude participation in study
+* Severe mental illness (e.g., schizophrenia, unmedicated bipolar disorder)
+
+CARE PARTNER
+
+* Issues with seeing or hearing that would prevent reading or listening to computer presentations
+* Medical conditions that would preclude participation in study
+* Severe mental illness (e.g., schizophrenia, unmedicated bipolar disorder)

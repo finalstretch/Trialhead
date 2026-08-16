@@ -1,0 +1,39 @@
+Inclusion Criteria:
+
+* A diagnose of stroke, cardiac arrest or Parkinson's disease.
+* Aged 18 years or older.
+* Impaired working memory measured with CABPad working memory test, cut off for inclusion: 5 symbols or less backwards
+* Computer and internet access at home.
+* Providing informed consent.
+
+Inclusion criteria specific for stroke
+
+* Inclusion within 6 months post-stroke
+* Stroke confirmed by clinical findings and imaging, both AIS and ICH is allowed.
+* Initial stroke severity \>/= NIHSS 3.
+
+Inclusion criteria specific for cardiac arrest
+
+• Inclusion within 6 months post ictus.
+
+Inclusion criteria specific for Parkinson's disease
+
+* Clinical diagnosis of PD.
+* Anti-parkinsonian medical treatment (dopaminergic or other).
+
+Exclusion Criteria:
+
+* Informed consent not provided
+* Other neurological or psychiatric disease which is expected to influence the patient's ability to participate in the trial according to the investigator
+* Not able to participate according to investigator
+
+Exclusion criteria specific for stroke
+
+* Patients with massive anosognosia for executive dysfunction or patients with no subjective feeling of executive dysfunction (Patient sustains total denial of executive symptoms over time)
+* Patients with severe aphasia, in which it is unclear whether the patient's performance on a neuropsychological test-battery is due to aphasia and not executive dysfunction.
+
+Exclusion criteria specific for cardiac arrest • None
+
+Exclusion criteria specific for PD
+
+• Diagnosis of PD Dementia according to the MDS PD Dementia criteria

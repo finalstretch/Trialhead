@@ -1,0 +1,50 @@
+Inclusion Criteria:
+
+* Subject must be 50 to 90 years of age, inclusive, on the day of signing informed consent.
+* Diagnosis of idiopathic Parkinson's disease according to the Movement Disorder Society Clinical Diagnostic Criteria or UK Parkinson's Disease Society Brain Bank criteria.
+* Hoehn and Yahr stage 1-3 (mild to moderate disease severity).
+* MDS-UPDRS-III (Motor Examination) score ≥10 at screening.
+* Stable doses of anti-parkinsonian medications (including levodopa, dopamine agonists, MAO-B inhibitors, COMT inhibitors, amantadine) for at least 4 weeks prior to screening, with no anticipated changes during the study period.
+* Ability to provide written informed consent.
+* Subject must sign an ICF indicating that he or she understands the purpose of, and procedures required for, the study and is willing to participate in the study.
+* Sufficient visual and auditory acuity to complete motor and cognitive assessments.
+* Availability and willingness to complete all scheduled study visits.
+* Presence of a reliable study partner or caregiver who can provide information about the participant's motor, cognitive, and functional status.
+* Ability to determine the motor threshold of the participant. The participant's motor threshold could be established as the minimum stimulus required to induce contraction of the contralateral hand muscles.
+* Subjects willing and able to abstain from partaking in any treatments other than the study procedure for the improvement in motor or cognitive function, including non-invasive brain stimulation treatments other than the study procedure during study participation.
+* Subjects willing and able to maintain their regular (pre-procedure) medication regimen, diet, and exercise routine without affecting significant change in either direction during study participation.
+* Willingness to comply with study instructions and to return to the clinic for the required visits.
+* Women of child-bearing potential are required to use birth control measures during the whole duration of the study.
+
+Exclusion Criteria:
+
+* Electronic implants in or near the head - rTMS devices are contraindicated for use in patients who have active or inactive implants in or near the head including device leads, deep brain stimulators, cochlear implants, ocular implants, and vagus nerve stimulators, implanted devices such as cardiac pacemakers, defibrillators, and neurostimulators.
+* Metallic, ferromagnetic, or other magnetic-sensitive implants/objects in or near the head - rTMS devices are contraindicated for use in patients who have conductive, ferromagnetic, or other magnetic-sensitive metals implanted in their head (with some exceptions in the mouth - see Operator's Manual) or within 12 inches (30 cm) of the therapy coil. Examples include implanted electrodes/stimulators, aneurysm clips or coils, stents, bullet fragments, jewelry, hair barrettes, and tattoos with metallic ink.
+* Drug pumps within 12 inches (30 cm) of the therapy coil.
+* Inability to determine the motor threshold of the participant (i.e., the minimum stimulus required to induce contraction of the contralateral hand muscles cannot be established).
+* History of seizure disorder or epilepsy, except for a single remote seizure more than 5 years ago, which may be permitted at investigator discretion.
+* Elevated risk of seizure due to traumatic brain injury with loss of consciousness \>30 minutes within the past 12 months.
+* Current use of medications known to significantly lower seizure threshold (e.g., clozapine, bupropion at doses \>450 mg/day, theophylline, high-dose tricyclic antidepressants) or recent dose reduction of anticonvulsant medications or benzodiazepines within 4 weeks of screening.
+* Atypical parkinsonism or Parkinson-plus syndromes (e.g., progressive supranuclear palsy, multiple system atrophy, corticobasal degeneration).
+* Hoehn and Yahr stage 4 or 5 (severe disease with significant disability).
+* Severe dementia, defined as MoCA score below 10, or inability to follow simple verbal commands or complete basic motor and cognitive assessments.
+* Rapidly progressive cognitive decline or suspected prion disease, autoimmune encephalitis.
+* Brain tumor, intracranial hemorrhage within the past 12 months, arteriovenous malformation, or increased intracranial pressure.
+* Acute stroke within the past 3 months.
+* Prior deep brain stimulation (DBS) surgery or other neurosurgical procedures for Parkinson's disease.
+* Has a current diagnosis of psychotic disorder, bipolar disorder, or other psychiatric condition that, in the investigator's opinion, would interfere with the subject's ability to participate in the trial.
+* Has a current or recent history of serious suicidal ideation within the past 6 months, corresponding to a positive response on item 4 (active suicidal ideation with some intent to act, without specific plan) or item 5 (active suicidal ideation with specific plan and intent) on the C-SSRS, or a history of suicidal behavior within the past year, as validated by the C-SSRS at screening.
+* History of substance or alcohol use disorder of moderate to severe severity according to DSM-5 criteria within 6 months before screening, or positive test result(s) for drugs of abuse (including opiates, cocaine, cannabinoids, methamphetamines, amphetamines) at screening.
+* Has history of or current clinically significant and/or unstable medical condition that could interfere with study participation or pose safety concerns, including but not limited to: Moderate or severe hepatic impairment (Child-Pugh Score ≥7); Severe renal impairment (estimated creatinine clearance below 30 mL/min or serum creatinine \>2 mg/dL); Unstable cardiac, vascular, or pulmonary disease Note: Subjects with chronic but stable, well-controlled conditions may be allowed in the study upon agreement with the investigator.
+* Has uncontrolled hypertension (systolic blood pressure \>160 mm Hg or diastolic blood pressure \>100 mm Hg, despite diet, exercise, or a stable dose of antihypertensive therapy) at screening.
+* Has clinically significant ECG abnormalities at screening, defined as: QTc interval (Fridericia's formula): ≥450 msec (males); ≥470 msec (females); Evidence of 2nd or 3rd degree atrioventricular block, or 1st degree atrioventricular block with PR interval \>210 msec; Left bundle branch block; Features of new ischemia; Other clinically important arrhythmia
+* Has a known malignancy or history of malignancy within 5 years before screening (exceptions are squamous and basal cell carcinomas of the skin and carcinoma in situ of the cervix, or malignancy that, in the opinion of the investigator, is considered cured with minimal risk of recurrence).
+* Had clinically significant acute illness within 7 days prior to study rTMS treatment.
+* Had major surgery (e.g., requiring general anesthesia) within 2 weeks before screening, or will not have fully recovered from surgery, or has surgery planned during the time the subject is expected to participate in the study. Note: Subjects with planned surgical procedures to be conducted under local anesthesia may participate.
+* Is pregnant or breastfeeding while enrolled in this study or within 1 month after the last session of study rTMS treatment.
+* Has received an investigational drug or used an invasive investigational medical device within 3 months before screening, or is currently enrolled in an investigational study.
+* Prior treatment with rTMS within 6 months of screening.
+* Subjects willing to partake in any treatments other than the study procedure for the improvement in cognitive function, including non-invasive brain stimulation treatments other than the study procedure, during study participation.
+* Has psychological and/or emotional problems which would render the informed consent invalid, or limit the ability of the subject to comply with the study requirements.
+* Has any condition for which, in the opinion of the investigator, participation would not be in the best interest of the subject (e.g., compromise the well-being) or that could prevent, limit, or confound the protocol-specified assessments.
+* Is an employee of the investigator or study site, with direct involvement in the proposed study or other studies under the direction of that investigator or study site, as well as family members of the employees or the investigator.

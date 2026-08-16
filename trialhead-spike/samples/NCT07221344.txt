@@ -1,0 +1,26 @@
+Inclusion Criteria (All Participants):
+
+* Body mass index between 18.0 and 35.0 kilograms (kg)/square meter (m\^2) at Screening
+* Not pregnant or breast-feeding
+* Able and willing to provide written informed consent prior to the performance of any study specific procedures
+* Participants of childbearing potential must agree to use highly effective contraception in addition to a condom during the study and for at least 90 days following the end of the study or last dose of study drug, whichever is later; participants must not donate sperm or eggs during the study and for at least 90 days following the end of the study or last dose of study drug whichever is later
+
+Inclusion Criteria (Alzheimer's Disease):
+
+* Adults aged 50 to 80 years of age with a clinical diagnosis of early AD and plasma, CSF, or imaging biomarkers consistent with the diagnosis
+* If participant is on AD medications, the doses must be stable for ≥weeks prior to Screening.
+
+  a. Participants with early AD are not required to be on AD medications.
+* Have a reliable and competent caregiver or trial partner who is ≥18 years of age, able and willing to accompany the participant to study visits involving informant-based assessments, to be available to site staff by telephone as needed, and in the opinion of the Investigator, be sufficiently familiar with the participant throughout the study in order to provide accurate and reliable information relevant to study outcome measures
+
+Exclusion Criteria (All Participants):
+
+* Blood pressure outside of specified range in the protocol
+* Human immunodeficiency virus (HIV) infection (seropositive at Screening)
+* Seropositive for hepatitis B (HBV) or hepatitis C (HCV) at Screening
+* Intellectual disability or significant behavioral neuropsychiatric manifestation
+* Clinically significant cardiac, liver, or renal disease
+* Any contraindications to lumbar puncture
+* Known allergy or possible allergy to either ARO-MAPT-SC or to its excipients
+
+Note: Additional inclusion/exclusion criteria may apply per protocol.

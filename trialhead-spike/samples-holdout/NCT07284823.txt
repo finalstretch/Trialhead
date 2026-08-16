@@ -1,0 +1,13 @@
+Inclusion Criteria:
+
+* Self-reported gait impairment
+* Have access to a smartphone with iOS or Android operating system with Bluetooth capabilities and internet connection
+* Ability to walk with or without an assistive device for up to 1 minute
+* Leg measurements within sizing range of the Cionic Neural Sleeve
+
+Exclusion Criteria:
+
+* Daily occurrence of falls
+* Implanted demand-type cardiac pacemaker or defibrillator
+* Malignant tumor or existing thrombosis in the leg
+* Fracture or dislocation in the leg that could be adversely affected by motion from stimulation

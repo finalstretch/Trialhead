@@ -1,0 +1,13 @@
+Inclusion Criteria:
+
+* Patients with ipsilateral locally recurrent breast cancer who previously underwent ipsilateral axillary surgery.
+* Female patients aged 18 years or older.
+* Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+* Patients who voluntarily decide to participate in the study and provide written informed consent.
+
+Exclusion Criteria:
+
+* Patients with distant metastases.
+* Patients who previously underwent ipsilateral mastectomy.
+* Pregnant or breastfeeding women.
+* Patients with a general condition that impairs the ability to understand or provide informed consent.

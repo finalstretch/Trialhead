@@ -1,0 +1,30 @@
+Inclusion Criteria:
+
+* Type 1 Diabetes mellitus (T1D) or Type 2 Diabetes mellitus (T2D) diagnosed at least 12 months prior to screening, using multiple daily injection (MDI) regime for at least six months prior to screening
+* Performing SMBG, no CGM/flash glucose monitoring (FGM) use during the last six months prior screening
+* HbA1c ≥8% and ≤10% based on analysis from a local laboratory
+
+Exclusion Criteria:
+
+* Untreated adrenal or thyroid insufficiency
+* Severe visual impairment
+* Significant renal impairment: eGFR \<30 ml/min within last one year
+* Serious acute or chronic concomitant disease or an anamnesis which might, in the opinion of the investigator, pose a risk to the subject
+* Hematocrit greater than 10% below the lower limit of normal
+* Pregnancy (lack of negative pregnancy test - except in case of menopause, sterilization or hysterectomy - self-reported), planned pregnancy, or breast feeding
+* Allergic to the adhesive (glue or tape)
+* Skin diseases (e.g. psoriasis vulgaris, bacterial skin diseases) at the sensor application sites
+* Sickle cell disease, or hemoglobinopathy
+* Elective surgery planned that requires general anesthesia during study participation
+* Current or anticipated acute uses of glucocorticoids (oral, injectable, or intravenous)
+* Medical conditions that, per investigator determination, make it inappropriate or unsafe to target an HbA1c of \<7%. Conditions may include but are not limited to: heart failure, unstable cardiovascular disease, recent myocardial infarction, ventricular rhythm disturbances, recent transient ischemic attack or cerebrovascular accident, significant malignancy
+* Chronic use of opiates, opioids, morphinomimetics more than three times per week, which has not stopped at least 30 days prior to screening and any other medication interfering with the assessment of pain, as per investigator's discretion
+* Intake of hydroxyurea (hydroxycarbamide), levodopa, methyldopa, ascorbic acid, acetylsalicylic acid (≥300mg), which has not stopped at least 30 days prior to screening
+* Magnetic resonance tomography (MRT), computed tomography (CT), X-ray, radiofrequency ablation, high-frequency electrical heat or high intensity focused ultrasound planned during the course of the study
+* Planned flight or high-altitude hike (\>3000 m) during baseline and assessment periods
+* Shift-worker (night-shifts)
+* On or planning to start a diet intended for weight change
+* Currently abusing illicit and/or prescription drugs or alcohol as judged by the investigator
+* Any other physical or psychological disease or psychiatric disorder that could limit adherence to the required study tasks and interfere with the normal conduct of the study as judged by the investigator
+* Dependency (e.g., employee, co-worker or family member) on sponsor, investigator or companies active in the field of CGM (e.g. Dexcom, Abbott, Menarini, Medtronic) or their subsidiaries
+* Participation in another clinical study at the same time

@@ -1,0 +1,13 @@
+Inclusion Criteria:
+
+* Patients diagnosed with ASUC
+* Aged 18 years or older.
+* No gender restriction.
+
+Exclusion Criteria:
+
+* Presence of contraindications, allergy, or intolerance to upadacitinib or glucocorticoids.
+* Patients requiring immediate colectomy; diagnosis of Crohn's disease; confirmed intestinal infection; hemodynamic instability; clinically significant cytomegalovirus infection; current malignancy.
+* Presence of severe underlying systemic diseases involving the heart, lungs, liver, kidneys, hematologic system, or other organ systems.
+* Pregnant or breastfeeding women.
+* Unwilling to participate in the clinical study.

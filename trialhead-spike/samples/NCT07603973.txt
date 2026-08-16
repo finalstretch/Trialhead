@@ -1,0 +1,13 @@
+Inclusion Criteria:
+
+* Men and women \> 50 years referred to specialist healthcare for knee OA management
+
+Exclusion Criteria:
+
+* Received joint replacement or are under consideration for revision in the referred joint
+* Have undergone joint replacement surgery in opposite knee
+* Have uncontrolled serious comorbidities
+* Have cognitive deficits
+* Are seeking care for recent knee trauma conditions (less than 6 months after trauma) or mainly psoriatic/rheumatoid arthritis
+* Unable to understand Norwegian
+* Do not possess a smartphone

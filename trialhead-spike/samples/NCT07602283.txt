@@ -1,0 +1,18 @@
+Inclusion Criteria:
+
+* Clinical Dementia Rating 0.5 - 2
+* Be a person with or caregiver to a person with a diagnosis of early Alzheimer's Disease, mild dementia, and/or mild cognitive impairment (MCI) and chronic pain defined as non-cancer pain lasting \>3 months that occurs most days and limits life or work activities OR Be a caregiver to a person with a diagnosis of early Alzheimer's Disease, mild dementia, and/or mild cognitive impairment (MCI) and chronic pain defined as non-cancer pain lasting \>3 months that occurs most days and limits life or work activities
+* Able to provide informed consent
+* Willing to wear an EEG headset and heart rate monitoring devices
+* Willing to answer survey questions about topics related to the study
+* Willing to be audio / video recorded
+* Willing to undergo QST, blood draw, heart rate data collection and cognitive testing
+
+Exclusion Criteria:
+
+* Clinical Dementia Rating \<0.5 or \> 2
+* Unable to provide informed consent
+* Endorsing suicidal ideation (SI), self-injurious behavior, or homicidal ideation (HI) above the threshold defined in the "Risk Reduction and Safety Plan"
+* Participating in another clinical trial studying AD and/or Dementia
+* Starting a new prescription medication in the last 4 weeks
+* Taking central nervous system acting medications that may interfere with study measurements as determined at PI discretion

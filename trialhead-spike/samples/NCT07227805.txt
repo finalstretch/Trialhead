@@ -1,0 +1,32 @@
+Inclusion Criteria:
+
+1. Is aged ≥2 years old at time of screening.
+2. Has a clinical diagnosis of Type 1 or Type 2 diabetes for ≥ 6 months prior to screening as determined via medical record by an individual qualified to make a medical diagnosis.
+3. Is on MiniMed™ 780G with Simplera Sync sensor for at least 3 months before screening.
+4. Has a glycosylated hemoglobin (HbA1c) \<11% (97 mmol/mol) at time of screening visit as processed at Point of Care (PoC) or local lab.
+5. Must have a minimum daily insulin requirement (Total Daily Dose) of ≥ 6 units and a maximum of 250 units
+6. Willing to switch to approved insulin per insulin pump labeling.
+7. Investigator has confidence that the subject, parent(s)/legal guardian(s) can successfully operate all study devices and is capable of adhering to study visit schedule per protocol.
+8. Subject, Parent(s)/legal guardian(s) is willing to participate in all training sessions as directed by study staff.
+9. Subject, Parent(s)/legal guardian(s) is willing and able to provide written informed consent.
+10. For subject with Type 2 Diabetes only: Is on stable dose of anti-diabetic medication (other than insulin) (e.g., pramlintide, DPP-4 inhibitor, GLP-1 and GIP agonists/mimetics, metformin, SGLT2 inhibitors) for the last 3 months prior to screening. NB: Subject should not change type or dose of medication during the course of the study.
+11. For Israel only: Subject, Parents(s)/legal guardian(s) is fluent in English.
+
+Exclusion Criteria:
+
+1. Has Addison's disease, growth hormone deficiency, hypopituitarism or definite gastroparesis, uncontrolled coeliac disease, uncontrolled thyroid disorder, or poorly controlled asthma, per investigator judgment.
+2. For subjects with Type 1 Diabetes only: Is using any anti-diabetic medication other than insulin 6 months before screening or plan on using during the study (e.g., pramlintide, DPP-4 inhibitor, GLP-1 and GIP agonists/mimetics, metformin, SGLT2 inhibitors).
+3. Has taken any oral, injectable, or intravenous (IV) glucocorticoids within 8 weeks from time of screening visit, or plans to take any chronically oral, injectable, or IV glucocorticoids during the course of the study, per investigator judgement
+4. Has had renal failure defined by creatinine clearance \<30 ml/min, as assessed by local lab test ≤ 6 months before screening or performed at screening at local lab, as defined by the creatinine-based Cockcroft, CKD-EPI or MDRD equations.
+5. Has active or severe retinopathy in the last 6 months before screening
+6. Has any unresolved adverse skin conditions in the area of sensor placement (e.g. psoriasis, dermatitis herpetiformis, rash, Staphylococcus infection).
+7. Has any other disease or condition that may preclude the patient from participating in the study, per investigator judgment.
+8. History of 2 or more DKA events in the last 3 months before screening.
+9. Has had Hyperosmolar Hyperglycemic State (HHS) in the last 6 months before screening.
+10. Is using hydroxyurea at time of screening or plans to use it during the study
+11. Women of child-bearing potential who have a positive pregnancy test at screening or plan to become pregnant during the course of the study.
+12. Women who are breastfeeding.
+13. Is actively participating in an investigational study (drug or device) wherein he/she has received treatment from an investigational study drug or device in the last 2 weeks before screening, as per investigator judgment.
+14. Subject is currently abusing illicit drugs, marijuana, alcohol or prescription drugs (other than nicotine), per investigator judgment.
+15. Subject, Parent(s)/legal guardian(s) are part of research staff involved with the study.
+16. Subject, Parent(s)/legal guardian (s) are legally incompetent, illiterate, or vulnerable.

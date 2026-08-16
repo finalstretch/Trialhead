@@ -1,0 +1,23 @@
+Inclusion Criteria :
+
+* At least 18 years old at time of consent
+* Signed and dated written informed consent in accordance with ICH-GCP and local legislation prior to admission to the trial
+* Women of childbearing potential (WOCBP) must be ready and able to use highly effective methods of birth control per ICH M3 (R2).
+* Participants with medical history of hypertension and on active pharmacological treatment
+* Participants with medical history of type 2 diabetes mellitus (T2DM) and on active pharmacological treatment
+* Established cardiovascular (CV) disease and on active pharmacological treatment
+* At least one additional risk factor for developing heart failure (HF)
+
+Exclusion Criteria:
+
+* History of HF or hospitalization for HF or treatment of HF
+* Atrial fibrillation or Atrial flutter with a resting heart rate \>110 beats per minute (bpm) documented by echocardiogram (ECG) at Visit 1 (screening)
+* Advanced untreated conduction disease or untreated clinically relevant ventricular arrhythmia at Visit 1 (screening)
+* Treatment with an Mineralocorticoid receptor antagonist (MRA)
+* Treatment with amiloride or other potassium-sparing diuretic
+* Receiving the following treatments at Visit 1 (screening) or requiring such treatment before Visit 2 (randomisation), or planned during the trial:
+
+  * A direct renin inhibitor (e.g. aliskiren)
+  * More than one Angiotensin-converting enzyme inhibitor (ACEi) and/or Angiotensin receptor blocker (ARB) (including Angiotensin receptor-neprilysin inhibitor (ARNi)) used simultaneously
+  * Other aldosterone synthase inhibitors (e.g. baxdrostat)
+  * Systemic mineralocorticoid replacement therapy (e.g. fludrocortisone) Further exclusion criteria apply.

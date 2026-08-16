@@ -1,0 +1,13 @@
+Inclusion Criteria:
+
+* Active ulcerative colitis (UC) with an modified Mayo Score (mMS) of 5 to 9 points and endoscopic subscore of 2 to 3 (confirmed by central reader).
+* Demonstrated intolerance or inadequate response (IR) to one or more of the following categories of drugs:
+
+aminosalicylates (except in countries where failure of this drug class is not sufficient for eligibility), oral locally acting corticosteroids, systemic steroids (prednisone or equivalent), immunomodulators (IMMs), and/or biologic therapies, as outlined in the protocol.
+
+\- Subjects must have a documented history of UC for at least 3 months prior to Baseline, confirmed by colonoscopy during the screening period, with exclusion of current infection, colonic dysplasia and/or malignancy. Documentation of pathology results consistent with the diagnosis of UC must be available.
+
+Exclusion Criteria:
+
+* Participants who have had a major surgery performed within 12 weeks prior to Baseline or planned during the conduct of the study (e.g., inguinal hernia repair, cholecystectomy, intestinal resection).
+* Participants who have concurrent clinically significant medical conditions other than the indication being studied or any other reason that the investigator determines would interfere with the subject's participation in this study, would make the subject an unsuitable candidate to receive study treatment, or would put the subject at risk by participating in the study.

@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode build output and per-user state
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Unrelated scratch file from the first day of trying Claude Code
+ruhi.html
+
+# Local tool settings
+.claude/

@@ -1,0 +1,44 @@
+Inclusion Criteria:
+
+1. Male or female participants aged between 50 to 85 years old (inclusive).
+2. Participants must have at least 4 years of formal education and be capable of completing cognitive and other protocol-specified assessments.
+3. Documented progressive memory decline for ≥12 months prior to screening.
+4. Meets the core clinical diagnostic criteria for mild to moderate AD dementia (stages 4-5), according to the National Institute on Aging and the Alzheimer's Association (NIA-AA) 2018 research framework and the AA workgroup 2024 update.
+5. Evidence of positive brain amyloid pathology, demonstrated by at least one of the following:
+
+   1. Positive Aβ-PET scan (historical positive result acceptable); or
+   2. Positive Cerebrospinal fluid (CSF) Aβ testing (historical positive result acceptable).
+6. Mini-Mental State Examination (MMSE) total score between 15 and 26 inclusive (between 12 and 22 for participants with an elementary school education level).
+7. Clinical Dementia Rating (CDR) Global of 1 or 2, and the CDR-Memory Box scores ≥ 0.5.
+8. If receiving acetylcholinesterase inhibitor or memantine, participants must be on a stable dose for at least 12 weeks prior to baseline.
+9. Must have at least one reliable study partner who can accompany the participant to complete daily treatment. The study partner should have a close relationship with the participant and sufficient knowledge to accurately report on cognition, function, behavior, safety, and protocol compliance. The study partner must be able to communicate with study staff via phone or WeChat, attend required on-site visit, provide informed consent to supporting follow-up throughout the study.
+10. The participant, study partner, or legally authorized representative voluntarily agrees to participate and provides written informed consent prior to any study procedures.
+
+Exclusion Criteria:
+
+1. Presence of any diagnosis other than AD that could cause dementia or cognitive decline, including but not limited to: vascular dementia; Central nervous system infections (e.g., HIV, neurosyphilis); Creutzfeldt-Jakob disease; Huntington's disease; Parkinson's disease; Lewy body dementia; Traumatic brain injury-related dementia; Dementia caused by physical and chemical factors (e.g., drug toxicity, alcohol intoxication, carbon monoxide poisoning); significant systemic diseases (e.g., hepatic or pulmonary encephalopathy); Intracranial space-occupying lesions (e.g., subdural hematoma, brain tumors); or dementia clearly attributable to endocrine disorders, vitamin deficiencies, or other identifiable causes.
+2. Brain MRI demonstrating significant pathological findings, including but not limited to:
+
+   1. More than two infarcts with a diameter \> 2 cm, or a single infarct involving critical regions (thalamus, hippocampus, entorhinal cortex, parahippocampal cortex, angular gyrus, or other cortical and subcortical gray matter nuclei);
+   2. Extensive white matter hyperintensities (Fazekas score ≥ 3);
+   3. Space-occupying lesions such as cysts, abscesses, or brain tumors (e.g., meningiomas or arachnoid cysts). Specifically, meningiomas or arachnoid cysts with a maximum diameter \< 1 cm do not require exclusion.
+3. History of transient ischemic attack (TIA), stroke, or seizure within 6 months of screening.
+4. Hachinski Ischemic Score (HIS) \> 4.
+5. Hamilton Depression Rating Scale (HAMD-17) total score \> 10.
+6. Diagnosis of a psychiatric disorder according to the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) at screening, including schizophrenia or other psychotic disorders, bipolar disorder, major depressive disorder, or delirium.
+7. Known history or laboratory confirmation of HIV infection or neurosyphilis at screening.
+8. Severe cardiovascular disease, including New York Heart Association (NYHA) class III or IV heart function; Severe or unstable angina, or newly developed unstable angina within 3 months prior to screening (with objective clinical evidence such as cardiac enzyme abnormalities or dynamic ST-T changes on electrocardiogram); Acute myocardial infarction within 6 months prior to screening.
+9. Severe dysfunction of major organs (heart, lungs, liver, kidneys, etc.), or any medical condition that, in the opinion of the investigator, could render the participant unsuitable for this study or interfere with participation.
+10. Current or prior treatment with any anti-amyloid monoclonal antibody (e.g., aducanumab, lecanemab, or donanemab).
+11. Prior or planned lymphaticovenous anastomosis (LVA) of the cervical deep lymphatic vessels.
+12. Participation in any interventional clinical trial involving a drug or medical device within the 30 days prior to screening, except for observational studies or verified placebo-group participation in a previous interventional trial.
+13. History of severe head trauma or implanted cranial devices (e.g., bone screws, bone plates, prior cranial surgery, deep brain stimulators); Contraindications to MRI (e.g., claustrophobia, pacemakers/defibrillators, ferromagnetic metal implants); unwilling to undergo MRI examination.
+14. Contraindications to PET or allergy to Aβ-PET tracer (except participants enrolled based solely on CSF Aβ positivity). Participants with uncontrolled abnormal blood glucose, allergy to FDG tracer, or any other investigator-judged contraindications are ineligible for the FDG-PET substudy.
+15. History of malignancy within 5 years prior to screening, except for:
+
+    1. Adequately treated basal or squamous cell skin carcinoma, or cervical dysplasia;
+    2. Adequately treated Stage I in situ cervical cancer ≥ 2 years prior to screening without recurrence;
+    3. Prostate cancer confined to the prostate, adequately treated (e.g., surgery, radiotherapy, or active surveillance), with stable prostate-specific antigen (PSA) levels for ≥ 2 years prior to screening;
+    4. Non-metastatic breast cancer, adequately treated and without recurrence.
+16. Women who are pregnant, breastfeeding, planning pregnancy, or of childbearing potential not using highly effective contraception.
+17. Any other condition that, in the opinion of the investigator, may compromise the participant's safety, interfere with protocol adherence, or confound study results.

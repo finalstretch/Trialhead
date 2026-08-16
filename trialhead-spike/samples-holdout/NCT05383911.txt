@@ -1,0 +1,11 @@
+Inclusion Criteria:
+
+* Patients diagnosed with SCD ages 15-25 years receiving treatment at Nemours and their caregivers will be included. Patients must be deemed candidates for initiation of one or more disease-modifying therapies by their SCD healthcare provider.
+* Nemours SCD healthcare providers will also be included.
+* English language fluency is a requirement for all participants.
+
+Exclusion Criteria:
+
+* Patients/ caregivers who previously participated in usability testing of the intervention will be excluded.
+* Patients will also be excluded if they have history of seizures, if their medical status or cognitive functioning preclude completion of interviews, or if no legal guardian is available to provide consent (for patients \< 18 years).
+* Providers still completing training will be excluded.

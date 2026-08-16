@@ -1,0 +1,16 @@
+Inclusion Criteria:
+
+1. Patients aged ≥50 years who have provided written informed consent.
+2. Fulfillment of classification criteria for at least one of the following inflammatory rheumatic diseases:
+
+   * Rheumatoid arthritis (RA) according to ACR/EULAR 2010 criteria
+   * Psoriatic arthritis (PsA) according to CASPAR criteria
+   * Axial spondyloarthritis (AxSpA) according to ASAS criteria
+   * Systemic lupus erythematosus (SLE) according to ACR/EULAR 2019 criteria
+3. Low-to-moderate cardiovascular risk according to SCORE2/OP classification.
+
+Exclusion Criteria:
+
+1. Presence of previous cardiovascular events, type 2 diabetes mellitus, familial hypercholesterolemia, or chronic kidney disease resulting in classification as high or very high cardiovascular risk.
+2. Prior carotid ultrasound examination with subsequent therapeutic intervention derived from its results, either in the context of a research study or routine clinical practice.
+3. Contraindications to lipid-lowering therapy, including recent history of alcoholism, active liver disease, or unexplained and persistent elevation of serum transaminases exceeding three times the upper limit of normal (applicable to statins and ezetimibe).

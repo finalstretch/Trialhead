@@ -1,0 +1,25 @@
+Inclusion Criteria:
+
+Ability to read and speak English to allow for written informed consent and patient-reported outcomes measures.
+
+* Provision of signed and dated informed consent form
+* Stated willingness to comply with all study procedures and availability for the duration of the study
+* Ability to take oral medication and be willing to adhere to the study intervention regimen
+* Diagnosis of rheumatoid arthritis by a medical provider, confirmed by checking medical records.
+* Current use of an RA treatment regimen of both oral prednisone and 1 other Food and Drug Administration-approved disease-modifying antirheumatic drug (DMARD), with no change in this therapy over the past 90 days
+
+  1. Eligible DMARDs include the following: hydroxychloroquine, sulfasalazine, methotrexate, leflunomide, etanercept, adalimumab, infliximab, golimumab, certolizumab pegol, abatacept, tocilizumab, sarilumab, rituximab, tofacitinib, baricitinib, upadacitinib
+  2. Patients enrolling in the 15-day taper must be taking 7.5mg/day oral prednisone
+  3. Patients enrolling in the 150-day taper must be taking 5mg/day oral prednisone
+
+Exclusion Criteria:
+
+Current or recent (past year) use of systemic glucocorticoid (oral, intravenous, or intramuscular administration) \>2 weeks for an indication other than RA, to reduce risk of adverse health outcomes related to worsening of the indicated condition
+
+* Patients with greater than moderate RA activity as determined by the Clinical Disease Activity Index or by rheumatologist assessment, given high likelihood of taper failure in this population due to increased RA activity alone.
+* Pre-existing primary or secondary adrenal insufficiency diagnosed by a physician, given high risk of worsening with prednisone taper
+* Treatment with another investigational drug or intervention within 90 days
+* Pregnancy
+* Self-reported medical or psychiatric conditions that in the judgment of study personnel would preclude participation in this study (e.g., schizophrenia, malignancy, psychosis, suicidal ideation, history of substance abuse; note that stable anxiety and depression are NOT exclusions)
+* Current, recent (within the last 6 months), or habitual use of artificial nails or nail enhancements. (Artificial nails can influence pressure pain sensitivity at the thumbnail);
+* Any impairment, activity, behavior, or situation that in the judgment of the study team would prevent satisfactory completion of the study protocol

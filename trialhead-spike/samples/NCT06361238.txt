@@ -1,0 +1,22 @@
+Inclusion Criteria:
+
+1. Age ≥ 60 years
+2. Type 2 diabetes
+3. Patients undergoing elective cardiac surgery
+
+Exclusion Criteria:
+
+1. History of neurological or psychiatric disorders, such as schizophrenia, epilepsy, Parkinson's disease, severe dementia, etc
+2. Patients with communication difficulties, such as severe visual, auditory, or speech impairments
+3. History of central nervous system damage or surgery
+4. Cardiac function NYHA Class IV
+5. Severe liver dysfunction (Child-Pugh Class C)
+6. Severe renal failure requiring renal replacement therapy
+7. History of pancreatitis
+8. Type 1 diabetes
+9. Patients whose blood sugar is difficult to control within 4-8 mmol/L during the screening period
+10. Patients with medullary thyroid carcinoma or a family history of it
+11. Pregnant or breastfeeding women
+12. Intolerance or allergy to liraglutide
+13. Previous use of GLP-1A and SGLT2i
+14. Patients who refuse to sign the informed consent

@@ -1,0 +1,11 @@
+Inclusion Criteria:
+
+* Those aged 40-85
+* Those with an ASA score of I-II-III
+* Those with a body mass index (BMI) between 18-30
+
+Exclusion Criteria:
+
+* Those under 40 and over 85
+* Those with an ASA score of IV or higher
+* Those with a BMI of under 18 and over 30

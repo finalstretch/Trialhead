@@ -1,0 +1,15 @@
+Inclusion Criteria:
+
+* Diagnosis of PD
+* Bilateral DBS
+* Directional DBS electrode system
+* MRI, at least 7 Tesla, with diffusion tensor imaging, prior to DBS surgery
+* Head CT, at least 1mm cuts, following DBS surgery
+* At least 3 months since initial activation of the neurostimulator
+
+Exclusion Criteria:
+
+* Neurological or musculoskeletal disorder that significantly affects gait, balance, or limb movements
+* Dementia
+* Prior stereotactic neurosurgery other than DBS for movement disorder
+* Pregnancy

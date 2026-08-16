@@ -1,0 +1,33 @@
+Inclusion Criteria:
+
+1. Males and females ages 18 and above
+2. Active moderate to severe seropositive RA
+3. At least 6 total tender and/or swollen joints counted on a 28 joint assessment during screening and at Week 0 (a joint that is both tender and swollen will be counted as "2")
+4. Demonstrated an inadequate response to, or loss of response to standard csDMARD treatment (e.g., methotrexate) or up to three total bDMARDs and tsDMARDs
+5. Receiving stable background treatment with a csDMARD prior to start of the treatment period at Week 0. Methotrexate (if chosen as background treatment) must be maintained at a stable dose for at least 4 weeks prior to Week 0, while all other csDMARDs (if chosen as background treatment) must be maintained at a stable dose for at least 8 weeks prior to Week 0. Participants must be willing to maintain their background medication regimen throughout the 28-week study period.
+6. For participants that have previously undergone treatment with bDMARDs or tsDMARDs therapy, those treatments must be discontinued at least 4 weeks prior to start of the treatment period at Week 0 and may not be resumed until after the Week 24 Closeout Visit
+7. For participants that have previously undergone treatment with Golimumab or Infliximab, those treatments must be discontinued at least 8 weeks prior to start of the treatment period at Week 0 and may not be resumed until after the Week 24 Closeout Visit
+8. Participants may receive up to 10 mg of daily prednisone as part of their background treatment but must have maintained a stable dose for a minimum of 6 weeks prior to start of the treatment period at Week 0, and must be willing to maintain the stable dose until after the Week 24 Closeout Visit
+9. Torso circumference at the belly button and sternum level must both be in the range of 25 to 50 inches
+10. Participants with an immunomodulation device must be willing and able to turn the device off at least 4 weeks prior to start of the treatment period at Week 0 and may not be resumed until after the Week 24 Closeout Visit
+11. Participants must be willing not to initiate any new treatments with expected immune modulating effects during the study period, and any existing immune modulating treatments must be stabilized by Week 0
+12. Participants must be willing and able to follow the medication rules described in the study's IRB-approved Medication Guide
+
+Exclusion Criteria:
+
+1. Active bacterial or viral infection
+2. Pregnant women or those trying to become pregnant
+3. Receiving active chemotherapy or immunotherapy to treat malignancy within 30 days prior to enrollment
+4. Having received more than a total of three bDMARDs and tsDMARDs
+5. Having received Rituximab monoclonal antibody medication
+6. Presence of an implanted device or other solid object in the vicinity of the spleen that can interfere with or absorb the ultrasound beam
+7. History of asplenia
+8. History of splenomegaly
+9. History of ascites
+10. Recent abdominal surgery
+11. Currently participating in an investigational drug or device study
+12. Open wound/sores that would make performing study procedures too difficult
+13. Inability to perform minimal daily self-cares associated with feeding or dressing, such as lifting a cup of water to the mouth or putting on clothing.
+14. Refusal or inability to regularly attend the scheduled on-site visits and at-home visits, or perform the remote video observation sessions
+15. Cannot speak English
+16. Any other clinical reasons deemed by the investigators of the study in which the patient would not be an appropriate candidate for the study

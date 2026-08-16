@@ -1,0 +1,79 @@
+Inclusion Criteria:
+
+1. Age ranges from 18 to 65 years old (including threshold), regardless of gender.
+2. Positive expression of CD19 on peripheral blood B cells determined by flow cytometry.
+3. The functions of important organs meet the following requirements:
+
+   1. Bone marrow hematopoietic function needs to meet: Neutrophil count ≥1×109/L; Hemoglobin ≥60g/L;
+   2. Liver function: ALT≤3×ULN; AST≤3×ULN; TBIL≤1.5×ULN;
+   3. Renal function: creatinine clearance (CrCl) ≥30 ml/minute;
+   4. Coagulation function: International standardized ratio (INR) ≤1.5×ULN, prothrombin time (PT) ≤1.5×ULN;
+   5. Heart function: good hemodynamic stability;
+4. Female subjects with fertility and male subjects whose partners are women of childbearing age are required to use medically approved contraception or abstinence during the study treatment period and at least 6 months after the end ofthe study treatment period; Female subjects of childbearing age tested negative for serum HCG within 7 days before enrollment in the study and were not in lactation.
+5. Voluntarily participate in this clinical study, sign an informed consent form, have good compliance, and cooperate with follow-up.
+
+Specific inclusion criteria:
+
+Recurrent refractory systemic lupus erythematosus
+
+1. Complies with the classification standards of the 2019 European Union Against Rheumatology/American Society of Rheumatology (EULAR/ACR) SLE;
+2. Disease activity score SELENA SLEDAI≥6 with at least one Injima Lupus Assessment Group Index (BILAG-2004) category A (severe presentation) or two Category B (moderate presentation) organ scores, or both; Or disease activity score SELENA SLEDAI score ≥8;
+3. Definition of relapse refractory: conventional treatment remains ineffective for more than 6 months or disease activity occurs again after remission. Conventional treatment is defined as the use of glucocorticoids and cyclophosphamide, and any of the following immunomodulators: antimalarials, azathioprine, mortemycophanate, methotrexate, leflunomide, tacrolimus, cyclosporine, and biologics including rituximab, belimumab and telitacicept.
+
+Recurrent refractory sjogren's syndrome
+
+1. Meet the 2002 AECG criteria for primary Sjogren's syndrome or the 2016 ACR/EULAR classification criteria;
+2. Disease activity ESSDAI≥6;
+3. Positive anti-SSA /Ro antibody;
+4. Definition of relapse refractory: conventional treatment remains ineffective for more than 6 months or disease activity occurs again after remission. Conventional treatment is defined as the use of glucocorticoids and cyclophosphamide, and any of the following immunomodulators: antimalarials, azathioprine, mortemycophanate, methotrexate, leflunomide, tacrolimus, cyclosporine, and biologics including rituximab, belimumab and telitacicept.
+
+Relapsing refractory/progressive diffuse systemic sclerosis
+
+1. Meet the 2013 ACR classification criteria for systemic sclerosis;
+2. Positive antibodies related to systemic sclerosis;
+3. Diffuse sclerosis of the skin or active interstitial pneumonia (HRCT suggests ground glass exudation);
+4. Definition of relapse refractory: conventional treatment remains ineffective for more than 6 months or disease activity occurs again after remission. Conventional treatment is defined as the use of glucocorticoids and cyclophosphamide, and any of the following immunomodulators: antimalarials, azathioprine, mortemycophanate, methotrexate, leflunomide, tacrolimus, cyclosporine, and biologics including rituximab, belimumab and telitacicept
+5. Definition of progression: rapid skin progression (mRSS increase \>25%); Or progression of lung disease (a 10% reduction in FVC, or a more than 5% reduction in FVC with a 15% reduction in DLCO).
+6. Note: Articles 4 and 5 satisfy one or the other.
+
+Recurrent refractory/progressive inflammatory myopathy:
+
+1. Meet the 2017 EULAR/ACR classification criteria for inflammatory myopathy (including DM, PM, ASS and NM);
+2. Positive myositis antibody;
+3. Patients with muscle involvement had an MMT-8 score of less than 142 and abnormal findings on at least two of the following five core measures (PhGA, PtGA, extra-muscular disease activity score ≥2; HAQ total score ≥0.25; Muscle enzyme levels were 1.5 times the upper limit of the normal range); Or MMT-8≥142 with active interstitial lung disease (HRCT suggests ground glass exudation);
+4. Definition of relapse refractory: conventional treatment remains ineffective for more than 6 months or disease activity occurs again after remission. Conventional treatment is defined as the use of glucocorticoids and cyclophosphamide, and any of the following immunomodulators: antimalarials, azathioprine, mortemycophanate, methotrexate, leflunomide, tacrolimus, cyclosporine, and biologics including rituximab, belimumab and telitacicept
+5. Definition of progressive: myositis aggravation or rapid progression of interstitial pneumonia.
+
+Note: Clauses 4 and 5 satisfy one or the other.
+
+Recurrent/refractory ANCA-associated vasculitis:
+
+1. Meet the 2022ACR/EULAR diagnostic criteria for ANCA vasculitis, including microscopic polyvasculitis, granulomatous polyvasculitis, and eosinophilic granulomatous polyvasculitis.
+2. Anca-associated antibody positive (MPO-ANCA or PR3-ANCA positive);
+3. Birmingham vasculitis activity score (BVAS) ≥15 points (total 63 points), indicating vasculitis disease activity;
+4. Definition of relapse refractory: conventional treatment remains ineffective for more than 6 months or disease activity occurs again after remission. Conventional treatment is defined as the use of glucocorticoids and cyclophosphamide, and any of the following immunomodulators: antimalarials, azathioprine, mortemycophanate, methotrexate, leflunomide, tacrolimus, cyclosporine, and biologics including rituximab, belimumab and telitacicept.
+
+Recurrent refractory/catastrophic antiphospholipid syndrome:
+
+1. Meet the diagnostic criteria for primary antiphospholipid syndrome as revised in Sydney 2006;
+2. Positive titers of phospholipid antibodies (IgG/IgM of LA, B2GP1 or acL, more than two positive tests within 12 weeks);
+3. Definition of relapse resistance: standard therapy with warfarin anticoagulant or replacement vitamin K antagonists (i.e., maintenance of the INR required for treatment) or with standard therapeutic dose of low molecular weight heparin (LMWH), as well as treatment of recurrent thrombosis with past hormones and cyclophosphamide;
+4. Catastrophic antiphospholipid syndrome needs to meet the following four criteria: (1) involvement of three or more organs, systems and/or tissues; (2) Symptoms appear within 1 week; (3) Histologically confirmed obstruction of small blood vessels in at least one organ or tissue; (4) aPL was positive.
+
+Note: Clauses 3 and 4 satisfy one or the other.
+
+Exclusion Criteria:
+
+1. People with severe drug allergy or allergic constitution;
+2. the presence or suspicion of fungal, bacterial, viral or other infections that cannot be controlled or require treatment;
+3. Subjects with central nervous system disorders (excluding pre-existing epilepsy, psychosis, organic encephalopathy syndrome, cerebrovascular accident, encephalitis, central nervous system vasculitis as a result of the disease);
+4. Patients with cardiac dysfunction;
+5. Subjects with congenital immunoglobulin deficiency;
+6. History of malignant tumor in recent five years;
+7. Subjects with end-stage renal failure;
+8. Subjects with hepatitis B surface antigen (HBsAg), hepatitis B core antibody (HBcAb) positive and peripheral blood HBV DNA titer higher than the upper limit of detection; Hepatitis C virus (HCV) antibody positive and peripheral blood HCV RNA positive; Human immunodeficiency virus (HIV) antibody positive; Syphilis positive;
+9. Mental illness and severe cognitive impairment;
+10. Participants who had participated in other clinical trials within 3 months before enrollment;
+11. The duration of use of immunosuppressants that have therapeutic effects on the disease before enrollment was within five half-lives or biologics within four weeks;
+12. A woman who is pregnant or planning to become pregnant;
+13. The investigators believe that there are also subjects who could not be included in the study for other reasons.

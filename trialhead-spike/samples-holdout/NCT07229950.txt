@@ -1,0 +1,31 @@
+Inclusion Criteria:
+
+1. Male and female subject age ≥ 18，≤75.
+2. the body mass index (BMI= weight (kg)/height (2 m ²)) of the subjects is ≥ 18 kg/m ².
+3. Subject has active Ulcerative Colitis with a 9-point modified Mayo score of 4-9 at baseline, with an endoscopic subscore of ≥ 2 (confirmed by central read), and rectal bleeding subscore of ≥1.
+4. Subject has at least a 90-days history of Ulcerative Colitis diagnosis at baseline.
+5. Subject is deemed by the physician as having inadequate response, loss of response or intolerance to at least one conventional treatment (oral 5-ASA, immunosuppressants or corticosteroids), or anti-TNF therapy (e.g., infliximab, adalimumab) or other biological, or JAK inhibitors treatment.
+6. Subject is capable of providing a signed and dated informed consent form indicating the subject has been informed of all pertinent aspects of the study.
+7. All women of childbearing potential and their male partners must commit to using a highly effective contraception to 3 months after last dose of study medication.
+
+Exclusion Criteria:
+
+1. Subject has a diagnosis of indeterminate colitis, or clinical findings suggestive of Crohn's Disease.
+2. Subject with Ulcerative Colitis, which is confined to a proctitis (distal 15 cm or less).
+3. Treatment naïve subject diagnosed with Ulcerative Colitis.
+4. Subject is displaying clinical signs of ischemic colitis, fulminant colitis or toxic megacolon.
+5. Subject had previous surgery as a treatment for Ulcerative Colitis or likely to require surgery during the study period.
+6. Screening endoscopic examination revealed that the subjects had a history of gastrointestinal dysplasia (atypical hyperplasia)/cancer or dysplasia (atypical hyperplasia)/cancer. Except for completely resected low-grade dysplasia.
+7. Subject has evidence of pathogenic bowel infection. Subjects had Clostridium difficile or other intestinal infection within 30 days of screening endoscopy or test positive at screening for C. difficile toxin or other intestinal pathogens.
+8. Subject currently has or had:
+
+   8.1 A clinically significant infection within 1 month of baseline. 8.2 A history of more than one episode of herpes zoster, or disseminated zoster (single episode).
+
+   8.3 Any infection otherwise judged by the investigator to have the potential for exacerbation by participation in the study.
+
+   8.4Any infection requiring antimicrobial therapy within 2 weeks of screening.
+9. Subject is receiving any of the following therapies:
+
+9.1 Cyclosporine, mycophenolate, tacrolimus、JAK inhibitors within 4 weeks prior to baseline.
+
+9.2 Interferon therapy within 8 weeks prior to baseline. 9.3 Intravenous corticosteroids or rectally administered formulation of corticosteroids or 5-ASA within 2 weeks prior to baseline.

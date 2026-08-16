@@ -1,0 +1,14 @@
+Inclusion Criteria:
+
+* Have a confirmed diagnosis of SCD (HbSS, SC, S/β-thalassemia, SD, SE, SO) by hemoglobin electrophoresis/High Performance Liquid Chromatography (HPLC)
+* Aged 18 and above
+* Ability to understand and provide informed consent.
+* If receiving hydroxyurea or L-glutamine, crizanlizumab, voxelotor or erythropoietin stimulating agents, must have been receiving the drug for at least 12 weeks prior to screening and plan to continue taking the drug at the same dose and schedule during the study
+* Experienced at least 2 VOCs leading to healthcare visit within the 12 months prior to screening visit as determined by medical history.
+
+Exclusion Criteria:
+
+* Active malignancy
+* Current pregnancy or breast feeding
+* Participating in a chronic transfusion program (pre-planned series of transfusions for prophylactic purposes) and/or planning on undergoing an exchange transfusion during the duration of the study; episodic transfusion in response to worsened anemia or VOC is permitted
+* Received active treatment on another investigational trial within 30 days (or 5 half-lives of that agent, whichever is greater) prior to screening visit or plans to participate in another investigational drug trial

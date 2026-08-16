@@ -1,0 +1,18 @@
+Inclusion Criteria:
+
+* Subjects have completed TLL-018-301 study within 3 months;
+* Age (at the time of consent):\>＝18 years of age, \<＝75 years of age;
+* Female subjects of childbearing potential (WOCBP), who should not be pregnant or breastfeeding, should not enter the study until after pregnancy testing (e.g., HCG beta subunit-based monitoring);
+* All subjects and their partners voluntarily use contraception as deemed effective by the investigator for at least 90 days from the first dose of the investigational drug to the last dose of the investigational drug (Appendix I); no sperm or egg donation is planned by the subject for at least 6 months from the screening period to the last dose of the investigational drug.
+* Subjects can understand the informed consent form, volunteer to participate in the study and sign the informed consent form.
+
+Exclusion Criteria:
+
+* Subjects have had severe allergic reaction related to the investigational drug during the TLL-018-301 study;
+* Subjects have had herpes zoster, a major cardiovascular event (MACE), thromboembolism, or lymphoproliferative disorders from the time of TLL-018-301 study to the screening of OLE study;
+* Subjects have a clinically significant cardiovascular, respiratory, or any other serious and/or non-stable disease, and there is security risk for subjects to participate in this study judged by the investigator;
+* Subjects have abnormal and clinically significant laboratory test values at screening;
+* Subjects who have taken traditional Chinese medicines, csDMARDs, immunosuppressive drugs, potent opioids, and other JAK inhibitors (except the investigational drugs in TLL-018-301 study) within 1 week before taking the first dose of the investigational drug in OLE study;
+* Subjects have treated with flunomide, any bDMARDs, interferon, and other injected immunosuppressive drugs from TLL-018-301 study to the screening of OLE study;
+* Subjects who have received any live vaccine within 2 months prior to taking the first dose of the investigational drug or who plan to receive a live vaccine during the study;
+* Subjects have had active tuberculosis infection without evidence of clinical cure; have suspected tuberculosis symptoms judged by the investigator; have latent tuberculosis infection (LTBI) but not received preventive treatment regimens within 3 years prior to screening or not completed a course of therapy.

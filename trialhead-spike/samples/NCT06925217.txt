@@ -1,0 +1,36 @@
+Inclusion Criteria:
+
+* Informed consent signed by the subject
+* Age 18 years and older
+* Type 2 diabetes diagnosed for at least 12 months
+* Treatment with insulin therapy for at least 6 months
+* CKD defined either as an eGFR 30-59 ml/min/1.73m² or presence of albuminuria \> 3 mg/mmol (stage A2 or A3 according to KDIGO) with an eGFR \> 30 ml/min/1.73m². CKD must be present for at least 6 months.
+* HbA1c \< 12% based on a venous blood sample from the screening visit
+* Receiving treatment with an SGLT2 inhibitor and/or GLP-1 receptor agonist for at least 3 months, have been offered these therapies previously, or contraindication/intolerance to receiving these therapies
+* Willing to wear study devices and follow study instructions
+* Capable of giving an informed consent
+
+Exclusion Criteria:
+
+* Type 1 diabetes
+* Current use of insulin pump
+* Current use of any closed-loop system
+* Alternative cause of CKD according to medical records such as polycystic kidney disease, glomerulonephritis, congenital urogenital tract diseases, etc.
+* Known or suspected allergy against insulin
+* Pregnancy, planned pregnancy, or breast feeding
+* Severe visual impairment
+* Severe hearing impairment
+* Two or more episodes of severe hypoglycemia in the last 6 months
+* Medically documented allergy towards the adhesive (glue) of plasters
+* Serious skin diseases located at places of the body, which potentially are possible to be used for localisation of the glucose sensor
+* Any physical/psychological disease or medication(s) likely to interfere with the conduct of the study and interpretation of the study results, as judged by study clinician
+* Recent (less than three months) history of myocardial infarction, percutaneous coronary intervention, stroke, or hospitalization for heart failure with reduced ejection fraction
+* History of renal transplantation requiring ongoing immunosuppressive therapy
+* Known or suspected non-compliance, drug or alcohol abuse
+* Inability to follow the procedures of the investigation, e.g. due to language problems
+* Incapacity to give informed consent
+* Contra-indication to undergo MR-imaging according to a standard checklist such as the presence of a pacemaker or other implanted metallic device or severe claustrophobia.
+* Subject refuses to be informed of incidental findings related to their health discovered during imaging or other study-related exams
+* Participation in another investigation with an investigational drug or another MD within the 30 days preceding and during the present investigation
+* Previous enrolment into the current investigation
+* Enrolment of the PI, his/her family members, employees and other dependent persons

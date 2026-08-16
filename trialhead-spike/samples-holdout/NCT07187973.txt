@@ -1,0 +1,45 @@
+Inclusion Criteria:
+
+1. Aged 18 years or older at the time of signing the informed consent form (ICF).
+2. Male or female study participants with SCD HbSC or HbSS.
+3. Participants who have been diagnosed with any of the following SCD-related complications: between 1-10 episodes of VOC in the past 12 months, any history of sickle cell related retinopathy, silent cerebral infarct, avascular necrosis, sensorineural hearing loss; or at least 1 episode of priapism, hepatic sequestration, splenic sequestration, or splenic infarct within the last 12 months as assessed locally.
+4. Hgb ≥7.0 g/dL during Screening. The first 2 participants must have an Hgb ≥9 g/dL.
+5. Normal alpha globin gene screen.
+6. Absolute reticulocyte count or % reticulocyte count \>1.5 × upper limit of normal (ULN) during Screening.
+7. TSAT ≥15% at Screening.
+8. Ferritin ≥50 ng/mL for HbSC or ≥100 ng/mL for HbSS (ferritin must be \<1000 ng/mL at Screening).
+9. For participants taking hydroxyurea, L-glutamine, or crizanlizumab, stable dose for at least 2 months prior to Screening and with no anticipated need for dose adjustments during the study.
+10. If male, not vasectomized for at least 6 months, with female sexual partner(s) of childbearing potential, agrees he and partner will use double methods of the following highly effective methods of birth control (described below) from the first dose of randomized study drug until 120 days after the last administration of study drug and must not donate sperm during their study participation:
+
+    1. Stable hormonal contraceptive (≥3 months; female partner) in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+    2. Intrauterine device, in place for at least 3 months (female partner) in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+    3. Surgically sterile by hysterectomy, bilateral oophorectomy, or bilateral tubal ligation (female partner) in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+11. If female, then EITHER postmenopausal, defined as at least 12 months natural, spontaneous amenorrhea, 6 months of spontaneous amenorrhea with serum follicle-stimulating hormone (FSH) \>40 mIU/mL at Screening, or at least 6 weeks following surgical menopause (bilateral oophorectomy with or without hysterectomy); surgically sterile, OR agree to use 1 of the following highly effective methods of birth control on Day 1 (or earlier) and for at least 120 days after the last administration of study drug:
+
+    1. Stable hormonal contraceptive (≥3 months) in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+    2. Intrauterine device, in place for at least 3 months in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+    3. Tubal ligation or single male partner with vasectomy in conjunction with a barrier method (eg, condom \[male or female\] or diaphragm).
+12. Negative pregnancy test (females of childbearing potential) prior to dosing.
+13. Able to understand the study aims, procedures, and requirements, and provide written informed consent.
+14. Able to comply with all study procedures.
+
+Exclusion Criteria:
+
+1. Participants who are receiving regularly scheduled blood (RBC) transfusion therapy or phlebotomy or have received RBC transfusion or phlebotomy within 60 days of Screening.
+2. Hospitalized for VOC or other sickle cell related complication within 14 days of Screening.
+3. Participants with clinically significant bacterial, fungal, parasitic, or viral infection.
+4. Active HIV, hepatitis B, or C. A positive hepatitis or HIV result should be discussed between the Investigator and Sponsor prior to enrollment.
+5. Significant renal dysfunction, evidenced by estimated glomerular filtration rate of \<60 mL/min/1.73 m2 at the Screening visit, as assessed locally.
+6. Hepatic dysfunction characterized by alanine aminotransferase (ALT) \>2.5 × ULN.
+7. Any episode of ACS in the last 6 months.
+8. Prior or planned hematopoietic stem cell transplant or gene therapy.
+9. History of unstable or deteriorating cardiac or pulmonary disease within 6 months prior to Screening.
+10. History of invasive malignancies within the last 5 years, except localized cured prostate cancer and cervical cancer, or other malignancies deemed acceptable by the Sponsor.
+11. Major surgery within 8 weeks before Screening or incomplete recovery from any previous surgery.
+12. A history or known allergic reaction to any IP excipients or history of anaphylaxis to any food or drug.
+13. History of alcohol dependence or excessive alcohol consumption, as assessed by the Investigator.
+14. Other medical or psychiatric condition or laboratory finding not specifically noted above that, in the judgment of the Investigator or Sponsor, would put the participant at an unacceptable risk or otherwise preclude the participant from participating in the study.
+15. Condition or concomitant medication that would confound the ability to interpret clinical, clinical laboratory, including a major psychiatric condition that has had an exacerbation or required hospitalization in the last 6 months.
+16. If female, pregnant or breastfeeding.
+17. Participation in any other clinical protocol or investigational study that involves administration of experimental therapy and/or therapeutic devices within 30 days of Screening.
+18. Participants with a history of transient ischemic attack or stroke may be considered in consultation with Sponsor.

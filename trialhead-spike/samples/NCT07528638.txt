@@ -1,0 +1,20 @@
+Inclusion Criteria:
+
+1. Patients ages 18-70 years old.
+2. Pathologically confirmed diagnosis of breast cancer.
+3. Undergoing ALND by one of the breast surgeon Sub-Investigators on this study.
+
+Exclusion Criteria:
+
+1. Patients having any previous axillary surgery other than percutaneous breast biopsy and/or SLNB.
+2. Prior breast radiation with neuropathy clearly developing after radiation.
+3. Patients who have undergone prior chemotherapy and developed post-chemotherapy neuropathy prior to ALND.
+4. Patients with any pre-existing neurological conditions affecting nerves, such as neuropathy (peripheral neuropathy, neuropathic pain or nerve injury to upper extremity).
+5. Patients taking medications that are known to modify neuropathic pain (eg, gabapentin, pregabalin, duloxetine, venlafaxine, lidocaine patches, capsaicin, opioids, tramadol, NMDA receptor antagonists, clonidine, cannabis, botox).
+6. Patients with prior spinal surgery or spinal pathology (cervical spinal stenosis or cervical radiculopathy).
+7. Patients with limb-dysfunction.
+8. Patients with demyelinating disease.
+9. Patients with significant co-morbidities (clotting disorders on anticoagulation, cardiac issues, other conditions that could impact long-term follow-up).
+10. Patients that present with pre-operative breast, arm or chest pain ipsilateral to anticipated ALND.
+11. Patients who have had prior procedures where IONM failed intraoperatively.
+12. Presence of parietal cortical lesion.

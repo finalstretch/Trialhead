@@ -1,0 +1,45 @@
+Inclusion Criteria:
+
+1. Female patients aged 18-70 years with primary breast cancer;
+2. Histopathologically confirmed invasive breast cancer (meeting latest ASCO/CAP guidelines criteria) with:
+
+   * TNM stage T1-2;
+   * Nodal stage N0-1;
+3. Ductal carcinoma in situ (DCIS) with maximum tumor diameter \<3 cm;
+4. Paget's disease;
+5. Neoadjuvant chemotherapy permitted for eligible patients;
+6. Unicentric lesion confirmed by breast ultrasound, mammography, and MRI;
+7. Nipple-areolar complex resection required for preoperative imaging or pathologically confirmed nipple involvement;
+8. Enrolled patients randomized 1:1 to breast-conserving surgery or total mastectomy group;
+9. Participants voluntarily signed informed consent forms and completed ethics review procedures.
+
+Exclusion Criteria:
+
+1. Tumor-related characteristics
+
+   1. Metastatic or bilateral breast cancer
+   2. Inflammatory breast cancer
+   3. Multicentric lesions
+2. Comorbidities/treatment history
+
+   1. History of other malignancies (except cured cervical carcinoma in situ/basal cell carcinoma/squamous cell carcinoma) or prior anticancer therapy (systemic/local)
+   2. Major non-breast surgery within 4 weeks before enrollment (excluding diagnostic biopsy/PICC placement) without full recovery
+   3. Active infections/immune disorders:
+
+      HIV/AIDS Viral hepatitis (HBV-DNA≥500 IU/ml; HCV antibody-positive with detectable HCV-RNA) Autoimmune hepatitis HBV/HCV coinfection
+   4. Allogeneic bone marrow/solid organ transplantation history or planned
+   5. Cardiovascular diseases:
+
+      * Heart failure or LVEF\<50%
+      * Uncontrolled arrhythmias (resting heart rate\>100 bpm, ventricular tachycardia, Mobitz II/third-degree AV block)
+      * Angina requiring antianginal drugs
+      * Clinically significant valvulopathy
+      * Transmural myocardial infarction on ECG
+      * Uncontrolled hypertension (SBP\>180 mmHg and/or DBP\>100 mmHg)
+3. Reproductive status
+
+   Pregnancy/lactation, or reproductive-aged women with:
+   * Positive baseline pregnancy test
+   * Refusal of effective contraception
+4. Neuropsychiatric disorders Epilepsy, dementia, psychoactive substance abuse, or alcoholism
+5. Other investigator-determined exclusionary conditions

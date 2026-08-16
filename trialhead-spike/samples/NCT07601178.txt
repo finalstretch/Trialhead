@@ -1,0 +1,48 @@
+Inclusion Criteria:
+
+1. Participants voluntarily join the study, sign the informed consent form, and agree to strictly comply with the study protocol requirements.
+2. Female patients aged between 18 and 75 years.
+3. Confirmed by histopathological examination as advanced triple-negative invasive breast cancer, meeting the following criteria: pathological type triple-negative, specifically: ER negative (IHC \<1%), PR negative (IHC \<1%), HER2 negative (IHC -/+ or IHC ++ but FISH/CISH negative). Priority is given to pathology from metastatic lesions; if metastatic lesion pathology is not available, primary lesion pathology may be used.
+4. TNBC patients with initial diagnosis of stage IV (according to AJCC 8th edition) or recurrent/metastatic disease who are not suitable for surgery, and have not received prior systemic therapy for advanced disease. Prior neoadjuvant and/or adjuvant therapy with taxanes or other anti-tumor treatments is permitted, provided that there was no disease progression during neoadjuvant therapy, and the interval between completion of taxane-based (neo)adjuvant therapy and recurrence/metastasis is ≥6 months.
+5. Suitable for nab-paclitaxel treatment.
+6. At least one measurable tumor lesion according to RECIST 1.1 criteria.
+7. Expected survival ≥3 months.
+8. ECOG performance status 0 or 1.
+9. Adequate organ function, including:
+
+1)Hematology: Absolute neutrophil count (ANC) ≥1.5×10⁹/L; platelet count (PLT) ≥100×10⁹/L; hemoglobin (HB) ≥90 g/L.
+
+2)Liver function: Total bilirubin ≤1.5×ULN; AST and ALT ≤2.5×ULN; if liver metastases are present, ALT and AST must be ≤5×ULN.
+
+3)Renal function: Serum creatinine (Cr) ≤1.5×ULN, or creatinine clearance ≥60 mL/min (calculated by the Cockcroft-Gault formula).
+
+10.Participants of childbearing potential must use appropriate contraception during the study and for 120 days after study completion, have a negative serum pregnancy test within 7 days before study enrollment, and must not be lactating.
+
+Exclusion Criteria:
+
+1. Known history of severe allergic reactions to QL1706, anlotinib, nab-paclitaxel, or any of their excipients.
+2. Inability to swallow oral medications, or any gastrointestinal disorder that may interfere with the absorption and metabolism of the study drugs.
+3. Symptomatic brain/leptomeningeal metastases and/or spinal cord metastases.
+4. Active or potentially relapsing autoimmune disease, with the following exceptions: vitiligo, alopecia, psoriasis, or eczema not requiring systemic treatment; hypothyroidism due to autoimmune thyroiditis requiring only stable-dose hormone replacement therapy; type I diabetes mellitus requiring only stable-dose insulin replacement therapy.
+5. Major surgery within 3 weeks before study initiation, or failure to recover from surgery.
+6. History of organ transplantation or autologous/allogeneic stem cell transplantation.
+7. Known or self-reported human immunodeficiency virus (HIV) infection.
+8. HBV-DNA positive or HCV-DNA positive (copy number \>10³).
+9. Prior treatment with any agent targeting the mechanism of tumor immunotherapy, including immune checkpoint inhibitors (e.g., anti-PD-1 antibodies, anti-PD-L1 antibodies, anti-CTLA-4 antibodies), immune checkpoint agonists (e.g., antibodies targeting ICOS, CD40, CD137, GITR, OX40), or immune cell therapy.
+10. Prior treatment with anti-angiogenic targeted therapy.
+11. Hypertension that cannot be well controlled with a single antihypertensive medication (systolic blood pressure ≥150 mmHg or diastolic blood pressure ≥90 mmHg).
+12. Arterial/venous thrombotic events (e.g., cerebrovascular accident including transient ischemic attack, deep vein thrombosis, pulmonary embolism) within 6 months before enrollment.
+13. Presence of other malignancies within 5 years before enrollment, except for TNBC.
+14. Tumor invasion or compression of surrounding major blood vessels or organs.
+15. Active central nervous system (CNS) metastatic lesions.
+16. Clinically significant pleural effusion, pericardial effusion, or ascites requiring repeated drainage.
+17. History of myocarditis, cardiomyopathy, or malignant arrhythmias.
+18. History of significant bleeding tendency or coagulation dysfunction.
+19. History of esophageal-gastric varices, severe ulcer, non-healing wound, gastrointestinal perforation, abdominal fistula, gastrointestinal obstruction, intra-abdominal abscess, or acute gastrointestinal bleeding within 6 months before the first dose.
+20. Known active tuberculosis (TB).
+21. History of or current non-infectious pneumonitis/interstitial lung disease requiring systemic corticosteroid therapy.
+22. Major surgery or severe trauma within 30 days before the first dose, or planned major surgery within 30 days after the first dose; minor local surgery within 3 days before the first dose.
+23. Platelet or red blood cell transfusion within 4 weeks before initiation of study drug treatment.
+24. Receipt of live vaccine within 4 weeks before the first dose, or planned receipt of live vaccine during the study.
+25. Female participants who are pregnant, breastfeeding, or planning to become pregnant during the study.
+26. Patients judged by the investigator to be unsuitable for participation in this study.

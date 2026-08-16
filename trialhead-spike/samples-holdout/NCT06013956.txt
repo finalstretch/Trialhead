@@ -1,0 +1,11 @@
+Key Inclusion Criteria:
+
+* Ability to provide informed consent.
+* Clinical diagnosis of idiopathic Parkinson's disease.
+* Determined, as per standard of care, to be a candidate for deep brain stimulation (DBS) surgery targeting the subthalamic nucleus.
+* Ability to tolerate delays in taking daily standard Parkinson's disease medications.
+
+Key Exclusion Criteria:
+
+* Secondary Parkinsonism, stroke, or progressive central nervous system disease other than Parkinson's disease.
+* Patient has a condition that, in the opinion of the investigators, would significantly increase the risk of interfering with study compliance, safety, or outcome.

@@ -1,0 +1,36 @@
+Inclusion Criteria:
+
+* Age between 12 and 59 years
+* Male or female
+* Clinical diagnosis of an autoimmune rheumatic disease (ARD) based on internationally accepted criteria (e.g., rheumatoid arthritis, systemic lupus erythematosus, juvenile idiopathic arthritis, Sjögren's syndrome, vasculitis)
+* Healthy control matched by age and sex
+* ARD patients with clinically stable disease for at least 3 months
+* ARD patients under low-grade immunosuppression or no immunosuppression
+* Acceptable immunosuppressive treatments include:
+
+Hydroxychloroquine Sulfasalazine Prednisone ≤ 20 mg/day Methotrexate ≤ 0.4 mg/kg/week (maximum 20 mg/week) Leflunomide 20 mg/day Azathioprine \< 3 mg/kg/day Combination therapy with low-dose prednisone (≤ 7.5 mg/day), hydroxychloroquine, or sulfasalazine
+
+* Healthy controls with no history of autoimmune or chronic infectious diseases
+* Healthy controls not taking immunosuppressive medications Willing and able to comply with study procedures and follow-up
+* Female participants of reproductive potential with negative pregnancy test at baseline
+* Female participants of reproductive potential agreeing to use effective contraception for at least 90 days after vaccination
+
+Exclusion Criteria:
+
+* Prior receipt of any dengue vaccine
+* Receipt of a live attenuated vaccine within 4 weeks prior to enrollment
+* Receipt of an inactivated vaccine within 2 weeks prior to enrollment
+* Known allergy to any component of the vaccine
+* Febrile illness (≥ 37.8°C) within 72 hours prior to vaccination
+* History of immunodeficiency syndromes
+* History of asplenia
+* History of cancer
+* History of HIV infection
+* History of primary immunodeficiencies
+* Immunosuppression due to organ transplant
+* Chronic uncontrolled comorbidities (e.g., heart failure, renal failure, hepatic insufficiency, diabetes mellitus)
+* Hospitalization or acute illness at screening
+* Receipt of blood transfusion within 3 months prior to enrollment
+* Current pregnancy or breastfeeding
+* Intention to become pregnant within 90 days post-vaccination
+* Participation in another clinical trial within 30 days prior to enrollment

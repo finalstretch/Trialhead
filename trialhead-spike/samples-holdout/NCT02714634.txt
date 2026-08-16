@@ -1,0 +1,27 @@
+Inclusion Criteria:
+
+* Patient with rheumatoid arthritis according to EULAR/ACR 2010 criteria
+* DAS28-CRP\>3.2
+* Insufficient response to methotrexate at a weekly dose≥15mg after at least 3 months or to leflunomide at a dose of 10 (in case 20 mg are not well tolerated) to 20 mg per day after 3 months of treatment
+* RA radiographic erosions and/or serum rheumatoid factor associated to anti-Cyclic Citrullinated Peptide (Anti-CCP)
+* Age greater or equal to 18 years
+* Written informed consent, dated and signed before initiating any trial-related procedure
+* Affiliation to a social insurance system
+* Women of child bearing potential, negative β-HCG assay (Human chorionic gonadotropin)
+* Effective method of birth control during the study and continuing after the discontinuation of the investigational drug or study. The duration will depend on the drug used (referred to the summary product characteristic).
+
+Exclusion Criteria:
+
+* Previous treatment with or contraindication to targeted therapies (biologic or JAK/STAT inhibitor)
+* Previous treatment with triple therapy
+* Other inflammatory arthritis except RA associated with Sjögren's syndrome
+* Contraindication to all biologics/ JAK/STAT inhibitors or to methotrexate, leflunomide, sulfasalazine and hydroxychloroquine
+* Corticosteroids at a dose \>15 mg/d of equivalent prednisone for at least 4 weeks before the inclusion
+* Absence of tuberculosis screening
+* Patient who cannot be followed during 12 months
+* Pregnancy, breastfeeding, desire of pregnancy in the 12 months
+* Drug addiction, addiction to alcohol
+* Participation in a clinical study with an investigational product within 4 weeks prior to the start of the study treatment
+* Women of child bearing potential, unless they are using an effective method of birth control
+* Patient under law protection
+* Prisoners

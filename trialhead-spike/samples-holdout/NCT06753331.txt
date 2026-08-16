@@ -1,0 +1,30 @@
+Inclusion Criteria:
+
+1. Men or women aged ≥ 40 and ≤ 72 years at the time of informed consent with a clinically established diagnosis of Parkinson's disease in accordance with the Movement Disorder Society (MDS) Clinical Diagnostic Criteria for Parkinson's Disease.
+2. Subject has a clinically established diagnosis of PD for ≥ 4 years.
+3. Subject has suboptimal control of PD symptoms, with optimized oral antiparkinsonian medication regimen including levodopa/carbidopa monotherapy or levodopa/carbidopa plus antiparkinsonian medications, with stable dosing for ≥ 2months prior to screening.
+4. Subject has a L-DOPA response of ≥ 30% without the influence of antiparkinsonian medications at Screening.
+5. Subject has a Modified Hoehn and Yahr stage 3 - 4 in the Off state.
+6. Subject has a pretreatment 18F-DOPA PET scan consistent with PD.
+7. Subject has both On and Off states as demonstrated by the MDS-UPDRS Part III/IV and the Hauser patient daily diary.
+8. Subjects must meet the following race criteria: 2 of the up to 5 sentinel subjects will be of Asian race, defined as having at least 2 grandparents who are Japanese, Taiwanese, Korean, or Chinese. Subjects in Cohort 2 can be of any race.
+9. Subject is approved by the Enrollment Authorization Eligibility Committee following review of all required information collected during Screening.
+
+Exclusion Criteria:
+
+1. Subject has atypical parkinsonian syndrome (eg, progressive supranuclear palsy \[PSP\], multiple system atrophy \[MSA\], dementia with Lewy bodies \[DLB\], corticobasal degeneration, Parkinson-plus syndrome, vascular parkinsonism, secondary parkinsonism, hereditary parkinsonism).
+2. Subject has non-PD neurological symptoms or evidence of non-PD brain disease (eg, tumor, inflammation, active or history of vascular disorder, history of cerebral hemorrhage, Alzheimer's disease, or other neurodegenerative disorder) based on neuroimaging and/or medical history that would preclude study participation.
+3. Subject has psychiatric symptoms, cognitive impairment, depression, dementia, or other behavioral disorder that would preclude study participation based on Investigator decision.
+4. Subject has received previous striatal or other extrapyramidal system PD treatments, including deep-brain stimulation, central nervous system (CNS) ablation (eg, pallidotomy, thalamotomy), implanted cell, or gene therapy, and/or focused ultrasound therapy.
+5. Subject has peak-dose dyskinesia of sufficient severity that precludes study participation, defined as any item score of ≥ 3 (moderate dyskinesia) on the UDysRS Part 1B (Patient Dyskinesia Questionnaire) AND/OR any item score of ≥ 2 (moderate dyskinesia) on Part 3 (Objective Evaluation of Dyskinesia Disability) Intensity Scale: Impairment. Subject has another type (eg, diphasic dyskinesia) or an unusual pattern of dyskinesia.
+6. Subject has a history of, or concurrent abnormal immune function that may adversely affect the engraftment of the cell implants and use of adjunctive immunosuppressants.
+7. The subject has the following clinical laboratory test results at Screening:
+
+   * Neutrophil count \< 2,000/μL.
+   * Platelet count \< 5.0 × 104/μL.
+   * Aspartate aminotransferase (AST), alanine aminotransferase (ALT) \> 3.0 × upper limit of normal.
+   * Total bilirubin \> 1.5 × upper limit of normal.
+   * Persistent estimated glomerular filtration rate (eGFR) \< 60 mL/min/1.73 m2.
+   * Poorly controlled blood glucose in diabetic subjects (glycosylated hemoglobin \> 9.0%, or fasting serum glucose ≥ 200mg/dL).
+8. Subject has any disorder that would contraindicate general anesthesia, conscious sedation or stereotactic surgery.
+9. Subject has any clinically significant unstable medical condition or any clinically significant chronic disease that would pose a risk to the subject or that might confound the results of the study. In cases in which the impact of the condition upon risk to subject or study results is unclear, the Medical Monitor should be consulted.

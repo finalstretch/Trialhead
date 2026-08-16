@@ -1,0 +1,12 @@
+Inclusion Criteria:
+
+* Both genders are aged 40-80 years
+* Patient having Types ii diabetes with Minimum of 5 years since diabetes diagnosis
+* Patients experiencing chronic pain for at least 6 months and level ≥ 3 on NPRS.
+* Patient having ≥ 6 score on Toronto Clinical Neuropathy Scoring System for diabetic neuropathy
+
+Exclusion Criteria:
+
+* Non-ambulatory patients
+* Patients with ulceration/infection of feet, medical/surgical conditions
+* Patients suffering from stroke, parkinson's disease, or multiple sclerosis

@@ -1,0 +1,27 @@
+Inclusion Criteria:
+
+* According to the definition of the latest ASCO/CAP guidelines, early or locally advanced HER2 negative invasive breast cancer confirmed by histopathology meets the following conditions:
+
+  * HER2 negative: IHC 0/1+or IHC2+with no amplification of ISH;
+  * Primary tumor size: ≥ 1cm
+  * Lymph node status: N0-3
+  * Inflammatory breast cancer patients with measurable lesions (according to RECIST 1.1 standard)
+* Patients with bilateral breast cancer whose primary lesions all meet the inclusion criteria, or breast cancer with Tis-1bN0 and HER2 negative on the other side only meeting the inclusion criteria on one side;
+* The hormone receptor status is known;
+* ECOG score 0-1;
+* Carrying BRCA1 or BRCA2 germline pathogenic mutations or suspected pathogenic mutations;
+* According to RECIST 1.1 standard, at least one measurable lesion is present;
+
+Exclusion Criteria:
+
+* Tumor related symptoms and treatment
+
+  * Recurrent or metastatic breast cancer;
+  * Participated in other drug trials or received any anti-tumor therapy, including endocrine therapy, bisphosphate therapy, immunotherapy, biological therapy, or tumor embolization, within 4 weeks prior to enrollment;
+  * Previously received treatment for PD-1/PD-L1 antibodies, CTLA-4 antibodies, or other PD-1/PD-L1 inhibitors;
+  * Previously received PARP inhibitor treatment (excluding those who have completed PARP inhibitor treatment for ovarian cancer for at least 5 years without recurrence or metastasis);
+* Human immunodeficiency virus (HIV) infection or known acquired immunodeficiency syndrome (AIDS); active hepatitis or combined hepatitis B and C co-infection; autoimmune hepatitis;
+* Confirmed history of heart failure or systolic dysfunction (LVEF \< 50%); high risk uncontrolled cardiac arrhythmias, such as atrial tachycardia; angina requiring antianginal medication
+* Female patients who are pregnant or lactating
+* History of definite neurological or psychiatric disorders, including epilepsy or dementia
+* Presence of interstitial lung disease, pneumonitis, or uncontrolled systemic disease (eg, diabetes mellitus, pulmonary fibrosis, acute pneumonitis, etc.)

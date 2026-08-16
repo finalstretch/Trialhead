@@ -1,0 +1,10 @@
+Inclusion Criteria:
+
+* Male or female subjects aged more than 18 years at the time of signing the informed consent form;
+* Subjects with MCI or SCD who, at the time of their first visit, did not have a clinical diagnosis of dementia (MMSE ≥ 24);
+* Smartphone user.
+
+Exclusion Criteria:
+
+* Age younger than that stated in the inclusion criterion;
+* Inability to understand.

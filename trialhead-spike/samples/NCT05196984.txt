@@ -1,0 +1,23 @@
+Inclusion Criteria:
+
+* Subject is between the ages of 25-65
+* Subject must have a clinically confirmed diagnosis of Down Syndrome (karyotypes optional). Individuals with mosaic Down syndrome will be excluded.
+* Subject or their legal guardian is willing to sign informed consent document.
+* If subject is deemed to not have capacity to sign the informed consent, he/she will need a legally authorized representative to provide surrogate consent.
+* Subject will be medically stable with consistent medication over the previous 3 months.
+
+Exclusion Criteria:
+
+* Subjects has history of a dual diagnosis Down Syndrome and Autism
+* Subjects with has history of seizure or epilepsy within the past 24 months.
+* Subjects with a new diagnosis of Attention-deficit/hyperactivity disorder (ADHD) (\< 6 months) or untreated ADHD
+* Active treatment with one or more anti-epileptic agent.
+* Subjects who have a known history a stroke within the past 24 months.
+* Subjects with a known history of migraine headache.
+* Subjects on medications that lower seizure threshold such as wellbutrin, ciprofloxacin, levofloxacin, etc.
+* Subjects with clinically significant suicide risk and/or suicide attempt in the past 1 year.
+* Subjects with behavioral problems such as aggression/agitation/impulsivity that might interfere with their ability to comply with protocol.
+* Active treatment with one or more psychiatric agent (e.g. antidepressants, antipsychotics, etc).
+* Subjects who have an active implantable medical device including but not limited to implantable cardioverter defibrillator (ICD), deep brain stimulator (DBS), cardiac pacemaker, and/or sacral nerve stimulator.
+* Subjects who have profound and uncorrected hearing or visual impairment.
+* Subjects who are pregnant (self-report).

@@ -1,0 +1,17 @@
+Inclusion criteria
+
+1. veteran between the ages of 60 to 85
+2. clinical diagnosis of mild to moderate Alzheimer's disease or related dementia
+3. clinically significant neuropsychiatric symptoms (NPS) evidenced by a score ≥ 2 in at least one domain of the Neuropsychiatric Inventory Questionnaire
+4. mild to moderate cognitive impairment demonstrated by a Mini-Mental State Examination (MMSE) score of 15-23
+5. have a caregiver who is able and willing to escort the patient to/from clinic visits, answer questionnaires, and assist in the implementation of treatment sessions at home
+6. if taking psychotropic medications, demonstrate stability for at least 4 weeks of treatment
+
+Exclusion Criteria:
+
+1. any contraindication for MRI
+2. any contraindication for iTBS/tDCS including but not limited to seizure disorder, severe cardiovascular disease, history of brain surgery, or stroke involving the cerebral cortex near area of stimulation
+3. current alcohol or substance use disorder determined by QuickSCID (nicotine allowed; mild cannabis and alcohol use is allowed)
+4. neuropsychiatric symptoms (NPS) that are severe enough to preclude the intervention from being delivered safely and effectively, particularly agitation or aggression.
+
+6\) any unstable coexisting medical condition that in the opinion of the principal investigator(s) interferes with the treatment protocol or increase the likelihood of adverse events.

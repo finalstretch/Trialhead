@@ -1,0 +1,26 @@
+Inclusion Criteria:
+
+* Adult women (≥19 years) scheduled to undergo therapeutic mastectomy for breast cancer who desire immediate breast reconstruction (IBR).
+* Breast cancer classified as clinical TNM stage 0 to IIIA, based on preoperative evaluation according to the 8th edition of the AJCC anatomic staging system.
+* Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+
+Exclusion Criteria:
+
+* Patients scheduled for breast-conserving surgery or deemed ineligible for immediate breast reconstruction (IBR).
+* Clinical evidence of nipple or skin involvement on preoperative evaluation.
+
+  * Pregnant or breastfeeding women.
+  * Tumors consisting exclusively of lobular carcinoma in situ (LCIS).
+  * Paget's disease of the breast.
+  * Inflammatory breast cancer.
+  * Male breast cancer.
+  * Clinical stage IIIB-IV disease on preoperative evaluation.
+  * breast size equal to or larger than cup E
+  * History of breast cancer or bilateral breast cancer (including metachronous or synchronous disease).
+  * History of non-breast malignancy, with the exception of non-melanoma skin cancer or papillary/follicular thyroid carcinoma.
+  * Special histologic subtypes of breast tumors (e.g., phyllodes tumor, sarcoma, lymphoma).
+  * Age \>70 years.
+  * American Society of Anesthesiologists (ASA) physical status classification grade ≥4.
+  * Inability to provide informed consent.
+  * History of prior chest radiotherapy.
+  * Patients who have not undergone preoperative testing for hepatitis B virus (HBV), hepatitis C virus (HCV), and human immunodeficiency virus (HIV), which is required for liability insurance coverage.

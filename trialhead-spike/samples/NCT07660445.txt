@@ -1,0 +1,29 @@
+Inclusion Criteria:
+
+* BMI \>/= 27kg/m2
+* Known T2DM
+* Individualized Metabolic Surgery (IMS) score 25-115
+* HbA1c \<11% (subjects on oral glucose lowering drug(s) or HbA1c \<8% (subjects on insulin)
+
+Exclusion Criteria:
+
+* Previous treatment with ReCET, ESG or similar procedure
+* Previous GI surgery that could preclude the ability to perform ReCET or ESG, or acute gastric and duodenal pathology that increased the risk of ReCET or ESG
+* Type 1 DM, DM secondary to specific disease or having any history of ketoacidosis
+* Fasting C-peptide level \<0.5ug/L
+* Any inflammatory disease of the gastrointestinal tract such as Crohn's disease
+* Abnormal pathologies or conditions of the gastrointestinal tract, including duodenal polyps, ulcers or upper gastrointestinal bleeding conditions within 3 months of study
+* Uncorrectable bleeding diathesis, platelet dysfunction, thrombocytopenia with platelet count less than 100,000/microliter or known coagulopathy
+* Currently taking prescription antithrombotic therapy (e.g., anticoagulant agent) within 10 days prior to study and/or there is a need or expected need to use during the study period
+* Currently taking medications known to cause significant weight gain or weight loss (e.g. chemotherapeutics)
+* Patients who have used non-steroidal analgesics and anti-inflammatory drugs (NSAID) and corticosteroids in the past 1 month
+* Underlying uncontrolled endocrine problem that leads to obesity, including and not limited to hypothyroidism, Cushing syndrome and eating disorder.
+* Patients with contra-indications to endoscopy
+* Patients with cirrhosis due to causes other than MASLD
+* Malignancy
+* Diagnosis of autoimmune connective tissue disorder (e.g. lupus erythematosus, scleroderma)
+* Pregnant or breast feeding
+* ASA grade IV \& V
+* Mental or psychiatric disorder; Drug or alcohol addiction
+* Other cases deemed by the examining physician as unsuitable for safe treatment
+* Refusal to participate

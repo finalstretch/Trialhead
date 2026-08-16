@@ -1,0 +1,19 @@
+Inclusion Criteria:
+
+1. clinically diagnosed with Parkinson's disease
+2. aged ≥40 years
+3. Hoehn and Yahr stage ≤3
+4. able to independently undertake transportation back and forth from test days and training sessions
+5. expectedly able to complete ≥85% of the training sessions
+6. experience walking difficulties (the generic walking scale (Walk-12G) score ≥8.5).
+
+Exclusion Criteria:
+
+1. have another neurological disorder or other disorders that affect gait and balance (e.g., severe arthritis or arthrosis)
+2. are pregnant
+3. have dementia (Montreal Cognitive Assessment score \&lt;18)
+4. are suffering from alcohol abuse (i.e., exceeding ten units per week, according to the Danish Health Authority recommendation
+5. have cardiovascular, respiratory, orthopedic, or metabolic disorders or other medical comorbidities hindering participation in maximal exercise testing.
+6. have a depression
+7. use an activity tracker during exercise
+8. performing high-intensity brisk walking three or more times during a week.

@@ -1,0 +1,21 @@
+Inclusion Criteria:
+
+* Diagnosis of idiopathic Parkinson Disease.
+* At least 4 years of symptoms.
+* On dopaminergic medication for Parkinson Disease.
+* Stable on dopaminergic medication and other medications which may influence apathy (such as selective serotonin re-uptake inhibitors, stimulant medications) for at least 4 weeks prior to first study visit and remain stable throughout the study period.
+* Hospital's study-specific informed consent must be obtained.
+* Must have capacity to provide informed consent in English.
+* For female participants, confirmation that they have not had a menstrual period in over 12 months, or that they will use an effective form of contraception during the study.
+
+Exclusion Criteria:
+
+* Inability to provide informed consent.
+* Inability to perform effort task (determined during the titration session).
+* Presence of dementia (Montreal Cognitive Assessment (MoCA) score \< 21).
+* History of epilepsy or brain surgery.
+* Severe tremor or dyskinesia that would interfere with EEG (determined by the PI).
+* Patients with clinically significant medical or neurological conditions which may be an alternative cause of parkinsonism such as repeated brain injury, anti-dopaminergic medications, anoxic brain injury, or significant basal ganglia strokes.
+* Presence of other known central nervous system disease that may interfere with performance or interpretation of EEG or TMS.
+* Presence of any implanted metal devices including, but not limited to, pacemakers, deep brain stimulators, vagal nerve stimulators, bladder stimulators, or cochlear implants.
+* Presence of medical contraindications to TMS such as implanted stimulators, history of mania or bipolar disorder, history of epilepsy.

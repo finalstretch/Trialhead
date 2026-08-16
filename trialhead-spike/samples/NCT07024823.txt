@@ -1,0 +1,57 @@
+Key Inclusion Criteria:
+
+\- Healthy participants with suitable veins for cannulation or repeated venipuncture.
+
+Parts A and B:
+
+* Have a body mass index (BMI) between 18 and 30 kilograms per millimeter (kg/m2), inclusive.
+* For Chinese participants (Part A2): participants are to be Chinese, defined as having both parents and 4 grandparents who are Chinese. This includes second and third generation participants of Chinese descent whose parents or grandparents are living in a country other than China.
+* For Japanese participants (Part B2): participants are to be Japanese, defined as having both parents and 4 grandparents who are Japanese. This includes second and third generation participants of Japanese descent whose parents or grandparents are living in a country other than Japan.
+
+Part C:
+
+* Have a BMI between 20 and 40 kg/m2, inclusive.
+* Have a diagnosis of diabetic kidney disease (DKD).
+* Hemoglobin A1C (HbA1c) of ≤ 10.5%.
+* Participants are required to be on a stable dose of angiotensin converting enzyme inhibitor (ACEi) or angiotensin receptor blocker (ARB) for at least 6 weeks prior to Visit 1 and throughout the Screening Period. In addition, participants should be on stable doses of all other medication for ≥ 6 weeks before Screening.
+
+Part D:
+
+* Have a BMI between 20 and 35 kg/m2, inclusive.
+* Have a diagnosis of DKD as defined by a) diagnosis of type 2 diabetes (T2D) b) eGFR values and c) urine albumin to creatinine ratio (UACR) values.
+* HbA1c of ≤ 10.5%.
+* Participants are required to be on a stable dose of ACEi or ARB for at least 6 weeks prior to Visit 1 and throughout the Screening Period. In addition, participants should be on stable doses of all other medication for ≥ 6 weeks before Screening.
+* Participants must be able and motivated to use the home creatinine device and smartphone independently by successfully performing the test without assistance from site staff.
+* Participants must be able to read and understand English sufficient to participate in site visits and home testing.
+
+Key Exclusion Criteria:
+
+* History of any clinically important disease or disorder which may put the participant at risk because of participation in the study or influence the results.
+* Any positive result on Screening for serum hepatitis B surface antigen (HBsAg), hepatitis B core antibody (HBcAb), or human immunodeficiency virus (HIV).
+
+Parts A and B:
+
+* History or presence of gastrointestinal, hepatic, or renal disease.
+* Any clinically important illness, medical/surgical procedure, or trauma within 4 weeks of the first administration of study intervention.
+* History of severe allergy/hypersensitivity or ongoing clinically important allergy/hypersensitivity, or history of hypersensitivity to drugs with a similar chemical structure or class to AZD4248.
+* Participants who have previously received AZD4248.
+
+Part C:
+
+* History or presence of gastrointestinal, hepatic, or renal disease.
+* Any clinically important illness, medical/surgical procedure, or trauma within 4 weeks of the first administration of study intervention.
+* History of severe allergy/hypersensitivity or ongoing clinically important allergy/hypersensitivity, or history of hypersensitivity to drugs with a similar chemical structure or class to AZD4248.
+* Use of drugs that are strong or moderate CYP3A4 inhibitors/inducers or P-gp inhibitors from within 3 weeks before Screening until the end of the last sample collection.
+* Participants who have previously received AZD4248.
+* Participants on serum creatinine-altering drugs should be on long-term treatment at a stable dose prior to study entry.
+* Expected change of dosing regimen during the study.
+* History of clinically significant heart or vascular disease.
+* New York Heart Association Class 2, 3, or 4 or history of hospitalization for heart failure within 6 months of screening.
+* Ventricular arrhythmias requiring treatment.
+* Amputation due to peripheral artery disease.
+* Severe chronic obstructive pulmonary disease as judged by the Investigator or hospitalization for exacerbation in the last 6 months.
+
+Part D:
+
+* Participants on serum creatinine-altering drugs should be on long-term treatment at a stable dose prior to study entry.
+* Expected change of dosing regimen during the study.

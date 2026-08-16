@@ -1,0 +1,15 @@
+Inclusion Criteria:
+
+* Diagnosis of probable AD according to the diagnostic criteria for AD dementia (NIA-AA 2011)
+* Mini-Mental State Examination (MMSE) score ≥ 5 to ≤ 22 at the start of the treatment period
+* Symptoms of agitation defined by the IPA from at least 14 days before the start of the screening period
+* Neuropsychiatric Inventory-Nursing Home version (NPI-NH) Agitation/Aggression domain (NPI-NH-A/A) score ≥ 4 at the start of the treatment period.
+* Patients who can participate in the study under hospitalization from 21 days before the start of the treatment period to throughout the treatment period
+
+Exclusion Criteria:
+
+* Diagnosis of dementia not due to AD or any other disorder with memory impairment, such as mixed dementia, vascular dementia, Lewy body dementia, dementia associated with Parkinson's disease, frontotemporal dementia, drug-induced dementia, dementia associated with human immunodeficiency virus (HIV) infection, traumatic brain injury, normal pressure hydrocephalus, or other non-AD dementia
+* Any MRI or CT scan of the brain performed after the onset of dementia with findings consistent with clinically relevant CNS disease other than AD, such as vascular changes (eg, cortical cerebral infarction, multiple cerebral infarctions), space-occupying lesions (eg, tumors), or any other major structural brain disease
+* Delirium within 30 days before the start of the screening period or a history of delirium
+* At risk of suicide according to the Columbia-Suicide Severity Rating Scale (C-SSRS) (answers "yes" to Question 4 or 5 of the suicidal ideation section of the C-SSRS) or any suicide attempt within 6 months before the start of the screening period, or at serious risk of suicide in the opinion of the investigator or subinvestigator
+* Prior or current treatment with anti-amyloid beta antibodies

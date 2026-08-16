@@ -1,0 +1,13 @@
+Key Inclusion Criteria:
+
+* Have type 2 diabetes for greater than 3 months and no longer than 5 years by history prior to entering the trial, based upon ADA disease diagnostic criteria.
+* Have an HbA1c \> 6.5% and ≤ 10% as determined by the central lab at Visit 1 (Screening).
+* Have been on a stable maximum dose of metformin for at least 3 months prior to entering the study or have been on stable therapy of diet and exercise only for at least 3 months. Stable treatment is defined as no change in treatment or dose in the last 3 months.
+
+Key Exclusion Criteria:
+
+* Have known type 1 diabetes.
+* Diabetic complications
+* Have taken any oral (other than metformin) or injectable treatment (insulin or GLP-1 RA classes or other) for type 2 diabetes currently or for greater than a 4 week duration previously. Previous treatment must have been stopped at least 3 months prior to screening
+* Systolic blood pressure greater than 150 mmHg or a diastolic blood pressure greater than 100 mmHg at Visit 1 on average after three supine measurements, or a known history of renal artery stenosis.
+* At baseline, the QT interval corrected by Fridericia (QTcF) ECG findings (\>450 msec for males and \>470 msec for females), left bundle branch block, or cardiac arrhythmia requiring medical or surgical treatment within 6 months prior to Visit 1 on the ECG.

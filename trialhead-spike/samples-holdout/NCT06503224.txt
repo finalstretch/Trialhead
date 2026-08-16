@@ -1,0 +1,50 @@
+Inclusion Criteria:
+
+1. Sign the informed consent form.
+2. At the time of signing the informed consent form, the age of 18 years old or above, both male and female.
+3. Bone marrow hematopoietic function is satisfied: white blood cell count ≥3×10\^9/L; neutrophil count ≥1×10\^9/L (not receiving colony-stimulating factor within 2 weeks prior to screening); hemoglobin ≥60g/L.
+4. Liver function fulfillment: ALT≤3×ULN; AST≤3×ULN; TBIL≤3×ULN.
+5. Renal function fulfillment: creatinine clearance CrCl ≥ 60mL/min.
+6. Coagulation function meets: international standard ratio INR \<1.5 times ULN, prothrombin time PT \<1.5 times ULN.
+
+Patients with rheumatoid arthritis must also meet the following enrollment criteria:
+
+1. Diagnosis of rheumatoid arthritis according to the 2010 ACR / EULAR diagnostic criteria.
+2. Fulfillment of one of the following conditions: DAS28-ESR \>3.2 or CDAI \>10 at 3 months after use of a standard treatment regimen prior to screening; inability to taper hormones (prednisone) to less than 7.5 mg/day; and number of swollen joints and/or number of joints with tenderness ≥3. Standard treatment regimen is defined as the stable use of any of the following (alone or in combination): corticosteroids, nonsteroidal anti-inflammatory drugs ( NSAIDs) and csDMARDs, including methotrexate, leflunomide, hydroxychloroquine, salazosulfapyridine, elamodex, tretinoin, and paeonia lactiflora total, as well as biological agents (including TNF inhibitors, non-TNF inhibitors, and JAK inhibitors).
+3. Stable treatment with 1 or 2 cs DMARD(s) prior to enrollment as follows: at least 12 weeks of methotrexate and at least 4 weeks of administration at a dose of 7.5-25 mg/week; at least 4 weeks of stable hydroxychloroquine doses of ≤400 mg/d; at least 4 weeks of stable oral salicylazosulfapyridine 1 to 3 g/d; at least 4 weeks of stable oral leflunomide 10-20 mg /d.
+
+Patients with SLE will also be required to meet the following enrollment criteria:
+
+1. Diagnosis of SLE according to the 2019 EULAR/ACR classification criteria for SLE.
+2. A history of SLE for at least 6 months prior to screening, with the disease remaining active 2 months after the use of a standard treatment regimen prior to screening. Standard treatment regimen is defined as stable use of any of the following (alone or in combination): corticosteroids, antimalarials, nonsteroidal anti-inflammatory drugs (NSAIDs), and other immunosuppressive or biologic agents, including azathioprine, mertiomaxolide, cyclophosphamide, methotrexate, leflunomide, tacrolimus, cyclosporine, belimumab, rituximab, and tetracycline.
+3. BILAG-2004 assessment of the presence of at least 1 grade A or 2 grade B organ scores.
+4. Positive for at least one of the following antibodies: anti-nuclear antibody, anti-ds-DNA antibody, anti-Sm antibody.
+5. SLEDAI-2000 score ≥ 8 during the screening period.
+
+Patients with dry syndrome were also required to meet the following enrollment criteria:
+
+1. Diagnosis of dry syndrome according to the 2002 International Classification Criteria for Primary Dry Syndrome or the 2016 ACR/EULAR classification criteria.
+2. Diagnosis of pSS-TP with platelet count \<30 x 10\^9/L.
+3. History of dry syndrome for at least 6 months prior to screening and disease still active 2 months after use of conventional treatment regimen prior to screening. Definition of conventional therapy:Use of glucocorticoids (above 1 mg/Kg/d) and cyclophosphamide, and any of the following immunomodulatory drugs for more than 6 months: antimalarials, azathioprine, mycophenolate mofetil, methotrexate, leflunomide, tacrolimus, and cyclosporine, as well as biologics, such as rituximab, belimumab, and tetraciprazole.
+
+Patients with systemic sclerosis were also required to meet the following enrollment criteria:
+
+1. Diagnosis of systemic sclerosis according to the 2013 ACR classification criteria for systemic sclerosis.
+2. Positive antinuclear antibodies at screening.
+3. Presence of clear evidence of HRCT progression.
+4. History of systemic sclerosis for at least 6 months prior to screening, and active disease 2 months after use of a conventional treatment regimen prior to screening. Definition of conventional therapy:Use of glucocorticoids (above 0.5 mg/Kg/d) and cyclophosphamide for more than 6 months, as well as any of the following immunomodulatory medications: antimalarials, azathioprine, mycophenolate mofetil, methotrexate, leflunomide, tacrolimus, and cyclosporine, as well as biologics, such as rituximab and belimumab.
+
+Exclusion Criteria:
+
+1. pre-screening presence of clinically significant CNS disease or pathological changes not caused by the disease itself, including, but not limited to: stroke, apoplexy, aneurysm, epilepsy, convulsions, aphasia, severe craniocerebral injury, dementia, Parkinson's disease, cerebellar disorders, organic brain syndromes, or insanity.
+2. Those suffering from relatively serious heart diseases such as angina pectoris, myocardial infarction, heart failure and arrhythmia.
+3. History of major organ transplantation or hematopoietic stem cell/bone marrow transplantation.
+4. vaccination, B-cell targeted therapy within 4 weeks prior to screening.
+5. History of any malignant disease.
+6. Patients with end-stage renal failure.
+7. Presence or suspected presence of uncontrolled fungal, bacterial, viral or other infections.
+8. History of severe allergy to drugs used in clinical studies or raw materials of test drugs, such as cyclophosphamide, fludarabine, DMSO.
+9. The patient is positive for HBV surface antigen, or HBV core antibody and positive for DNA by RT-PCR; positive for HCV antibody or positive for HIV antibody or positive for syphilis or positive for CMV DNA or positive for EBV DNA.
+10. Females who are pregnant or breastfeeding or who plan to have a pregnancy within 2 years of return infusion of the test drug; partners of male patients who plan to become pregnant within 2 years of treatment with the test drug.
+11. Evidence of active tuberculosis infection.
+12. other circumstances assessed by the investigator as unsuitable for enrollment.

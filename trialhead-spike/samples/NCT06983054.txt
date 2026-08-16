@@ -1,0 +1,40 @@
+Inclusion Criteria:
+
+Adults with previously diagnosed T2DM according to American Diabetes Association (ADA) criteria
+
+* HbA1c 6.5-10%
+* Age 18 - 85 years of age
+* Overweight or obese with BMI: \>25 kg/m2
+* We will make every effort to enrol participants of all races/ethnicities."
+* Both sexes (females must be post-menopausal; no menses \>1 year; in case of doubt, Follicle-Stimulating Hormone (FSH) will be determined with cut-off defined as \>31 U/L)
+* Ability to provide signed and dated, written informed consent prior to any study procedures
+* Estimated GFR 60-90 ml/min/1.73m2 by CKD-EPI matching the eGFR range of most participants in VERTIS-CV
+* Sodium intake at baseline \< 200 mmol/day
+* UACR \< 30 mg/mmol
+* All participants need to be on a stable dose of diabetes medication, including Metformin, SU, DPP4-inhibitors, or insulin.
+* Participants suffering from hypertension need to be on a stable dose of RAS inhibitors. In case RAS inhibition is not tolerated, the participant should to be on a stable dose of other antihypertensive treatment.
+
+Exclusion Criteria:
+
+* History of unstable or rapidly progressing renal disease NL80772.029.22 / DC2022ERTU DESIGN Protocol DESIGN, Study NO. 2022.0737 Version 5.0dd22-02-2024 14 of 45
+
+  * Estimated GFR \<60 mL/min/1.73m2 or eGFR \> 90 mL/min/1.73m2 determined by CKD-EPI
+  * UACR \> 30 mg/mmol
+  * Current/chronic use of the following medication: SGLT2 inhibitors, TZD, GLP-1RA, glucocorticoids, immune suppressants, antimicrobial agents, chemotherapeutics Participants should be on a stable dose of antipsychotics, tricyclic antidepressants (TCAs) and monoamine oxidase inhibitors (MAOIs). Subjects on diuretics will only be excluded when these drugs cannot be stopped for the duration of the study.
+  * Chronic use of non-steroidal anti-inflammatory drugs (NSAIDs) will not be allowed, unless used as incidental medication (1-2 tablets) for non-chronic indications (i.e.
+
+sports injury, headache or back ache). However, no such drug can be taken within a timeframe of 2 weeks prior to renal testing
+
+* History of diabetic ketoacidosis (DKA) requiring medical intervention (e.g. emergency room visit and/or hospitalization) within 1 month prior to the Screening visit.
+* Current urinary tract infection and active nephritis
+* Recent (\<6 months) history of cardiovascular disease, including:
+
+  * Acute coronary syndrome
+  * Chronic heart failure (New York Heart Association grade II-IV)
+  * Stroke or transient ischemic neurologic disorder
+* Severe hepatic insufficiency and/or significant abnormal liver function defined as aspartate aminotransferase (AST) \>3x upper limit of normal (ULN) and/or alanine aminotransferase (ALT) \>3x ULN
+* Active malignancy. History of malignancy is allowed unless the participant still has active treatment other than hormonal therapy.• History of or actual severe mental disease
+* Substance abuse (alcohol: defined as \>4 units/day)
+* Allergy to any of the agents used in the study
+* Individuals who are investigator site personnel, directly affiliated with the study, or are immediate (spouse, parent, child, or sibling, whether biological or legally adopted) family of investigator site personnel directly affiliated with the study
+* Inability to understand the study protocol or give informed consent

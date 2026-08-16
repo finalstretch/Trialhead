@@ -1,0 +1,18 @@
+Inclusion Criteria:
+
+* Clinical diagnosis of Parkinson's disease
+* Previous placement of bilateral Medtronic Percept DBS as standard of care treatment for PD
+* Clinically optimized DBS parameters for one month prior to enrollment
+* Ability to ambulate with or without an assistive device for 5 continuous minutes
+* Willingness to withhold antiparkinsonian medication and DBS stimulation for outcomes assessments
+
+Exclusion Criteria:
+
+* Neurocognitive impairment that compromises the ability to provide informed consent
+* Neurological disease other than Parkinson's disease (i.e. multiple sclerosis, stroke)
+* Recommendation for medical clearance using the American College of Sports Medicine (ACSM) Preparticipation Health Screen:
+
+  1. If the ACSM screen recommends medical clearance, the subject must obtain medical clearance by their health care provided prior to participation.
+  2. Those who choose not to obtain physician clearance will not be eligible for participation. Those who do not receive physician clearance for high intensity exercise will not be eligible.
+* A musculoskeletal issue (arthritis, osteoporosis, back problem) that would limit one's ability to engage in exercise
+* Current cardiac arrhythmia

@@ -1,0 +1,37 @@
+Inclusion Criteria:
+
+* Capable of giving signed informed consent.
+* Adequate physiological function and reserve at screening.
+* Able to comply with recommended medication washout period.
+* Participants who are suitable for the study as determined by medical evaluation and at the discretion of the investigator.
+* Willingness to remain on/start appropriate, highly effective methods of birth control or other acceptable criteria.
+
+Exclusion Criteria:
+
+* BMI at screening \< 18 or \> 35kg/m2.
+* Any prior CAR T exposure.
+* Unable or unwilling to remain within proximity (\~2 hours travel time) of the administering investigational site for the first 28 days post study drug administration.
+* Received a bone marrow or solid organ transplant at any time or on an active transplant waiting list.
+* Received any investigational drug within ≥ 5 half-lives or 4 weeks, whichever is longer, prior to screening.
+* Has certain heart conditions that could make it unsafe or unsuitable to take part in the study.
+* Requirement for supplemental oxygen at rest (except at night for sleep apnea) or mechanical ventilation.
+* Uncontrolled hypertension (\> 160/100 mmHg) or symptomatic hypertension.
+* Any central nervous system disease that may impact participants safety in the investigator's opinion.
+* Other concurrent autoimmune or autoinflammatory disease. Certain autoimmune/autoinflammatory diseases may be included after discussion with the medical monitor.
+* Evidence of clinically significant bleeding or active bleeding conditions within 90 days before screening
+* History of malignancy or ongoing treatment for prior malignancy. Certain malignancies may be excepted.
+* Known genetic inborn error of immunity and/or primary immunodeficiency.
+* Active viral, bacterial, or fungal infection, or any ongoing infection that requires systemic antimicrobial therapy in the 4 weeks prior to screening.
+* Seropositive for HIV.
+* Active viral hepatitis are excluded.
+* Active syphilis, positive for Treponema pallidum antibody.
+* Vaccinated with live, attenuated vaccine within 4 weeks prior to apheresis or lymphodepletion.
+* Not up-to-date on vaccinations per local/national health authority or institutional guidelines for immune-compromised individuals.
+* Known life threatening allergies, hypersensitivity, or intolerance to AZD0120 or its excipients, including dimethyl sulfoxide.
+* Contraindications or hypersensitivity to fludarabine and cyclophosphamide.
+* Major surgery, or has surgery planned during the study.
+* Pregnant, breastfeeding, or planning to become pregnant while enrolled in this study or within 1 year after receiving study treatment (whichever is later).
+* Plans to father a child while enrolled in this study or within 1 year after receiving study treatment (whichever is later).
+* Any issue that would impair the ability of the participant to receive or tolerate the planned treatment at the investigational site, to provide informed consent or any condition in the opinion of the investigator, participation would not be in the best interest of the participant.
+
+Other protocol-defined eligibility criteria may apply.
