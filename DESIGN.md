@@ -149,7 +149,7 @@ Condition should eventually autocomplete against a controlled vocabulary rather 
 
 Runs once, **between the welcome screen and profile setup** — see the order note in §5.1. `Tour.swift` + `TourOverlay.swift`.
 
-Each step blurs the screen except one component, ringed and sharp, with a card explaining what it does and a **Got it** button. Twelve steps in three acts:
+Each step marks one component with a **translucent blue highlighter** and shows a card explaining what it does, with **Back**, **Skip**, and **Got it**. Nothing is blurred or dimmed — the rest of the screen stays fully legible, so the marked part reads as *"this one"* rather than as the only thing that exists. Twelve steps in three acts:
 
 **On the trials list** — search bar → search area → stage of testing.
 
@@ -169,7 +169,9 @@ Skippable at every non-interactive step. Completion is stored, so it runs once; 
 
 **Back is available at every step.** Twelve steps is a lot to take in, and without it someone who missed something has to abandon the whole walkthrough. Navigation is written as *"put the app wherever this step needs it"* rather than *"handle moving forward"*, which is what makes going backwards work — stepping back from Profile to the contact step re-opens the trial the tour was using.
 
-**Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and punches a hole in a `.ultraThinMaterial` backdrop using a `destinationOut` mask. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every spotlight lands a status-bar height too high.
+**Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and draws the highlighter there. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every highlight lands a status-bar height too high.
+
+An **invisible** touch blocker covers the screen only where wandering off would strand the tour on the wrong screen. Steps expecting a tap, the scrollable requirements step, and the two tab steps all leave the app fully usable. Nothing about that blocker is visible — with no scrim, a visible barrier would be the confusing part.
 
 This is also why the trials list uses a hand-rolled search field rather than `.searchable`: the system control's frame can't be measured, so the tour couldn't point at it.
 

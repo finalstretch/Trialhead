@@ -38,7 +38,7 @@ final class Tour {
             case .questions:    return .questions
             case .contact:      return .contactButton
             // The tab steps open the real tab and show it whole — nothing to
-            // spotlight, because the whole screen is the point.
+            // mark, because the whole screen is the point.
             case .profileTab, .savedTab, .finish: return nil
             }
         }
@@ -99,13 +99,6 @@ final class Tour {
         /// anyone scroll it teaches very little.
         var allowsScrolling: Bool {
             self == .requirements
-        }
-
-        /// The tab steps open the actual tab and leave it completely unblurred:
-        /// the point is seeing what's on that screen, and a dimmed version of it
-        /// tells you less than the real thing.
-        var dimsBackground: Bool {
-            self != .profileTab && self != .savedTab
         }
 
         /// Which tab this step wants on screen.

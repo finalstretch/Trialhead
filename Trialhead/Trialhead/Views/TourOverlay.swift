@@ -16,20 +16,6 @@ extension View {
     func tourAnchor(_ target: TourTarget) -> some View {
         anchorPreference(key: TourAnchorKey.self, value: .bounds) { [target: $0] }
     }
-
-    /// Blurs everything *except* the given shape.
-    func spotlightMask<S: Shape>(_ shape: S, in rect: CGRect) -> some View {
-        mask {
-            Rectangle()
-                .overlay {
-                    shape
-                        .path(in: rect)
-                        .fill(style: FillStyle(eoFill: true))
-                        .blendMode(.destinationOut)
-                }
-                .compositingGroup()
-        }
-    }
 }
 
 // MARK: - The overlay
@@ -42,11 +28,9 @@ struct TourOverlay: View {
 
     private var step: Tour.Step? { tour.step }
 
-    /// The area to keep sharp. Nil for the closing step, which dims everything.
-    ///
-    /// Clamped to the screen: some targets — the requirements checklist above
-    /// all — are far taller than the display, and an un-clamped spotlight would
-    /// leave no visible backdrop at all.
+    /// The area to mark. Clamped to the screen: the requirements checklist is
+    /// often taller than the display, and a marker running off both edges
+    /// wouldn't read as pointing at anything.
     private var spotlight: CGRect? {
         guard let target = step?.target, let anchor = anchors[target] else { return nil }
         let visible = proxy[anchor].insetBy(dx: -8, dy: -8)
@@ -55,10 +39,15 @@ struct TourOverlay: View {
         return visible
     }
 
+    /// Highlighter blue — light enough that the text underneath stays readable,
+    /// which is the whole point of marking something rather than masking it.
+    private static let highlighter = Color(red: 0.28, green: 0.64, blue: 1.0)
+
     var body: some View {
         if let step {
             ZStack {
-                if step.dimsBackground { backdrop }
+                touchBlocker
+                highlight
                 callout(for: step)
             }
             .transition(.opacity)
@@ -66,34 +55,35 @@ struct TourOverlay: View {
         }
     }
 
-    // MARK: Backdrop
+    // MARK: Highlight
 
+    /// A translucent blue marker over the component being described. No blur or
+    /// dimming anywhere else: the rest of the screen stays perfectly legible, so
+    /// the highlighted part reads as *"this one"* rather than as the only thing
+    /// that exists.
     @ViewBuilder
-    private var backdrop: some View {
+    private var highlight: some View {
         if let spotlight {
-            Rectangle()
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(0.28))
-                .spotlightMask(RoundedRectangle(cornerRadius: 16), in: spotlight)
-                // Let touches through when the step expects the person to act
-                // on the app itself — tapping a trial, or scrolling the
-                // requirements list. The callout card sits above this and keeps
-                // its own hit testing either way.
-                .allowsHitTesting(!(step?.waitsForAction ?? false)
-                                  && !(step?.allowsScrolling ?? false))
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Self.highlighter.opacity(0.22))
                 .overlay {
-                    // A ring so the cut-out reads as deliberate rather than as
-                    // a rendering glitch.
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(.white.opacity(0.9), lineWidth: 2)
-                        .frame(width: spotlight.width, height: spotlight.height)
-                        .position(x: spotlight.midX, y: spotlight.midY)
-                        .allowsHitTesting(false)
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(Self.highlighter.opacity(0.85), lineWidth: 2.5)
                 }
-        } else {
-            Rectangle()
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(0.28))
+                .frame(width: spotlight.width, height: spotlight.height)
+                .position(x: spotlight.midX, y: spotlight.midY)
+                .allowsHitTesting(false)
+                .transition(.opacity)
+        }
+    }
+
+    /// Invisible, and only present where wandering off would strand the tour on
+    /// the wrong screen. Steps that expect a tap, steps that invite scrolling,
+    /// and the two tab steps all leave the app fully usable.
+    @ViewBuilder
+    private var touchBlocker: some View {
+        if let step, step.target != nil, !step.waitsForAction, !step.allowsScrolling {
+            Color.clear.contentShape(Rectangle())
         }
     }
 
