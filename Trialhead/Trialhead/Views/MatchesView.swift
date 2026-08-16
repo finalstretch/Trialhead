@@ -5,6 +5,7 @@ struct MatchesView: View {
     /// Owned by ContentView so tapping the Trials tab can pop back to the list.
     @Binding var path: [String]
     @State private var showingLocation = false
+    @State private var showPhaseFilter = false
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -49,6 +50,8 @@ struct MatchesView: View {
                 locationRow
             }
 
+            phaseFilterSection
+
             Section {
                 ForEach(store.visibleSummaries) { summary in
                     NavigationLink(value: summary.nctId) {
@@ -74,6 +77,82 @@ struct MatchesView: View {
 }
 
 extension MatchesView {
+
+    /// Phase filter. Collapsed by default so it doesn't push the trials off
+    /// screen; each row carries a plain-English explanation, because "Phase 1"
+    /// is vocabulary and "first testing in people" is information.
+    var phaseFilterSection: some View {
+        Section {
+            DisclosureGroup(isExpanded: $showPhaseFilter) {
+                let counts = store.phaseCounts()
+
+                ForEach(TrialPhase.allCases) { phase in
+                    let count = counts[phase.rawValue] ?? 0
+                    let isOn = store.settings.selectedPhases.contains(phase.rawValue)
+
+                    Button {
+                        store.togglePhase(phase)
+                    } label: {
+                        HStack(alignment: .top, spacing: 12) {
+                            Image(systemName: isOn ? "checkmark.square.fill" : "square")
+                                .font(.title3)
+                                .foregroundStyle(isOn ? AnyShapeStyle(.tint) : AnyShapeStyle(.tertiary))
+
+                            VStack(alignment: .leading, spacing: 3) {
+                                HStack(spacing: 6) {
+                                    Text(phase.label)
+                                        .font(.subheadline.weight(.semibold))
+                                        .foregroundStyle(.primary)
+                                    Text("\(count)")
+                                        .font(.caption2.weight(.medium))
+                                        .padding(.horizontal, 6).padding(.vertical, 1)
+                                        .background(Color.secondary.opacity(0.15), in: Capsule())
+                                        .foregroundStyle(.secondary)
+                                }
+                                Text(phase.blurb)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                        .contentShape(Rectangle())
+                        .padding(.vertical, 2)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityAddTraits(isOn ? [.isSelected] : [])
+                    .accessibilityLabel("\(phase.label), \(count) trials. \(phase.blurb)")
+                }
+
+                if !store.settings.selectedPhases.isEmpty {
+                    Button("Show all phases") { store.clearPhaseFilter() }
+                        .font(.subheadline)
+                }
+            } label: {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Stage of testing")
+                        .font(.subheadline.weight(.medium))
+                    Text(phaseFilterSummary)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        } footer: {
+            if showPhaseFilter {
+                Text("Trials are tested in stages. Earlier phases are more experimental; later ones compare against the treatment you'd normally get. A higher number isn't automatically better — it depends on your situation.")
+                    .font(.caption)
+            }
+        }
+    }
+
+    private var phaseFilterSummary: String {
+        let selected = store.settings.selectedPhases
+        guard !selected.isEmpty else { return "Showing every phase · tap to filter" }
+        let names = TrialPhase.allCases
+            .filter { selected.contains($0.rawValue) }
+            .map(\.label)
+        return "Showing " + names.joined(separator: ", ")
+    }
+
     /// A labelled, tappable row rather than only the toolbar icon. The back
     /// button taught us that an unlabelled glyph is easy to miss entirely, and
     /// where you're searching is too important to hide behind one.
@@ -116,11 +195,9 @@ struct TrialCard: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 6) {
                 StatusPill(status: summary.status)
-                if let phase = summary.phase {
-                    Text(phase.replacingOccurrences(of: "PHASE", with: "Phase "))
-                        .font(.caption2.weight(.medium))
-                        .foregroundStyle(.secondary)
-                }
+                Text(summary.phaseDisplay)
+                    .font(.caption2.weight(.medium))
+                    .foregroundStyle(.secondary)
             }
 
             Text(summary.title)

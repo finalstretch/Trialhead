@@ -118,12 +118,40 @@ final class TrialsStore {
     // MARK: - Search
 
     var visibleSummaries: [TrialSummary] {
-        hideIneligible ? summaries.filter { !$0.categoricallyIneligible } : summaries
+        summaries
+            .filter { !hideIneligible || !$0.categoricallyIneligible }
+            .filter { matchesPhaseFilter($0) }
+    }
+
+    /// Empty selection means no filter — show everything.
+    private func matchesPhaseFilter(_ summary: TrialSummary) -> Bool {
+        guard !settings.selectedPhases.isEmpty else { return true }
+        return !Set(summary.phaseKeys).isDisjoint(with: settings.selectedPhases)
     }
 
     var hiddenCount: Int {
         summaries.filter(\.categoricallyIneligible).count
     }
+
+    /// How many trials each phase would show, so the checkboxes can display
+    /// counts and someone can see a filter is empty before they apply it.
+    func phaseCounts() -> [String: Int] {
+        var counts: [String: Int] = [:]
+        for summary in summaries where !hideIneligible || !summary.categoricallyIneligible {
+            for key in summary.phaseKeys { counts[key, default: 0] += 1 }
+        }
+        return counts
+    }
+
+    func togglePhase(_ phase: TrialPhase) {
+        if settings.selectedPhases.contains(phase.rawValue) {
+            settings.selectedPhases.remove(phase.rawValue)
+        } else {
+            settings.selectedPhases.insert(phase.rawValue)
+        }
+    }
+
+    func clearPhaseFilter() { settings.selectedPhases = [] }
 
     @MainActor
     func search() async {

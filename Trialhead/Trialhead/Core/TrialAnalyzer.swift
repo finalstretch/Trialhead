@@ -14,6 +14,11 @@ struct SearchSettings: Codable, Equatable {
     var latitude: Double = 40.7128
     var longitude: Double = -74.0060
 
+    /// Which phases to show. **Empty means show everything** — it's the "no
+    /// filter applied" state, not "hide everything", which would leave someone
+    /// staring at a blank list wondering what they broke.
+    var selectedPhases: Set<String> = []
+
     /// Travel radius in miles. Capped deliberately — see `maxRadiusMiles`.
     var radiusMiles: Int = 25 {
         didSet { radiusMiles = min(max(radiusMiles, Self.minRadiusMiles), Self.maxRadiusMiles) }
@@ -40,7 +45,7 @@ struct SearchSettings: Codable, Equatable {
 extension SearchSettings {
     enum CodingKeys: String, CodingKey {
         case condition, locationMode, locationQuery, locationLabel
-        case latitude, longitude, radiusMiles
+        case latitude, longitude, radiusMiles, selectedPhases
     }
 
     init(from decoder: Decoder) throws {
@@ -53,6 +58,7 @@ extension SearchSettings {
         latitude = try container.decodeIfPresent(Double.self, forKey: .latitude) ?? latitude
         longitude = try container.decodeIfPresent(Double.self, forKey: .longitude) ?? longitude
         radiusMiles = try container.decodeIfPresent(Int.self, forKey: .radiusMiles) ?? radiusMiles
+        selectedPhases = try container.decodeIfPresent(Set<String>.self, forKey: .selectedPhases) ?? []
         clampRadius()   // `didSet` doesn't fire during initialisation
     }
 }
@@ -87,8 +93,12 @@ struct TrialSummary: Identifiable {
     let nctId: String
     let title: String
     let status: String
-    let phase: String?
+    /// Every phase the study lists — combined studies carry more than one, and
+    /// an empty list means "no phase applies" (devices, surgery, behavioural).
+    let phaseKeys: [String]
     let sponsor: String?
+
+    var phaseDisplay: String { TrialPhase.display(phaseKeys) }
     let siteCount: Int
     /// How many sites are actually enrolling — the number that matters, and
     /// often smaller than `siteCount`.
@@ -123,7 +133,7 @@ enum TrialAnalyzer {
             nctId: nctId,
             title: section.identificationModule?.briefTitle ?? "Untitled study",
             status: section.statusModule?.overallStatus ?? "UNKNOWN",
-            phase: section.designModule?.phases?.first,
+            phaseKeys: TrialPhase.keys(from: section.designModule?.phases),
             sponsor: section.sponsorCollaboratorsModule?.leadSponsor?.name,
             siteCount: sites.count,
             enrollingSiteCount: enrollingSiteCount(sites),

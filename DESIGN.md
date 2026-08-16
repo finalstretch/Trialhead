@@ -151,7 +151,7 @@ Ranked list of trials. Ranking blends relevance, distance, and how few blockers 
 │  ┌─────────────────────────────────┐  │
 │  │ 47 trials · within 50 mi        │  │
 │  └─────────────────────────────────┘  │
-│  [Recruiting] [No blockers] [Phase ▾] │
+│  ▸ Stage of testing                   │
 │                                       │
 │ ┌───────────────────────────────────┐ │
 │ │ ● RECRUITING      PHASE 2         │ │
@@ -189,6 +189,12 @@ Ranked list of trials. Ranking blends relevance, distance, and how few blockers 
 > **Still open:** cards need a stronger primary differentiator. Candidates — sponsor type (academic vs industry), enrollment size, or record staleness, since a trial untouched for two years is often inactive regardless of its "recruiting" label.
 
 Note the wording throughout — *likely*, *to ask* — never *eligible*.
+
+**Phase filter (built 2026-08-16).** A collapsible "Stage of testing" section sits under the location row, with a checkbox per phase — Early Phase 1, Phase 1–4, and **No phase** — each carrying a one-line plain-English explanation and a live count of matching trials. Empty selection means *show everything*, never *hide everything*.
+
+The explanations are the point, not decoration. "Phase 1" is research vocabulary; "the first testing in people, mainly about safety and finding the right dose" is something a caregiver can act on. The section footer adds the caveat that a higher number isn't automatically better — it depends on the person's situation.
+
+**"No phase" needs saying out loud.** The API returns no phase for device, surgical, behavioural and dietary studies. That isn't missing data, and users will assume it is unless told. Combined studies list several phases and are counted under each, so per-phase counts can exceed the number of trials.
 
 **States to design:** loading (skeleton cards), empty (no trials — offer to widen radius or drop filters), offline (show cached with a banner), error.
 
