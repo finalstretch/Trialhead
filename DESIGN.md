@@ -161,6 +161,12 @@ Each step blurs the screen except one component, ringed and sharp, with a card e
 
 Skippable at every non-interactive step. Completion is stored, so it runs once; "Delete everything" resets it along with the profile.
 
+**Touches pass through where a step expects them.** The backdrop blocks taps by default, so nobody wanders off mid-explanation. Two exceptions: the interactive steps, and the **requirements** step — that list runs to dozens of rows, and describing it while forbidding anyone to scroll it teaches very little.
+
+**Spotlights are clamped to the screen.** The requirements checklist is often taller than the display, and an un-clamped cut-out would leave no visible backdrop at all. A target scrolled entirely off-screen falls back to dimming everything rather than pointing somewhere wrong.
+
+**The tab-bar spotlight covers the whole bar**, extended into the bottom safe area, so Saved and Profile are both fully sharp while the callout names the one it's describing. Individual `tabItem` frames can't be measured, and a half-blurred tab bar reads as a rendering fault rather than a highlight.
+
 **Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and punches a hole in a `.ultraThinMaterial` backdrop using a `destinationOut` mask. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every spotlight lands a status-bar height too high.
 
 This is also why the trials list uses a hand-rolled search field rather than `.searchable`: the system control's frame can't be measured, so the tour couldn't point at it.

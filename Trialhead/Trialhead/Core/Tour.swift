@@ -71,9 +71,9 @@ final class Tour {
             case .pickCondition:
                 return "Pick one below to see what results look like. This is just an example — you'll choose your own condition in a moment."
             case .openTrial:
-                return "Tap any trial in the list to see what's inside."
+                return "Tap on the provided trial to see what's inside."
             case .requirements:
-                return "Every trial has pages of eligibility rules. We split them into requirements and disqualifiers. Green means you likely meet it; amber means it's worth asking about."
+                return "Every trial has pages of eligibility rules. We split them into requirements and disqualifiers. Green means you likely meet it; amber means it's worth asking about. Scroll through them — the list stays put."
             case .siteLocation:
                 return "The nearest site that's still enrolling, and how many others there are. Sites can close while a trial keeps running elsewhere — we only point you at open ones."
             case .questions:
@@ -81,7 +81,7 @@ final class Tour {
             case .contact:
                 return "Call or email the coordinator, with a message already drafted from your details. This is the step most people never take — and it's free, normal, and commits you to nothing."
             case .profileTab:
-                return "Your details live here — age, height, weight, and where you're searching from. You'll fill these in next, and can change them any time. Adding past treatments here later makes the question lists noticeably sharper."
+                return "Age, height, weight, and where you're searching from. You'll fill these in next, and can change them any time. Adding past treatments here later makes the question lists noticeably sharper."
             case .savedTab:
                 return "Bookmark a trial and it waits for you here, even if you search for something else."
             case .finish:
@@ -92,6 +92,13 @@ final class Tour {
         /// Interactive steps wait for the person to do something.
         var waitsForAction: Bool {
             self == .pickCondition || self == .openTrial
+        }
+
+        /// Steps where the person should be able to touch the app underneath —
+        /// the requirements list is long, and describing it without letting
+        /// anyone scroll it teaches very little.
+        var allowsScrolling: Bool {
+            self == .requirements
         }
 
         var buttonLabel: String {

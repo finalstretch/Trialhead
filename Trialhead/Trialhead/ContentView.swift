@@ -26,12 +26,16 @@ struct ContentView: View {
         }
         .environment(tour)
         // An invisible strip over the tab bar, so the tour can highlight it
-        // without needing each tab item's exact frame.
+        // without needing each tab item's exact frame. Sized generously and
+        // extended into the bottom safe area so the whole bar — Saved and
+        // Profile included — sits inside the spotlight rather than half of it
+        // being blurred out.
         .overlay(alignment: .bottom) {
             Color.clear
-                .frame(height: 56)
+                .frame(height: 120)
                 .allowsHitTesting(false)
                 .tourAnchor(.tabBar)
+                .ignoresSafeArea(edges: .bottom)
         }
         .overlayPreferenceValue(TourAnchorKey.self) { anchors in
             // `ignoresSafeArea` belongs on the GeometryReader, not inside the

@@ -43,9 +43,16 @@ struct TourOverlay: View {
     private var step: Tour.Step? { tour.step }
 
     /// The area to keep sharp. Nil for the closing step, which dims everything.
+    ///
+    /// Clamped to the screen: some targets — the requirements checklist above
+    /// all — are far taller than the display, and an un-clamped spotlight would
+    /// leave no visible backdrop at all.
     private var spotlight: CGRect? {
         guard let target = step?.target, let anchor = anchors[target] else { return nil }
-        return proxy[anchor].insetBy(dx: -8, dy: -8)
+        let visible = proxy[anchor].insetBy(dx: -8, dy: -8)
+            .intersection(CGRect(origin: .zero, size: proxy.size))
+        guard !visible.isNull, visible.height > 24 else { return nil }
+        return visible
     }
 
     var body: some View {
@@ -68,7 +75,12 @@ struct TourOverlay: View {
                 .fill(.ultraThinMaterial)
                 .overlay(Color.black.opacity(0.28))
                 .spotlightMask(RoundedRectangle(cornerRadius: 16), in: spotlight)
-                .allowsHitTesting(!(step?.waitsForAction ?? false))
+                // Let touches through when the step expects the person to act
+                // on the app itself — tapping a trial, or scrolling the
+                // requirements list. The callout card sits above this and keeps
+                // its own hit testing either way.
+                .allowsHitTesting(!(step?.waitsForAction ?? false)
+                                  && !(step?.allowsScrolling ?? false))
                 .overlay {
                     // A ring so the cut-out reads as deliberate rather than as
                     // a rendering glitch.
