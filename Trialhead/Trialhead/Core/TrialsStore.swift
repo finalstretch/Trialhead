@@ -27,8 +27,36 @@ final class TrialsStore {
     init() {
         let stored = LocalStore.load()
         profile = stored.profile
-        settings = stored.settings
+        var loaded = stored.settings
+        loaded.clampRadius()   // files saved before the 30-mile cap existed
+        settings = loaded
         savedTrialIDs = Set(stored.savedTrialIDs)
+    }
+
+    // MARK: - Where to search
+
+    var isResolvingLocation = false
+    var locationError: String?
+
+    /// Turns the typed ZIP or city into coordinates, then re-runs the search.
+    @MainActor
+    func applyLocation(query: String, mode: LocationMode, radius: Int) async {
+        isResolvingLocation = true
+        locationError = nil
+        defer { isResolvingLocation = false }
+
+        do {
+            let place = try await LocationResolver.resolve(query, mode: mode)
+            settings.locationMode = mode
+            settings.locationQuery = query
+            settings.locationLabel = place.label
+            settings.latitude = place.latitude
+            settings.longitude = place.longitude
+            settings.radiusMiles = radius
+            await search()
+        } catch {
+            locationError = error.localizedDescription
+        }
     }
 
     private func persist() {

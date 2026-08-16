@@ -594,7 +594,13 @@ Each milestone should end with something runnable.
   1. [x] **Persist the profile.** ✅ `LocalStore.swift` — one JSON file in the app sandbox, written on every change via `didSet`. Also carries search settings and saved trial IDs, plus a working "Delete everything". Verified by writing a state file into the simulator and confirming it loads.
   2. [x] **Contact sheet (§5.6).** ✅ `ContactSheet.swift` — site and central contacts (deduplicated — the same coordinator is routinely listed twice), tap-to-call, and an editable drafted message built from the profile and the top amber criteria. Reached by a prominent button placed *above* the checklist, since burying it under forty rows would mean nobody gets there.
   3. [x] **Saved trials (§5.7).** ✅ `SavedView.swift` + bookmark toggle. Saved trials are re-fetched **by ID**, not filtered from the current search, so they survive changing what you search for.
-  4. [ ] **Sites map (§5.5)** with per-site contacts. Contacts are done; the map isn't.
+  4. [x] **Search area controls.** ✅ `LocationSheet.swift` + `LocationResolver.swift`. Three filters: search by **ZIP code**, search by **city**, and a **travel radius slider capped at 30 miles**. ZIP/city are turned into coordinates on-device by Apple's geocoder — the query never travels with any health detail. Reached from a labelled row at the top of the results list, not just a toolbar icon.
+
+     **The 30-mile cap is a product decision, not a technical limit.** Trials commonly need weekly in-person visits, and travel is among the most common reasons people drop out. Listing something 200 miles away pads the results with places nobody will realistically keep driving to.
+
+  5. [ ] **Sites map (§5.5)** with per-site contacts. Contacts are done; the map isn't. **M4 data check found per-site contacts are rare** — 5 of 85 sites in one trial, 0 of 18 in another — so the central contact carries the load and this is lower value than assumed.
+
+  6. [ ] **Nearest-site status bug.** `TrialAnalyzer.nearestSite` ignores per-site status, so a site marked COMPLETED can be shown as "nearest" while the trial still recruits (3 of 85 and 4 of 18 sites in sampled trials). Sends someone to a dead end. Small fix, high value — do this before the map.
   5. [ ] **A stronger card differentiator** — unresolved since M3, when distance turned out to be city-level. Needs a decision, not just code.
 
   Deferred to M5: the proper first-run onboarding flow (§5.1). The settings-style form works well enough to keep testing with.

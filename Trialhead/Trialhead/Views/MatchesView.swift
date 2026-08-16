@@ -4,6 +4,7 @@ struct MatchesView: View {
     @Bindable var store: TrialsStore
     /// Owned by ContentView so tapping the Trials tab can pop back to the list.
     @Binding var path: [String]
+    @State private var showingLocation = false
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -24,11 +25,30 @@ struct MatchesView: View {
             .onSubmit(of: .search) { Task { await store.search() } }
             .task { if store.summaries.isEmpty { await store.search() } }
             .refreshable { await store.search() }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showingLocation = true
+                    } label: {
+                        Label("\(store.settings.locationLabel) · \(store.settings.radiusMiles) mi",
+                              systemImage: "location.circle")
+                            .font(.footnote)
+                            .labelStyle(.titleAndIcon)
+                    }
+                }
+            }
+            .sheet(isPresented: $showingLocation) {
+                LocationSheet(store: store)
+            }
         }
     }
 
     private var list: some View {
         List {
+            Section {
+                locationRow
+            }
+
             Section {
                 ForEach(store.visibleSummaries) { summary in
                     NavigationLink(value: summary.nctId) {
@@ -36,7 +56,7 @@ struct MatchesView: View {
                     }
                 }
             } header: {
-                Text("\(store.visibleSummaries.count) trials within \(store.settings.radiusMiles) miles")
+                Text("\(store.visibleSummaries.count) trials")
             } footer: {
                 if store.hiddenCount > 0 {
                     Text("\(store.hiddenCount) hidden — the trial record's age or sex requirements rule you out.")
@@ -45,10 +65,43 @@ struct MatchesView: View {
         }
         .listStyle(.plain)
         .navigationDestination(for: String.self) { nctId in
+
             if let study = store.study(nctId) {
                 TrialDetailView(study: study, store: store)
             }
         }
+    }
+}
+
+extension MatchesView {
+    /// A labelled, tappable row rather than only the toolbar icon. The back
+    /// button taught us that an unlabelled glyph is easy to miss entirely, and
+    /// where you're searching is too important to hide behind one.
+    var locationRow: some View {
+        Button {
+            showingLocation = true
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: "location.circle.fill")
+                    .font(.title3)
+                    .foregroundStyle(.tint)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(store.settings.locationLabel)
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.primary)
+                    Text("within \(store.settings.radiusMiles) miles · tap to change")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.tertiary)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Search area: \(store.settings.locationLabel), within \(store.settings.radiusMiles) miles. Tap to change.")
     }
 }
 

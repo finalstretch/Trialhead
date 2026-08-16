@@ -60,10 +60,13 @@ struct ProfileView: View {
                     }
                 }
 
-                Section("Search area") {
-                    Picker("Within", selection: $store.settings.radiusMiles) {
-                        ForEach([25, 50, 100, 250], id: \.self) { Text("\($0) miles").tag($0) }
-                    }
+                Section {
+                    LabeledContent("Searching near", value: store.settings.locationLabel)
+                    LabeledContent("Within", value: "\(store.settings.radiusMiles) miles")
+                } header: {
+                    Text("Search area")
+                } footer: {
+                    Text("Change these from the location button on the Trials screen.")
                 }
 
                 Section {

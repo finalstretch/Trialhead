@@ -7,6 +7,22 @@ struct StoredState: Codable, Equatable {
     var savedTrialIDs: [String] = []
 }
 
+/// Forgiving decoding, same reasoning as `Profile` — a missing top-level key
+/// must not discard the keys that *are* there.
+extension StoredState {
+    enum CodingKeys: String, CodingKey {
+        case profile, settings, savedTrialIDs
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.init()
+        profile = try container.decodeIfPresent(Profile.self, forKey: .profile) ?? Profile()
+        settings = try container.decodeIfPresent(SearchSettings.self, forKey: .settings) ?? SearchSettings()
+        savedTrialIDs = try container.decodeIfPresent([String].self, forKey: .savedTrialIDs) ?? []
+    }
+}
+
 /// Saves to a single JSON file inside the app's own private folder.
 ///
 /// DESIGN.md Principle 3 — health data never leaves the device. A plain file in

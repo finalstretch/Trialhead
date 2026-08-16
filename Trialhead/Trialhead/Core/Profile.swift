@@ -36,6 +36,33 @@ struct Profile: Codable, Equatable {
     }
 }
 
+// MARK: - Forgiving decoding
+
+/// Swift's automatic decoding demands that *every* field be present, so adding
+/// one new property makes every previously-saved file fail to decode — and the
+/// person's whole profile silently disappears on the next launch.
+///
+/// Decoding each field with `decodeIfPresent` and falling back to the default
+/// means old files keep loading as new fields are added. Written in an extension
+/// so the memberwise `Profile(age:sex:…)` initialiser survives.
+extension Profile {
+    enum CodingKeys: String, CodingKey {
+        case age, sex, conditions, priorTreatments, medications, heightCM, weightKG
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.init()
+        age = try container.decodeIfPresent(Int.self, forKey: .age)
+        sex = try container.decodeIfPresent(Sex.self, forKey: .sex)
+        conditions = try container.decodeIfPresent([String].self, forKey: .conditions) ?? []
+        priorTreatments = try container.decodeIfPresent([String].self, forKey: .priorTreatments) ?? []
+        medications = try container.decodeIfPresent([String].self, forKey: .medications) ?? []
+        heightCM = try container.decodeIfPresent(Double.self, forKey: .heightCM)
+        weightKG = try container.decodeIfPresent(Double.self, forKey: .weightKG)
+    }
+}
+
 extension Profile {
     /// Stand-in profiles for testing. The real app builds these from onboarding.
     static let diabetesExample = Profile(

@@ -504,10 +504,65 @@ Incidental confirmation from testing: a saved Gothenburg study displayed
 scale where distance actually means something. It's only *within* a metro area
 that city-level geocoding makes it useless.
 
+## Search area: ZIP, city, and a capped radius
+
+`LocationSheet.swift` + `LocationResolver.swift`. Three filters — ZIP code, city,
+and a travel-radius slider running 5–30 miles.
+
+Apple's `CLGeocoder` turns the typed ZIP or city into coordinates on-device. No
+API key, no third-party service, and the query carries no health information.
+
+**The 30-mile cap is deliberate.** Trials commonly need weekly in-person visits,
+and travel is among the most common reasons people stop taking part. A 250-mile
+radius produces a longer list that is mostly false hope.
+
+## The bug that would have lost real users' data
+
+**Symptom:** a seeded test profile silently vanished between runs.
+
+**Cause:** Swift's automatic `Codable` decoding requires *every* property to be
+present in the JSON. Adding three fields to `SearchSettings` meant every
+previously saved file failed to decode — and `LocalStore.load()` fell back to a
+blank state, discarding the profile, the settings, and the saved trials.
+
+In a shipped app: **user installs an update, opens it, everything is gone.**
+
+**Verified rather than assumed.** Wrote an old-format file with
+`"condition": "melanoma"` and no location fields, launched, and watched the app
+display "breast cancer" — the default. After the fix, the same file loads as
+melanoma with the missing fields defaulted.
+
+**Fix:** hand-written `init(from:)` for `Profile`, `SearchSettings`, and
+`StoredState` using `decodeIfPresent` with fallbacks. Placed in extensions so the
+memberwise initialisers survive.
+
+**Rule going forward:** every field added to saved data must decode leniently.
+This is only testable by keeping an old-format file around — worth adding a real
+test for once there's a test target.
+
+## Two SwiftUI lifecycle traps
+
+**`onChange` fires after `onAppear`.** Restoring the saved ZIP/city mode in
+`onAppear` counted as a change, so the `.onChange(of: mode)` handler that clears
+the text field ran afterwards and wiped the value just restored. A boolean guard
+set at the end of `onAppear` doesn't help — it's already true by then. Moving the
+clearing into a custom `Binding` fixed it, because a binding's setter only runs
+when something actually sets it.
+
+**Toolbar `Label`s hide their text.** `.labelStyle(.titleAndIcon)` didn't
+override it either. The search location ended up shown as a bare icon — the same
+discoverability failure as the iOS 26 back button. Replaced with a labelled,
+tappable row at the top of the results list.
+
 ## Still open in M4
 
-- Sites map (§5.5) — the per-site contacts are done, the map isn't
-- A stronger primary differentiator for result cards, unresolved since M3
+- **Nearest-site status bug** — `nearestSite` ignores per-site status, so a
+  COMPLETED site can be presented as the nearest one. Sampled trials had 3 of 85
+  and 4 of 18 sites closed while the trial recruited. Sends someone to a dead
+  end; fix before building the map.
+- Sites map (§5.5). Data check tempered its value: per-site contacts are rare
+  (5 of 85, 0 of 18), so the central contact does most of the work.
+- A stronger primary differentiator for result cards, unresolved since M3.
 
 ## Next: M5
 
