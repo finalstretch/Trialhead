@@ -6,13 +6,14 @@ struct StoredState: Codable, Equatable {
     var settings = SearchSettings()
     var savedTrialIDs: [String] = []
     var hasCompletedOnboarding = false
+    var hasCompletedTour = false
 }
 
 /// Forgiving decoding, same reasoning as `Profile` — a missing top-level key
 /// must not discard the keys that *are* there.
 extension StoredState {
     enum CodingKeys: String, CodingKey {
-        case profile, settings, savedTrialIDs, hasCompletedOnboarding
+        case profile, settings, savedTrialIDs, hasCompletedOnboarding, hasCompletedTour
     }
 
     init(from decoder: Decoder) throws {
@@ -22,6 +23,7 @@ extension StoredState {
         settings = try container.decodeIfPresent(SearchSettings.self, forKey: .settings) ?? SearchSettings()
         savedTrialIDs = try container.decodeIfPresent([String].self, forKey: .savedTrialIDs) ?? []
         hasCompletedOnboarding = try container.decodeIfPresent(Bool.self, forKey: .hasCompletedOnboarding) ?? false
+        hasCompletedTour = try container.decodeIfPresent(Bool.self, forKey: .hasCompletedTour) ?? false
     }
 }
 

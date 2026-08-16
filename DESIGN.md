@@ -2,7 +2,7 @@
 
 > Working name. A trailhead is where a journey starts, which is roughly the app's job.
 
-**Status:** draft v0.8 · **Last updated:** 2026-08-16 · **M0–M4 complete, onboarding built**
+**Status:** draft v0.9 · **Last updated:** 2026-08-16 · **M0–M4 complete, onboarding built**
 **Framing:** a preparation tool, not an eligibility calculator (§1)
 **Architecture:** fully on-device, no backend, no model in v1 (§7)
 **Parser:** 96% clean split on unseen studies (M1) — the design holds
@@ -138,6 +138,28 @@ Multi-step, one question per screen, progress dots. Every step skippable except 
 **Units:** height and weight are asked in feet, inches and pounds, and stored as centimetres and kilograms. The app is US-only (§11.4) and nobody there knows their height in centimetres; trial criteria are written in metric.
 
 Condition should eventually autocomplete against a controlled vocabulary rather than accepting raw free text — see Open Questions.
+
+---
+
+### 5.1b Guided walkthrough
+
+Runs once, immediately after setup — the two are one continuous first-run experience, not separate events. `Tour.swift` + `TourOverlay.swift`.
+
+Each step blurs the screen except one component, ringed and sharp, with a card explaining what it does and a **Got it** button. Twelve steps in three acts:
+
+**On the trials list** — search bar → search area → stage of testing.
+
+**Two interactive steps.** The person picks a condition from five suggestions, then taps a trial themselves. Reading about a feature and using it are different things; a tour nobody touches teaches very little. These steps show "Your turn" instead of a button and wait for the action.
+
+**On the trial page** — requirements → where it happens → questions to ask → contact the study team. The detail screen scrolls each target into view before the spotlight points at it.
+
+**Then out** — the Profile tab (where treatments live, deliberately not asked during setup) and the Saved tab, before returning to the list.
+
+Skippable at every non-interactive step. Completion is stored, so it runs once; "Delete everything" resets it along with the profile.
+
+**Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and punches a hole in a `.ultraThinMaterial` backdrop using a `destinationOut` mask. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every spotlight lands a status-bar height too high.
+
+This is also why the trials list uses a hand-rolled search field rather than `.searchable`: the system control's frame can't be measured, so the tour couldn't point at it.
 
 ---
 

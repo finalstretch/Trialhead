@@ -5,6 +5,8 @@ struct TrialDetailView: View {
     @Bindable var store: TrialsStore
 
     @State private var showingContact = false
+    /// Optional so the view still works outside the tour (previews, tests).
+    @Environment(Tour.self) private var tour: Tour?
 
     private var profile: Profile { store.profile }
     private var settings: SearchSettings { store.settings }
@@ -14,16 +16,42 @@ struct TrialDetailView: View {
     private var parseFailed: Bool { TrialAnalyzer.parseFailed(study) }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                header
-                summaryCard
-                contactButton
-                if !parseFailed { checklist } else { rawCriteriaFallback }
-                sites
-                provenance
+        ScrollViewReader { scroll in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    header
+                    summaryCard
+                        .id(TourTarget.questions)
+                        .tourAnchor(.questions)
+                    contactButton
+                        .id(TourTarget.contactButton)
+                        .tourAnchor(.contactButton)
+                    if !parseFailed {
+                        checklist
+                            .id(TourTarget.requirements)
+                            .tourAnchor(.requirements)
+                    } else {
+                        rawCriteriaFallback
+                    }
+                    sites
+                        .id(TourTarget.siteLocation)
+                        .tourAnchor(.siteLocation)
+                    provenance
+                }
+                .padding()
             }
-            .padding()
+            // Tour targets sit below the fold, so bring each one into view
+            // before the spotlight tries to point at it.
+            .onChange(of: tour?.step) { _, step in
+                guard let target = step?.target, step?.isOnDetailScreen == true else { return }
+                withAnimation(.easeInOut(duration: 0.35)) {
+                    scroll.scrollTo(target, anchor: .center)
+                }
+            }
+            .onAppear {
+                // Opening a trial is the tour's second interactive step.
+                if tour?.step == .openTrial { tour?.completed(.openTrial) }
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

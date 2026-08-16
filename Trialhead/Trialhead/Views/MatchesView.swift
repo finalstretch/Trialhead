@@ -22,8 +22,6 @@ struct MatchesView: View {
                 }
             }
             .navigationTitle("Trials")
-            .searchable(text: $store.settings.condition, prompt: "Condition")
-            .onSubmit(of: .search) { Task { await store.search() } }
             .task { if store.summaries.isEmpty { await store.search() } }
             .refreshable { await store.search() }
             .toolbar {
@@ -47,16 +45,20 @@ struct MatchesView: View {
     private var list: some View {
         List {
             Section {
+                searchRow
                 locationRow
             }
 
             phaseFilterSection
 
             Section {
-                ForEach(store.visibleSummaries) { summary in
+                ForEach(Array(store.visibleSummaries.enumerated()), id: \.element.id) { index, summary in
                     NavigationLink(value: summary.nctId) {
                         TrialCard(summary: summary)
                     }
+                    // The tour points at the first result when it asks the
+                    // person to open one.
+                    .modifier(ConditionalAnchor(target: .firstResult, active: index == 0))
                 }
             } header: {
                 Text("\(store.visibleSummaries.count) trials")
@@ -77,6 +79,33 @@ struct MatchesView: View {
 }
 
 extension MatchesView {
+
+    /// A plain search field rather than `.searchable`. The system version is
+    /// nicer out of the box, but its frame can't be measured, and the guided
+    /// tour needs to point at it.
+    var searchRow: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(.secondary)
+            TextField("Condition", text: $store.settings.condition)
+                .autocorrectionDisabled()
+                .submitLabel(.search)
+                .onSubmit { Task { await store.search() } }
+            if !store.settings.condition.isEmpty {
+                Button {
+                    store.settings.condition = ""
+                } label: {
+                    Image(systemName: "xmark.circle.fill").foregroundStyle(.tertiary)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 9)
+        .background(Color.secondary.opacity(0.12), in: Capsule())
+        .listRowSeparator(.hidden)
+        .tourAnchor(.searchBar)
+    }
 
     /// Phase filter. Collapsed by default so it doesn't push the trials off
     /// screen; each row carries a plain-English explanation, because "Phase 1"
@@ -136,6 +165,7 @@ extension MatchesView {
                         .foregroundStyle(.secondary)
                 }
             }
+            .tourAnchor(.phaseFilter)
         } footer: {
             if showPhaseFilter {
                 Text("Trials are tested in stages. Earlier phases are more experimental; later ones compare against the treatment you'd normally get. A higher number isn't automatically better — it depends on your situation.")
@@ -181,6 +211,7 @@ extension MatchesView {
         }
         .buttonStyle(.plain)
         .accessibilityLabel("Search area: \(store.settings.locationLabel), within \(store.settings.radiusMiles) miles. Tap to change.")
+        .tourAnchor(.locationRow)
     }
 }
 

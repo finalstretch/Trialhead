@@ -11,6 +11,7 @@ final class TrialsStore {
     var settings: SearchSettings { didSet { persist() } }
     var savedTrialIDs: Set<String> { didSet { persist() } }
     var hasCompletedOnboarding: Bool { didSet { persist() } }
+    var hasCompletedTour: Bool { didSet { persist() } }
 
     var summaries: [TrialSummary] = []
     var savedSummaries: [TrialSummary] = []
@@ -33,6 +34,7 @@ final class TrialsStore {
         settings = loaded
         savedTrialIDs = Set(stored.savedTrialIDs)
         hasCompletedOnboarding = stored.hasCompletedOnboarding
+        hasCompletedTour = stored.hasCompletedTour
     }
 
     // MARK: - Where to search
@@ -65,7 +67,8 @@ final class TrialsStore {
         LocalStore.save(StoredState(profile: profile,
                                     settings: settings,
                                     savedTrialIDs: Array(savedTrialIDs).sorted(),
-                                    hasCompletedOnboarding: hasCompletedOnboarding))
+                                    hasCompletedOnboarding: hasCompletedOnboarding,
+                                    hasCompletedTour: hasCompletedTour))
     }
 
     /// Wipes stored details and returns the app to a blank slate.
@@ -80,6 +83,7 @@ final class TrialsStore {
         studiesById = [:]
         // Back to a genuinely blank slate — including the introduction.
         hasCompletedOnboarding = false
+        hasCompletedTour = false
     }
 
     // MARK: - Saved trials
