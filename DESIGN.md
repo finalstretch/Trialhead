@@ -590,14 +590,14 @@ Each milestone should end with something runnable.
 
 - [x] **M3 — Skeleton app.** ✅ *Done 2026-08-16.* `Trialhead/` — runs on the iPhone simulator against live data. Results list, trial detail with working checklist, profile settings. All six logic files compiled in **unchanged**, validating the no-UI-imports rule in §9. Two findings: site coordinates are city-level (see §5.2), and sub-headings were inflating question counts (fixed).
 
-- [ ] **M4 — Make it usable for real.** *Rewritten 2026-08-16; the original line predated M3.* In priority order:
-  1. **Persist the profile.** It currently lives in memory only and resets on every launch. Small job, and nothing else feels real until it's done.
-  2. **Contact sheet (§5.6)** — the drafted message, the call/email actions, the "calling is normal and welcome" reassurance. *This is the app's stated purpose and the least finished part of it.* The whole product was reframed around getting someone to that phone call, and right now we show a bare number.
-  3. **Saved trials (§5.7).** Shares the storage work with (1).
-  4. **Sites map (§5.5)** with per-site contacts — site-level phone numbers are often more useful than the central one.
-  5. **A stronger card differentiator** — unresolved since M3, when distance turned out to be city-level. Needs a decision, not just code.
+- [~] **M4 — Make it usable for real.** *Rewritten 2026-08-16; the original line predated M3.* In priority order:
+  1. [x] **Persist the profile.** ✅ `LocalStore.swift` — one JSON file in the app sandbox, written on every change via `didSet`. Also carries search settings and saved trial IDs, plus a working "Delete everything". Verified by writing a state file into the simulator and confirming it loads.
+  2. [x] **Contact sheet (§5.6).** ✅ `ContactSheet.swift` — site and central contacts (deduplicated — the same coordinator is routinely listed twice), tap-to-call, and an editable drafted message built from the profile and the top amber criteria. Reached by a prominent button placed *above* the checklist, since burying it under forty rows would mean nobody gets there.
+  3. [x] **Saved trials (§5.7).** ✅ `SavedView.swift` + bookmark toggle. Saved trials are re-fetched **by ID**, not filtered from the current search, so they survive changing what you search for.
+  4. [ ] **Sites map (§5.5)** with per-site contacts. Contacts are done; the map isn't.
+  5. [ ] **A stronger card differentiator** — unresolved since M3, when distance turned out to be city-level. Needs a decision, not just code.
 
-  *Two to three days.* Deferred to M5: the proper first-run onboarding flow (§5.1). The settings-style form works well enough to keep testing with.
+  Deferred to M5: the proper first-run onboarding flow (§5.1). The settings-style form works well enough to keep testing with.
 
 - [ ] **M5 — Real-world hardening.** Empty/loading/offline/error states, VoiceOver, Dynamic Type, disclaimers, delete-my-data. *Two days.*
 

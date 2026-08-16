@@ -461,10 +461,55 @@ identical and were synced by hand. If they drift, the spike's scores stop
 describing the app's behaviour. Options later: point the spike's `Package.swift`
 at the app's `Core/` folder, or retire the spike once its scoring job is done.
 
-## Next: M4
+---
 
-- Persist the profile (it resets on every launch)
-- Real onboarding flow (§5.1) instead of the settings-style form
-- Sites map + per-site contacts (§5.5)
-- Saved trials (§5.7)
-- Find a better primary differentiator for cards
+# M4 — Usable For Real (in progress)
+
+Three of five items done. `LocalStore.swift`, `ContactSheet.swift`, `SavedView.swift`.
+
+## Persistence
+
+One JSON file in the app's Application Support folder, written on every change
+via `didSet`. Holds profile, search settings, and saved trial IDs.
+
+A single file makes the privacy claim checkable rather than asserted — "delete
+everything" removes exactly one thing, and the Profile screen says so.
+
+Verified by writing a state file directly into the simulator's app container and
+confirming every field loaded, including a BMI computed from the stored height
+and weight.
+
+## Contact sheet
+
+The app's stated purpose, and until now the least finished part of it.
+
+- Site contacts listed before the central one — they're closer to actual screening
+- **Deduplicated on phone+email.** The same coordinator is routinely listed both
+  against a site and centrally; without this, one person appeared twice under two
+  different headings
+- Editable draft message assembled from the profile plus the top amber criteria,
+  capped at four questions — a coordinator facing forty bullet points answers none
+- Reached from a button placed **above** the checklist. Burying it under forty
+  rows of criteria would mean most people never reach it
+
+## Saved trials
+
+Saved trials are re-fetched **by NCT ID**, not filtered out of the current search
+results. Filtering was the obvious implementation and it's wrong: something saved
+while searching "breast cancer" would silently vanish the moment you searched for
+something else.
+
+Incidental confirmation from testing: a saved Gothenburg study displayed
+"3,780 mi", which is correct, and shows the distance logic works fine at the
+scale where distance actually means something. It's only *within* a metro area
+that city-level geocoding makes it useless.
+
+## Still open in M4
+
+- Sites map (§5.5) — the per-site contacts are done, the map isn't
+- A stronger primary differentiator for result cards, unresolved since M3
+
+## Next: M5
+
+Onboarding flow (§5.1), then real-world hardening — offline states, VoiceOver,
+Dynamic Type — then watching five real people use it.

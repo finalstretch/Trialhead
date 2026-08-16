@@ -46,7 +46,7 @@ struct MatchesView: View {
         .listStyle(.plain)
         .navigationDestination(for: String.self) { nctId in
             if let study = store.study(nctId) {
-                TrialDetailView(study: study, profile: store.profile, settings: store.settings)
+                TrialDetailView(study: study, store: store)
             }
         }
     }

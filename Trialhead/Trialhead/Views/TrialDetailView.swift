@@ -2,10 +2,14 @@ import SwiftUI
 
 struct TrialDetailView: View {
     let study: Study
-    let profile: Profile
-    let settings: SearchSettings
+    @Bindable var store: TrialsStore
 
+    @State private var showingContact = false
+
+    private var profile: Profile { store.profile }
+    private var settings: SearchSettings { store.settings }
     private var section: ProtocolSection? { study.protocolSection }
+    private var nctId: String { section?.identificationModule?.nctId ?? "" }
     private var evaluation: TrialEvaluation { TrialAnalyzer.evaluate(study, profile: profile) }
     private var parseFailed: Bool { TrialAnalyzer.parseFailed(study) }
 
@@ -14,11 +18,26 @@ struct TrialDetailView: View {
             VStack(alignment: .leading, spacing: 20) {
                 header
                 summaryCard
+                contactButton
                 if !parseFailed { checklist } else { rawCriteriaFallback }
                 sites
                 provenance
             }
             .padding()
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    store.toggleSaved(nctId)
+                } label: {
+                    Label(store.isSaved(nctId) ? "Saved" : "Save",
+                          systemImage: store.isSaved(nctId) ? "bookmark.fill" : "bookmark")
+                }
+                .tint(store.isSaved(nctId) ? .orange : .accentColor)
+            }
+        }
+        .sheet(isPresented: $showingContact) {
+            ContactSheet(study: study, profile: profile, evaluation: evaluation)
         }
         // Deliberately no title: a long NCT number here crowds the navigation bar,
         // and iOS responds by dropping the "Trials" label from the back button,
@@ -79,6 +98,20 @@ struct TrialDetailView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .background(Color.orange.opacity(0.10), in: RoundedRectangle(cornerRadius: 12))
+    }
+
+    /// Placed directly under the summary, above the checklist. The point of the
+    /// app is the phone call; burying it below forty rows of criteria would
+    /// mean most people never reach it.
+    private var contactButton: some View {
+        Button {
+            showingContact = true
+        } label: {
+            Label("Contact study team", systemImage: "phone.fill")
+                .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.borderedProminent)
+        .controlSize(.large)
     }
 
     // MARK: - Checklist
@@ -166,15 +199,6 @@ struct TrialDetailView: View {
             }
             if all.count > 1 {
                 Text("\(all.count) sites in total").font(.caption).foregroundStyle(.secondary)
-            }
-            if let contact = section?.contactsLocationsModule?.centralContacts?.first,
-               let phone = contact.phone {
-                Link(destination: URL(string: "tel:\(phone.filter { $0.isNumber })")!) {
-                    Label("Call \(phone)", systemImage: "phone.fill").font(.subheadline)
-                }
-                .padding(.top, 4)
-                Text("Research coordinators are there to answer exactly these questions. Calling is normal and free.")
-                    .font(.caption2).foregroundStyle(.secondary)
             }
         }
     }

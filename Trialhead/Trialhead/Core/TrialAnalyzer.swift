@@ -3,12 +3,13 @@ import CoreLocation
 
 /// Where the person is searching from. Kept separate from `Profile` on purpose:
 /// this is a search setting, not a health fact.
-struct SearchSettings {
+struct SearchSettings: Codable, Equatable {
     var condition: String = "breast cancer"
     var latitude: Double = 40.7128      // New York City, for now
     var longitude: Double = -74.0060
     var radiusMiles: Int = 50
 
+    /// Computed, so it isn't stored — `Codable` only saves the numbers.
     var coordinate: CLLocation { CLLocation(latitude: latitude, longitude: longitude) }
 }
 

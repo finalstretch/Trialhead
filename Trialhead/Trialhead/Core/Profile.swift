@@ -2,8 +2,8 @@ import Foundation
 
 /// Everything the app knows about the person using it.
 /// In the real app this is filled in during setup and stored only on the phone.
-struct Profile {
-    enum Sex: String { case female, male }
+struct Profile: Codable, Equatable {
+    enum Sex: String, Codable { case female, male }
 
     var age: Int?
     var sex: Sex?

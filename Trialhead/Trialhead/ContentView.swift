@@ -4,14 +4,20 @@ struct ContentView: View {
     @State private var store = TrialsStore()
     @State private var selectedTab = Tab.trials
     @State private var matchesPath: [String] = []
+    @State private var savedPath: [String] = []
 
-    enum Tab { case trials, profile }
+    enum Tab { case trials, saved, profile }
 
     var body: some View {
         TabView(selection: tabSelection) {
             MatchesView(store: store, path: $matchesPath)
                 .tabItem { Label("Trials", systemImage: "list.bullet") }
                 .tag(Tab.trials)
+
+            SavedView(store: store, path: $savedPath)
+                .tabItem { Label("Saved", systemImage: "bookmark") }
+                .badge(store.savedTrialIDs.count)
+                .tag(Tab.saved)
 
             ProfileView(store: store)
                 .tabItem { Label("Profile", systemImage: "person") }
@@ -27,8 +33,12 @@ struct ContentView: View {
         Binding(
             get: { selectedTab },
             set: { tapped in
-                if tapped == selectedTab, tapped == .trials {
-                    matchesPath.removeAll()
+                if tapped == selectedTab {
+                    switch tapped {
+                    case .trials: matchesPath.removeAll()
+                    case .saved: savedPath.removeAll()
+                    case .profile: break
+                    }
                 }
                 selectedTab = tapped
             })

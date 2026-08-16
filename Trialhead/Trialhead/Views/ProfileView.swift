@@ -1,9 +1,10 @@
 import SwiftUI
 
-/// Minimal for now — real onboarding comes later (DESIGN.md §5.1).
+/// Settings-style for now; the guided first-run flow (§5.1) comes in M5.
 /// Everything here stays on the device.
 struct ProfileView: View {
     @Bindable var store: TrialsStore
+    @State private var confirmingDelete = false
 
     var body: some View {
         NavigationStack {
@@ -22,6 +23,23 @@ struct ProfileView: View {
                 }
 
                 Section {
+                    TextField("e.g. breast cancer", text: list(\.conditions), axis: .vertical)
+                } header: {
+                    Text("Your condition")
+                } footer: {
+                    Text("Separate several with commas. Used to recognise rules that mention your diagnosis.")
+                }
+
+                Section {
+                    TextField("e.g. metformin, pembrolizumab", text: list(\.medications), axis: .vertical)
+                    TextField("e.g. mastectomy, chemotherapy", text: list(\.priorTreatments), axis: .vertical)
+                } header: {
+                    Text("Treatments")
+                } footer: {
+                    Text("Optional. Lets the app flag rules about treatments you've already had — the ones most worth asking about.")
+                }
+
+                Section {
                     LabeledContent("Height (cm)") {
                         TextField("cm", value: $store.profile.heightCM, format: .number)
                             .keyboardType(.decimalPad)
@@ -36,7 +54,7 @@ struct ProfileView: View {
                     Text("Body measurements")
                 } footer: {
                     if let bmi = store.profile.bmi {
-                        Text(String(format: "BMI %.1f — used to answer BMI rules automatically.", bmi))
+                        Text(String(format: "BMI %.1f — answers BMI rules automatically.", bmi))
                     } else {
                         Text("Optional, but they answer BMI rules that would otherwise need asking.")
                     }
@@ -55,13 +73,34 @@ struct ProfileView: View {
                 }
 
                 Section {
-                    Text("Nothing here leaves your phone. There is no account and no server.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                    Button("Delete everything", role: .destructive) { confirmingDelete = true }
+                } header: {
+                    Text("Privacy")
+                } footer: {
+                    Text("\(LocalStore.fileDescription). There is no account and no server — nothing you type here is ever sent anywhere.")
                 }
             }
             .navigationTitle("Profile")
             .onDisappear { Task { await store.search() } }
+            .confirmationDialog("Delete everything?",
+                                isPresented: $confirmingDelete, titleVisibility: .visible) {
+                Button("Delete", role: .destructive) { store.deleteEverything() }
+                Button("Cancel", role: .cancel) { }
+            } message: {
+                Text("Your details and saved trials will be erased from this device. This can't be undone.")
+            }
         }
+    }
+
+    /// Bridges a `[String]` to a comma-separated text field.
+    private func list(_ path: WritableKeyPath<Profile, [String]>) -> Binding<String> {
+        Binding(
+            get: { store.profile[keyPath: path].joined(separator: ", ") },
+            set: { text in
+                store.profile[keyPath: path] = text
+                    .split(separator: ",")
+                    .map { $0.trimmingCharacters(in: .whitespaces) }
+                    .filter { !$0.isEmpty }
+            })
     }
 }
