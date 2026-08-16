@@ -2,7 +2,7 @@
 
 > Working name. A trailhead is where a journey starts, which is roughly the app's job.
 
-**Status:** draft v0.7 · **Last updated:** 2026-08-16 · **M0–M3 complete — the app runs**
+**Status:** draft v0.8 · **Last updated:** 2026-08-16 · **M0–M4 complete, onboarding built**
 **Framing:** a preparation tool, not an eligibility calculator (§1)
 **Architecture:** fully on-device, no backend, no model in v1 (§7)
 **Parser:** 96% clean split on unseen studies (M1) — the design holds
@@ -129,9 +129,15 @@ Multi-step, one question per screen, progress dots. Every step skippable except 
 └───────────────────────────────────────┘
 ```
 
-**Steps:** condition → age & sex → location + travel radius → prior treatments → current medications → privacy statement.
+**Steps as built (M5):** welcome → condition → age & sex → height & weight → location + travel radius → done.
 
-Condition should autocomplete against a controlled vocabulary rather than accepting raw free text — see Open Questions.
+> **Treatments and medications are deliberately NOT asked during setup.** They sharpen the question lists more than anything else, but they're also the highest-friction fields in the app — asking someone to recall their treatment history *before* they've seen what a trial page even looks like is how you lose them at setup. They live in Profile, and the closing screen points there once the person has had a look around.
+
+**Required:** condition and location — without them there's nothing to search and nowhere to search from. **Skippable:** age & sex, height & weight.
+
+**Units:** height and weight are asked in feet, inches and pounds, and stored as centimetres and kilograms. The app is US-only (§11.4) and nobody there knows their height in centimetres; trial criteria are written in metric.
+
+Condition should eventually autocomplete against a controlled vocabulary rather than accepting raw free text — see Open Questions.
 
 ---
 
@@ -605,7 +611,7 @@ Each milestone should end with something runnable.
      Demonstrated on NCT06545942 from Myrtle Beach, SC: the closest site is **0 mi and COMPLETED**, the closest enrolling one is **369 mi away in Lake Mary**. Before the fix the app put this trial top of the list as a local option; now it correctly sinks to the bottom.
   5. [ ] **A stronger card differentiator** — unresolved since M3, when distance turned out to be city-level. Needs a decision, not just code.
 
-  Deferred to M5: the proper first-run onboarding flow (§5.1). The settings-style form works well enough to keep testing with.
+  ~~Deferred to M5: the first-run onboarding flow.~~ **Built 2026-08-16** — `OnboardingView.swift`, see §5.1.
 
 - [ ] **M5 — Real-world hardening.** Empty/loading/offline/error states, VoiceOver, Dynamic Type, disclaimers, delete-my-data. *Two days.*
 

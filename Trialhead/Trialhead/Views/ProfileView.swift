@@ -51,7 +51,7 @@ struct ProfileView: View {
                             .multilineTextAlignment(.trailing)
                     }
                 } header: {
-                    Text("Body measurements")
+                    Text("Body measurements (metric)")
                 } footer: {
                     if let bmi = store.profile.bmi {
                         Text(String(format: "BMI %.1f — answers BMI rules automatically.", bmi))

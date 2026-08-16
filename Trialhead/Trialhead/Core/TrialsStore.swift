@@ -10,6 +10,7 @@ final class TrialsStore {
     var profile: Profile { didSet { persist() } }
     var settings: SearchSettings { didSet { persist() } }
     var savedTrialIDs: Set<String> { didSet { persist() } }
+    var hasCompletedOnboarding: Bool { didSet { persist() } }
 
     var summaries: [TrialSummary] = []
     var savedSummaries: [TrialSummary] = []
@@ -31,6 +32,7 @@ final class TrialsStore {
         loaded.clampRadius()   // files saved before the 30-mile cap existed
         settings = loaded
         savedTrialIDs = Set(stored.savedTrialIDs)
+        hasCompletedOnboarding = stored.hasCompletedOnboarding
     }
 
     // MARK: - Where to search
@@ -62,7 +64,8 @@ final class TrialsStore {
     private func persist() {
         LocalStore.save(StoredState(profile: profile,
                                     settings: settings,
-                                    savedTrialIDs: Array(savedTrialIDs).sorted()))
+                                    savedTrialIDs: Array(savedTrialIDs).sorted(),
+                                    hasCompletedOnboarding: hasCompletedOnboarding))
     }
 
     /// Wipes stored details and returns the app to a blank slate.
@@ -75,6 +78,8 @@ final class TrialsStore {
         savedTrialIDs = []
         summaries = []
         studiesById = [:]
+        // Back to a genuinely blank slate — including the introduction.
+        hasCompletedOnboarding = false
     }
 
     // MARK: - Saved trials

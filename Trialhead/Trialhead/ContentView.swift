@@ -23,6 +23,9 @@ struct ContentView: View {
                 .tabItem { Label("Profile", systemImage: "person") }
                 .tag(Tab.profile)
         }
+        .fullScreenCover(isPresented: .constant(!store.hasCompletedOnboarding)) {
+            OnboardingView(store: store)
+        }
     }
 
     /// Tapping the tab you're already on returns you to the top of that tab.

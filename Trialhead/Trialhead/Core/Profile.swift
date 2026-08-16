@@ -21,6 +21,22 @@ struct Profile: Codable, Equatable {
         return weightKG / (metres * metres)
     }
 
+    // Stored in metric because trial criteria are written that way, but the app
+    // is US-only for now (DESIGN.md §11.4), so every screen asks in feet,
+    // inches, and pounds. Nobody in the US knows their height in centimetres.
+
+    var heightFeet: Int? { heightCM.map { Int(($0 / 2.54) / 12) } }
+    var heightInches: Int? { heightCM.map { Int(($0 / 2.54).rounded()) % 12 } }
+    var weightPounds: Double? { weightKG.map { $0 / 0.45359237 } }
+
+    mutating func setHeight(feet: Int, inches: Int) {
+        heightCM = feet == 0 && inches == 0 ? nil : Double(feet * 12 + inches) * 2.54
+    }
+
+    mutating func setWeight(pounds: Double?) {
+        weightKG = pounds.map { $0 * 0.45359237 }
+    }
+
     /// What the person said is wrong with them.
     var conditionTerms: [String] { Profile.normalize(conditions) }
 
