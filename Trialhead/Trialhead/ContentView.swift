@@ -25,18 +25,6 @@ struct ContentView: View {
                 .tag(Tab.profile)
         }
         .environment(tour)
-        // An invisible strip over the tab bar, so the tour can highlight it
-        // without needing each tab item's exact frame. Sized generously and
-        // extended into the bottom safe area so the whole bar — Saved and
-        // Profile included — sits inside the spotlight rather than half of it
-        // being blurred out.
-        .overlay(alignment: .bottom) {
-            Color.clear
-                .frame(height: 120)
-                .allowsHitTesting(false)
-                .tourAnchor(.tabBar)
-                .ignoresSafeArea(edges: .bottom)
-        }
         .overlayPreferenceValue(TourAnchorKey.self) { anchors in
             // `ignoresSafeArea` belongs on the GeometryReader, not inside the
             // overlay. Applied inside, it expands the drawing area *after* the
@@ -64,8 +52,8 @@ struct ContentView: View {
                 tour.start()
             }
         }
-        .onChange(of: tour.step) { previous, step in
-            handleTourStep(from: previous, to: step)
+        .onChange(of: tour.step) { _, step in
+            syncNavigation(for: step)
         }
     }
 
@@ -78,20 +66,40 @@ struct ContentView: View {
         return nil
     }
 
-    /// The tour spans two screens, so it has to drive navigation itself.
-    private func handleTourStep(from previous: Tour.Step?, to step: Tour.Step?) {
-        switch step {
-        case .profileTab:
-            // Coming off the trial page — go back to the list to talk about tabs.
-            matchesPath.removeAll()
-            selectedTab = .trials
-        case nil:
+    /// The tour spans several screens, so it drives navigation itself.
+    ///
+    /// Written as "put the app wherever this step needs it" rather than "handle
+    /// moving forward", which is what makes the Back button work: going
+    /// backwards is just another step needing its own screen.
+    private func syncNavigation(for step: Tour.Step?) {
+        guard let step else {
             // Finished or skipped: don't show it again.
             store.hasCompletedTour = true
             matchesPath.removeAll()
             selectedTab = .trials
+            return
+        }
+
+        if step.isOnDetailScreen {
+            selectedTab = .trials
+            // Stepping back from the Profile step lands here with no trial open,
+            // so re-open the one the tour was using.
+            if matchesPath.isEmpty, let first = store.visibleSummaries.first {
+                matchesPath = [first.nctId]
+            }
+            return
+        }
+
+        switch step {
+        case .profileTab:
+            matchesPath.removeAll()
+            selectedTab = .profile
+        case .savedTab:
+            selectedTab = .saved
         default:
-            break
+            // Every remaining step belongs on the trials list.
+            selectedTab = .trials
+            matchesPath.removeAll()
         }
     }
 

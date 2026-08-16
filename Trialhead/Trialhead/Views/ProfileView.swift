@@ -39,19 +39,32 @@ struct ProfileView: View {
                     Text("Optional. Lets the app flag rules about treatments you've already had — the ones most worth asking about.")
                 }
 
+                // Feet, inches and pounds, matching the setup flow. Stored as
+                // metric underneath, because that's how trial criteria are
+                // written — but nobody in the US knows their height in cm.
                 Section {
-                    LabeledContent("Height (cm)") {
-                        TextField("cm", value: $store.profile.heightCM, format: .number)
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
+                    LabeledContent("Height") {
+                        HStack(spacing: 2) {
+                            Picker("Feet", selection: heightFeet) {
+                                ForEach(3...7, id: \.self) { Text("\($0) ft").tag($0) }
+                            }
+                            Picker("Inches", selection: heightInches) {
+                                ForEach(0...11, id: \.self) { Text("\($0) in").tag($0) }
+                            }
+                        }
+                        .labelsHidden()
+                        .pickerStyle(.menu)
                     }
-                    LabeledContent("Weight (kg)") {
-                        TextField("kg", value: $store.profile.weightKG, format: .number)
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
+                    LabeledContent("Weight") {
+                        HStack(spacing: 4) {
+                            TextField("Pounds", value: weightPounds, format: .number.precision(.fractionLength(0)))
+                                .keyboardType(.decimalPad)
+                                .multilineTextAlignment(.trailing)
+                            Text("lb").foregroundStyle(.secondary)
+                        }
                     }
                 } header: {
-                    Text("Body measurements (metric)")
+                    Text("Body measurements")
                 } footer: {
                     if let bmi = store.profile.bmi {
                         Text(String(format: "BMI %.1f — answers BMI rules automatically.", bmi))
@@ -93,6 +106,22 @@ struct ProfileView: View {
                 Text("Your details and saved trials will be erased from this device. This can't be undone.")
             }
         }
+    }
+
+    // Imperial on screen, metric in storage.
+    private var heightFeet: Binding<Int> {
+        Binding(get: { store.profile.heightFeet ?? 5 },
+                set: { store.profile.setHeight(feet: $0, inches: store.profile.heightInches ?? 0) })
+    }
+
+    private var heightInches: Binding<Int> {
+        Binding(get: { store.profile.heightInches ?? 6 },
+                set: { store.profile.setHeight(feet: store.profile.heightFeet ?? 5, inches: $0) })
+    }
+
+    private var weightPounds: Binding<Double?> {
+        Binding(get: { store.profile.weightPounds.map { ($0).rounded() } },
+                set: { store.profile.setWeight(pounds: $0) })
     }
 
     /// Bridges a `[String]` to a comma-separated text field.

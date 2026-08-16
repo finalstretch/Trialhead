@@ -6,7 +6,6 @@ enum TourTarget: Hashable {
     case searchBar, locationRow, phaseFilter        // trials list
     case firstResult
     case requirements, siteLocation, questions, contactButton   // trial detail
-    case tabBar
 }
 
 /// The guided walkthrough that runs once, straight after onboarding.
@@ -38,8 +37,9 @@ final class Tour {
             case .siteLocation: return .siteLocation
             case .questions:    return .questions
             case .contact:      return .contactButton
-            case .profileTab, .savedTab: return .tabBar
-            case .finish:       return nil
+            // The tab steps open the real tab and show it whole — nothing to
+            // spotlight, because the whole screen is the point.
+            case .profileTab, .savedTab, .finish: return nil
             }
         }
 
@@ -101,6 +101,22 @@ final class Tour {
             self == .requirements
         }
 
+        /// The tab steps open the actual tab and leave it completely unblurred:
+        /// the point is seeing what's on that screen, and a dimmed version of it
+        /// tells you less than the real thing.
+        var dimsBackground: Bool {
+            self != .profileTab && self != .savedTab
+        }
+
+        /// Which tab this step wants on screen.
+        var tab: Int? {
+            switch self {
+            case .savedTab: return 1
+            case .profileTab: return 2
+            default: return 0
+            }
+        }
+
         var buttonLabel: String {
             self == .finish ? "Set up my details" : "Got it"
         }
@@ -129,6 +145,15 @@ final class Tour {
         if current == .finish { step = nil; return }
         step = Step(rawValue: current.rawValue + 1)
     }
+
+    /// Going back matters here: the walkthrough covers a lot in twelve steps,
+    /// and someone who missed one otherwise has to abandon the whole thing.
+    func retreat() {
+        guard let current = step, current.rawValue > 0 else { return }
+        step = Step(rawValue: current.rawValue - 1)
+    }
+
+    var canRetreat: Bool { (step?.rawValue ?? 0) > 0 }
 
     /// Called when the person completes an interactive step.
     func completed(_ action: Step) {

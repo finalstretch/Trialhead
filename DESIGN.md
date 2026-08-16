@@ -139,7 +139,7 @@ Multi-step, one question per screen, progress dots. Every step skippable except 
 
 **Required:** condition and location — without them there's nothing to search and nowhere to search from. **Skippable:** age & sex, height & weight.
 
-**Units:** height and weight are asked in feet, inches and pounds, and stored as centimetres and kilograms. The app is US-only (§11.4) and nobody there knows their height in centimetres; trial criteria are written in metric.
+**Units:** height and weight are asked in feet, inches and pounds — in setup *and* in Profile — and stored as centimetres and kilograms. The app is US-only (§11.4) and nobody there knows their height in centimetres; trial criteria are written in metric.
 
 Condition should eventually autocomplete against a controlled vocabulary rather than accepting raw free text — see Open Questions.
 
@@ -165,7 +165,9 @@ Skippable at every non-interactive step. Completion is stored, so it runs once; 
 
 **Spotlights are clamped to the screen.** The requirements checklist is often taller than the display, and an un-clamped cut-out would leave no visible backdrop at all. A target scrolled entirely off-screen falls back to dimming everything rather than pointing somewhere wrong.
 
-**The tab-bar spotlight covers the whole bar**, extended into the bottom safe area, so Saved and Profile are both fully sharp while the callout names the one it's describing. Individual `tabItem` frames can't be measured, and a half-blurred tab bar reads as a rendering fault rather than a highlight.
+**The tab steps open the real tab and don't dim at all.** Rather than spotlighting the tab bar from the trials screen, the tour switches to Profile (and then Saved) and leaves the whole screen sharp, with only the callout floating above it. Seeing the actual screen tells someone more than a blurred glimpse of the button that leads there.
+
+**Back is available at every step.** Twelve steps is a lot to take in, and without it someone who missed something has to abandon the whole walkthrough. Navigation is written as *"put the app wherever this step needs it"* rather than *"handle moving forward"*, which is what makes going backwards work — stepping back from Profile to the contact step re-opens the trial the tour was using.
 
 **Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and punches a hole in a `.ultraThinMaterial` backdrop using a `destinationOut` mask. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every spotlight lands a status-bar height too high.
 

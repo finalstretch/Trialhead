@@ -58,7 +58,7 @@ struct TourOverlay: View {
     var body: some View {
         if let step {
             ZStack {
-                backdrop
+                if step.dimsBackground { backdrop }
                 callout(for: step)
             }
             .transition(.opacity)
@@ -119,20 +119,27 @@ struct TourOverlay: View {
 
                 if step == .pickCondition { conditionChoices }
 
-                HStack {
-                    if !step.waitsForAction {
-                        Button("Skip tour") { tour.skip() }
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                HStack(spacing: 14) {
+                    if tour.canRetreat {
+                        Button {
+                            tour.retreat()
+                        } label: {
+                            Label("Back", systemImage: "chevron.left")
+                                .font(.subheadline)
+                                .labelStyle(.titleAndIcon)
+                        }
                     }
                     Spacer()
-                    if !step.waitsForAction {
-                        Button(step.buttonLabel) { tour.advance() }
-                            .buttonStyle(.borderedProminent)
-                    } else {
+                    Button("Skip") { tour.skip() }
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    if step.waitsForAction {
                         Label("Your turn", systemImage: "hand.tap.fill")
                             .font(.subheadline.weight(.medium))
                             .foregroundStyle(.tint)
+                    } else {
+                        Button(step.buttonLabel) { tour.advance() }
+                            .buttonStyle(.borderedProminent)
                     }
                 }
                 .padding(.top, 2)
