@@ -114,7 +114,9 @@ struct TrialDetailView: View {
             Text("^[\(evaluation.asks) question](inflect: true) to ask")
                 .font(.headline)
             if evaluation.matches > 0 {
-                Text("\(evaluation.matches) things already look fine")
+                Text(evaluation.matches == 1
+                     ? "1 thing already looks fine"
+                     : "\(evaluation.matches) things already look fine")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -146,14 +148,15 @@ struct TrialDetailView: View {
 
     private var checklist: some View {
         VStack(alignment: .leading, spacing: 16) {
+            colourKey
+
             if !evaluation.structured.isEmpty {
                 group(title: "From the trial record") {
                     ForEach(Array(evaluation.structured.enumerated()), id: \.offset) { _, check in
-                        CriterionRow(glyph: check.verdict,
-                                     text: check.label,
-                                     detail: check.rationale,
-                                     category: nil,
-                                     verbatim: nil)
+                        // Structured rows carry their own explanation in the
+                        // text, since "Age" alone says nothing on its own.
+                        CriterionRow(verdict: check.verdict,
+                                     text: "\(check.label): \(check.rationale)")
                     }
                 }
             }
@@ -164,11 +167,8 @@ struct TrialDetailView: View {
             if !inclusion.isEmpty {
                 group(title: "Requirements") {
                     ForEach(Array(inclusion.enumerated()), id: \.offset) { _, item in
-                        CriterionRow(glyph: item.verdict,
+                        CriterionRow(verdict: item.verdict,
                                      text: item.criterion.text,
-                                     detail: item.rationale,
-                                     category: item.category.label,
-                                     verbatim: item.criterion.text,
                                      depth: item.criterion.depth,
                                      isHeading: item.criterion.isHeading)
                     }
@@ -178,17 +178,44 @@ struct TrialDetailView: View {
             if !exclusion.isEmpty {
                 group(title: "Disqualifiers") {
                     ForEach(Array(exclusion.enumerated()), id: \.offset) { _, item in
-                        CriterionRow(glyph: item.verdict,
+                        CriterionRow(verdict: item.verdict,
                                      text: item.criterion.text,
-                                     detail: item.rationale,
-                                     category: item.category.label,
-                                     verbatim: item.criterion.text,
                                      depth: item.criterion.depth,
                                      isHeading: item.criterion.isHeading)
                     }
                 }
             }
         }
+    }
+
+    /// Said once, at the top, instead of repeated under all forty rows.
+    private var colourKey: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("KEY")
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .tracking(0.6)
+
+            HStack(spacing: 10) {
+                keyItem(.match, "Looks fine")
+                keyItem(.ask, "Worth asking")
+                if evaluation.blockers > 0 { keyItem(.blocker, "Rules you out") }
+            }
+        }
+    }
+
+    private func keyItem(_ verdict: Verdict, _ label: String) -> some View {
+        HStack(spacing: 5) {
+            Image(systemName: verdict.symbol)
+                .font(.caption)
+                .foregroundStyle(verdict.tint)
+            Text(label)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+        .padding(.horizontal, 9)
+        .padding(.vertical, 5)
+        .background(verdict.tint.opacity(0.14), in: Capsule())
     }
 
     /// DESIGN.md §11.8 — some sponsors submit criteria as unstructured prose
@@ -270,19 +297,20 @@ struct TrialDetailView: View {
 
 // MARK: - Row
 
+/// One eligibility rule, marked in green or amber rather than annotated.
+///
+/// The per-row explanations this replaced ("Bring this one to your care team")
+/// repeated identically down forty rows and drowned out the criteria themselves.
+/// The colour key at the top of the checklist says it once instead.
 struct CriterionRow: View {
-    let glyph: Verdict
+    let verdict: Verdict
     let text: String
-    let detail: String
-    let category: String?
-    let verbatim: String?
     var depth: Int = 0
+    /// Structural labels render as quiet headings, unmarked — they aren't
+    /// rules and shouldn't look like one.
+    var isHeading: Bool = false
 
     @State private var expanded = false
-
-    /// Structural labels render as quiet headings, with no verdict dot —
-    /// they aren't questions and shouldn't look like one.
-    var isHeading: Bool = false
 
     var body: some View {
         if isHeading {
@@ -298,51 +326,57 @@ struct CriterionRow: View {
     }
 
     private var row: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack(alignment: .top, spacing: 8) {
-                Circle()
-                    .fill(color)
-                    .frame(width: 8, height: 8)
-                    .padding(.top, 6)
+        HStack(alignment: .top, spacing: 9) {
+            // A shape as well as a colour, so the meaning survives for anyone
+            // who can't distinguish green from amber.
+            Image(systemName: verdict.symbol)
+                .font(.subheadline)
+                .foregroundStyle(verdict.tint)
+                .padding(.top, 1)
 
-                VStack(alignment: .leading, spacing: 3) {
-                    Text(text)
-                        .font(.subheadline)
-                        .lineLimit(expanded ? nil : 3)
-                        .fixedSize(horizontal: false, vertical: true)
+            Text(text)
+                .font(.subheadline)
+                .foregroundStyle(.primary)
+                .lineLimit(expanded ? nil : 3)
+                .fixedSize(horizontal: false, vertical: true)
 
-                    HStack(spacing: 6) {
-                        if let category {
-                            Text(category)
-                                .font(.caption2)
-                                .padding(.horizontal, 5).padding(.vertical, 1)
-                                .background(Color.secondary.opacity(0.12), in: Capsule())
-                        }
-                        Text(detail).font(.caption2).foregroundStyle(.secondary)
-                    }
-                }
-            }
+            Spacer(minLength: 0)
         }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 9)
+        .background(verdict.tint.opacity(0.14), in: RoundedRectangle(cornerRadius: 10))
         .padding(.leading, CGFloat(depth) * 16)
         .contentShape(Rectangle())
         .onTapGesture { withAnimation(.easeInOut(duration: 0.15)) { expanded.toggle() } }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(accessibilityVerdict): \(text). \(detail)")
+        .accessibilityLabel("\(verdict.spokenLabel): \(text)")
     }
+}
 
-    private var color: Color {
-        switch glyph {
+// MARK: - Verdict styling
+
+extension Verdict {
+    var tint: Color {
+        switch self {
         case .match: return .green
         case .ask: return .orange
         case .blocker: return .red
         }
     }
 
+    var symbol: String {
+        switch self {
+        case .match: return "checkmark.circle.fill"
+        case .ask: return "questionmark.circle.fill"
+        case .blocker: return "xmark.circle.fill"
+        }
+    }
+
     /// Never encode meaning in colour alone.
-    private var accessibilityVerdict: String {
-        switch glyph {
+    var spokenLabel: String {
+        switch self {
         case .match: return "Looks fine"
-        case .ask: return "To ask"
+        case .ask: return "Worth asking"
         case .blocker: return "Rules you out"
         }
     }

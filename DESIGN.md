@@ -343,7 +343,13 @@ This screen is the product. Everything else is scaffolding around it.
 └───────────────────────────────────────┘
 ```
 
-**Row anatomy:** verdict glyph · plain-language restatement · why-this-verdict line · disclosure chevron revealing verbatim source text.
+**Row anatomy (revised 2026-08-16):** the verbatim rule, marked in green or amber, with a symbol. **No per-row explanation.** A colour key sits once at the top of the checklist — ✓ Looks fine · ? Worth asking · ✕ Rules you out.
+
+The earlier design annotated every row ("Bring this one to your care team", "You entered 'breast cancer'"). Repeated down forty rows it became wallpaper, and it drowned out the criteria themselves — which are the thing people actually need to read. Saying it once in a key is shorter and clearer.
+
+Rows carry a **symbol as well as a colour**, so the meaning survives for anyone who can't distinguish green from amber, and VoiceOver reads the verdict aloud before the text.
+
+Structured rows from the trial record keep their explanation *inside* the row text — "Age: you entered 62; this trial accepts 18+, up to 60" — because a bare "Age" says nothing on its own.
 
 **Verdicts:** `match` (green ✓) · `ask` (amber ⚠) · `blocker` (red ✕) · `unknown` → rendered as `ask`.
 
