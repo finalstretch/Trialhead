@@ -600,7 +600,9 @@ Each milestone should end with something runnable.
 
   5. [ ] **Sites map (§5.5)** with per-site contacts. Contacts are done; the map isn't. **M4 data check found per-site contacts are rare** — 5 of 85 sites in one trial, 0 of 18 in another — so the central contact carries the load and this is lower value than assumed.
 
-  6. [ ] **Nearest-site status bug.** `TrialAnalyzer.nearestSite` ignores per-site status, so a site marked COMPLETED can be shown as "nearest" while the trial still recruits (3 of 85 and 4 of 18 sites in sampled trials). Sends someone to a dead end. Small fix, high value — do this before the map.
+  6. [x] **Nearest-site status bug.** ✅ *Fixed 2026-08-16.* `nearestSite` now prefers an **enrolling** site outright, however much closer a closed one is, and falls back to a closed one only when nothing else exists — flagged in amber on both the card and the detail screen. Site counts now describe enrolling sites ("nearest of 82 enrolling sites"), not every site ever listed.
+
+     Demonstrated on NCT06545942 from Myrtle Beach, SC: the closest site is **0 mi and COMPLETED**, the closest enrolling one is **369 mi away in Lake Mary**. Before the fix the app put this trial top of the list as a local option; now it correctly sinks to the bottom.
   5. [ ] **A stronger card differentiator** — unresolved since M3, when distance turned out to be city-level. Needs a decision, not just code.
 
   Deferred to M5: the proper first-run onboarding flow (§5.1). The settings-style form works well enough to keep testing with.

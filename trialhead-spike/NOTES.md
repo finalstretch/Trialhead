@@ -554,12 +554,34 @@ override it either. The search location ended up shown as a bare icon — the sa
 discoverability failure as the iOS 26 back button. Replaced with a labelled,
 tappable row at the top of the results list.
 
+## Fixed: nearest site could be a closed one
+
+A trial can be RECRUITING overall while individual sites have shut — 3 of 85 and
+4 of 18 in sampled studies. `nearestSite` ignored per-site status, so the app
+could present a closed clinic as the nearest place to go.
+
+**Fix:** enrolling sites win outright, however much closer a closed one is. Falls
+back to a closed site only when there is nothing else, flagged in amber. Site
+counts now say "nearest of 82 **enrolling** sites" rather than counting every
+site ever listed.
+
+**Demonstrated on NCT06545942, searching from Myrtle Beach, SC:**
+
+| Distance | Status | City |
+|---|---|---|
+| 0 mi | COMPLETED | Myrtle Beach |
+| 367 mi | COMPLETED | Fairfax |
+| **369 mi** | **RECRUITING** | Lake Mary |
+
+Before, the app showed "Myrtle Beach" and sorted this trial to the top of the
+list as a local option. Now it measures 369 miles to Lake Mary and sorts to the
+bottom, which is where a day's drive belongs.
+
+Worth noting the sort order does the real work here: fixing the distance fixed
+the ranking for free, because the list sorts nearest-first.
+
 ## Still open in M4
 
-- **Nearest-site status bug** — `nearestSite` ignores per-site status, so a
-  COMPLETED site can be presented as the nearest one. Sampled trials had 3 of 85
-  and 4 of 18 sites closed while the trial recruited. Sends someone to a dead
-  end; fix before building the map.
 - Sites map (§5.5). Data check tempered its value: per-site contacts are rare
   (5 of 85, 0 of 18), so the central contact does most of the work.
 - A stronger primary differentiator for result cards, unresolved since M3.

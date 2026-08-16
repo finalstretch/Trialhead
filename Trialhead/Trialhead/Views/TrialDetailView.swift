@@ -187,6 +187,8 @@ struct TrialDetailView: View {
         let all = section?.contactsLocationsModule?.locations ?? []
         let nearest = TrialAnalyzer.nearestSite(among: all, to: settings.coordinate)
 
+        let enrolling = TrialAnalyzer.enrollingSiteCount(all)
+
         return group(title: "Where") {
             if let nearest {
                 VStack(alignment: .leading, spacing: 4) {
@@ -195,10 +197,21 @@ struct TrialDetailView: View {
                     Text([nearest.site.city, nearest.site.state].compactMap { $0 }.joined(separator: ", ")
                          + (nearest.miles >= 20 ? " · about \(Int(nearest.miles.rounded())) mi" : ""))
                         .font(.caption).foregroundStyle(.secondary)
+
+                    if !nearest.isEnrolling {
+                        Label("This site is \(nearest.statusLabel.lowercased()) — ask the study team where else is open.",
+                              systemImage: "exclamationmark.triangle.fill")
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                            .padding(.top, 2)
+                    }
                 }
             }
             if all.count > 1 {
-                Text("\(all.count) sites in total").font(.caption).foregroundStyle(.secondary)
+                Text(enrolling == all.count
+                     ? "\(all.count) sites in total"
+                     : "\(enrolling) of \(all.count) sites currently enrolling")
+                    .font(.caption).foregroundStyle(.secondary)
             }
         }
     }

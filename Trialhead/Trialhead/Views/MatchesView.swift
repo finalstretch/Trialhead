@@ -136,12 +136,13 @@ struct TrialCard: View {
             }
 
             HStack(spacing: 4) {
-                Image(systemName: "mappin.and.ellipse")
+                Image(systemName: summary.nearestSiteIsEnrolling
+                      ? "mappin.and.ellipse" : "exclamationmark.triangle.fill")
                     .font(.caption2)
                 Text(distanceText)
                     .font(.caption)
             }
-            .foregroundStyle(.secondary)
+            .foregroundStyle(summary.nearestSiteIsEnrolling ? Color.secondary : Color.orange)
 
             Text("^[\(summary.questionCount) question](inflect: true) to ask")
                 .font(.caption.weight(.medium))
@@ -155,13 +156,20 @@ struct TrialCard: View {
     /// precision would be invented. Lead with the place name and only show a
     /// mileage once it's far enough to be a real travel decision.
     private var distanceText: String {
-        let suffix = summary.siteCount > 1 ? " · nearest of \(summary.siteCount) sites" : ""
-        guard let miles = summary.distanceMiles else {
+        guard let miles = summary.distanceMiles, let site = summary.nearestSite else {
             return "\(summary.siteCount) site\(summary.siteCount == 1 ? "" : "s"), location unlisted"
         }
-        let place = [summary.nearestSite?.city, summary.nearestSite?.state]
-            .compactMap { $0 }.first ?? "Study site"
-        return miles < 20 ? "\(place)\(suffix)" : "\(place) · \(Int(miles.rounded())) mi\(suffix)"
+        let place = [site.city, site.state].compactMap { $0 }.first ?? "Study site"
+        let far = miles >= 20 ? " · \(Int(miles.rounded())) mi" : ""
+
+        // Site counts describe *enrolling* sites, not every site ever listed —
+        // "nearest of 85 sites" is misleading when only 82 are open.
+        guard summary.nearestSiteIsEnrolling else {
+            return "\(place)\(far) — not currently enrolling"
+        }
+        let open = summary.enrollingSiteCount
+        let suffix = open > 1 ? " · nearest of \(open) enrolling sites" : ""
+        return "\(place)\(far)\(suffix)"
     }
 }
 

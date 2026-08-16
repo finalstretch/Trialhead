@@ -57,6 +57,29 @@ extension SearchSettings {
     }
 }
 
+/// One study site with its distance from the person.
+struct SiteMatch {
+    let site: Location
+    let miles: Double
+
+    /// Can someone actually join here right now?
+    var isEnrolling: Bool { Location.enrollingStatuses.contains(site.status ?? "") }
+
+    /// Human-readable status for a site that isn't enrolling.
+    var statusLabel: String {
+        (site.status ?? "Status unknown")
+            .replacingOccurrences(of: "_", with: " ")
+            .capitalized
+    }
+}
+
+extension Location {
+    /// Only RECRUITING means "you could join here today". A site can be
+    /// COMPLETED, WITHDRAWN, SUSPENDED or TERMINATED while the trial as a whole
+    /// still shows as recruiting elsewhere.
+    static let enrollingStatuses: Set<String> = ["RECRUITING"]
+}
+
 /// Everything one row of the results list needs.
 /// Per DESIGN.md §5.2 (revised after M2): distance and a question count —
 /// deliberately NOT a fit score.
@@ -67,8 +90,13 @@ struct TrialSummary: Identifiable {
     let phase: String?
     let sponsor: String?
     let siteCount: Int
+    /// How many sites are actually enrolling — the number that matters, and
+    /// often smaller than `siteCount`.
+    let enrollingSiteCount: Int
     let nearestSite: Location?
     let distanceMiles: Double?
+    /// False when the nearest site we could find has stopped enrolling.
+    let nearestSiteIsEnrolling: Bool
     let questionCount: Int
     let looksFineCount: Int
     /// Age or sex rules out this person — from exact fields in the trial
@@ -98,8 +126,10 @@ enum TrialAnalyzer {
             phase: section.designModule?.phases?.first,
             sponsor: section.sponsorCollaboratorsModule?.leadSponsor?.name,
             siteCount: sites.count,
+            enrollingSiteCount: enrollingSiteCount(sites),
             nearestSite: nearest?.site,
             distanceMiles: nearest?.miles,
+            nearestSiteIsEnrolling: nearest?.isEnrolling ?? false,
             questionCount: evaluation.asks,
             looksFineCount: evaluation.matches,
             categoricallyIneligible: structuredBlocked)
@@ -124,16 +154,22 @@ enum TrialAnalyzer {
             || (!parsed.foundInclusionHeader && !parsed.foundExclusionHeader)
     }
 
-    static func nearestSite(among sites: [Location], to origin: CLLocation)
-        -> (site: Location, miles: Double)?
-    {
-        sites
-            .compactMap { site -> (Location, Double)? in
-                guard let point = site.geoPoint else { return nil }
-                let metres = origin.distance(from: CLLocation(latitude: point.lat, longitude: point.lon))
-                return (site, metres / 1609.344)
-            }
-            .min { $0.1 < $1.1 }
-            .map { (site: $0.0, miles: $0.1) }
+    /// A trial can be RECRUITING overall while individual sites have closed —
+    /// 3 of 85 and 4 of 18 in sampled studies. Showing a closed site as "nearest"
+    /// sends someone to a dead end, so prefer an enrolling site and only fall
+    /// back to a closed one when there's nothing else, clearly flagged.
+    static func nearestSite(among sites: [Location], to origin: CLLocation) -> SiteMatch? {
+        let measured = sites.compactMap { site -> SiteMatch? in
+            guard let point = site.geoPoint else { return nil }
+            let metres = origin.distance(from: CLLocation(latitude: point.lat, longitude: point.lon))
+            return SiteMatch(site: site, miles: metres / 1609.344)
+        }
+        // Enrolling sites win outright, however much closer a closed one is.
+        return measured.filter(\.isEnrolling).min { $0.miles < $1.miles }
+            ?? measured.min { $0.miles < $1.miles }
+    }
+
+    static func enrollingSiteCount(_ sites: [Location]) -> Int {
+        sites.filter { Location.enrollingStatuses.contains($0.status ?? "") }.count
     }
 }
