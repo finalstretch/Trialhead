@@ -8,7 +8,14 @@ import SwiftUI
 /// them of someone who hasn't yet seen what a trial page looks like is how you
 /// lose them at setup. They live in Profile, suggested at the end of this flow.
 struct OnboardingView: View {
+    /// The first run is split in two, with the guided tour in between:
+    /// `.welcome` explains what the app is, the tour shows how it works, and
+    /// `.setup` then collects details — by which point the person has seen why
+    /// each one matters.
+    enum Mode { case welcome, setup }
+
     @Bindable var store: TrialsStore
+    let mode: Mode
 
     @State private var step: Step = .welcome
     @State private var condition = ""
@@ -58,6 +65,13 @@ struct OnboardingView: View {
         }
         .animation(.easeInOut(duration: 0.22), value: step)
         .interactiveDismissDisabled()
+        .onAppear {
+            if mode == .setup {
+                step = .condition
+                // Carry over whatever they searched during the tour.
+                if condition.isEmpty { condition = store.settings.condition }
+            }
+        }
     }
 
     // MARK: - Screens
@@ -104,6 +118,10 @@ struct OnboardingView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .padding(.top, 4)
+
+            Text("Next: a quick walkthrough of how it works. You'll add your own details afterwards.")
+                .font(.footnote.weight(.medium))
+                .padding(.top, 6)
         }
     }
 
@@ -280,7 +298,7 @@ struct OnboardingView: View {
             .disabled(!canAdvance || isFinishing)
 
             HStack {
-                if step != .welcome && step != .done {
+                if canGoBack {
                     Button("Back") { retreat() }
                         .font(.subheadline)
                 }
@@ -296,11 +314,17 @@ struct OnboardingView: View {
 
     private var primaryLabel: String {
         switch step {
-        case .welcome: return "Get started"
+        case .welcome: return "Show me how it works"
         case .location: return isFinishing ? "Finding trials…" : "Find trials"
         case .done: return "Start looking"
         default: return "Continue"
         }
+    }
+
+    /// No Back on the first setup question — behind it is the welcome screen
+    /// and the whole walkthrough, which belong to an earlier phase.
+    private var canGoBack: Bool {
+        step != .welcome && step != .done && step != .condition
     }
 
     /// Height and weight are genuinely optional. Condition and location aren't —
@@ -334,6 +358,9 @@ struct OnboardingView: View {
         errorText = nil
 
         switch step {
+        case .welcome:
+            // Hands over to the guided tour; setup resumes when it ends.
+            store.hasSeenWelcome = true
         case .location:
             Task { await finishSetup() }
         case .done:

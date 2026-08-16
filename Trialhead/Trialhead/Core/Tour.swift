@@ -65,11 +65,11 @@ final class Tour {
             case .searchBar:
                 return "Type the condition you're looking for trials for. You can change it any time."
             case .location:
-                return "Set your ZIP code or city, and how far you'd travel. Trials often need weekly visits, so distance matters more than people expect."
+                return "Set your ZIP code or city, and how far you'd travel. Trials often need weekly visits, so distance matters more than people expect. Right now this is showing an example location."
             case .phases:
                 return "Filter by how far along a treatment is. Each option explains what that stage actually means — a higher number isn't automatically better."
             case .pickCondition:
-                return "Pick one below to see what results look like."
+                return "Pick one below to see what results look like. This is just an example — you'll choose your own condition in a moment."
             case .openTrial:
                 return "Tap any trial in the list to see what's inside."
             case .requirements:
@@ -77,15 +77,15 @@ final class Tour {
             case .siteLocation:
                 return "The nearest site that's still enrolling, and how many others there are. Sites can close while a trial keeps running elsewhere — we only point you at open ones."
             case .questions:
-                return "Most rules need bloodwork or a doctor's judgement, so most will be amber. That's normal. This is your list for the conversation, not a verdict on whether you qualify."
+                return "Most rules need bloodwork or a doctor's judgement, so most stay amber. That's normal — this is your list for the conversation, not a verdict. Once you add your own details, the ones we can answer turn green."
             case .contact:
                 return "Call or email the coordinator, with a message already drafted from your details. This is the step most people never take — and it's free, normal, and commits you to nothing."
             case .profileTab:
-                return "Change your age, height and weight here. You can also add past treatments and medications, which makes the question lists noticeably sharper."
+                return "Your details live here — age, height, weight, and where you're searching from. You'll fill these in next, and can change them any time. Adding past treatments here later makes the question lists noticeably sharper."
             case .savedTab:
                 return "Bookmark a trial and it waits for you here, even if you search for something else."
             case .finish:
-                return "Search for any condition and start looking. You can always come back to Profile to fill in more details."
+                return "That's the whole app. Now let's set up your details, so the results are about you rather than this example."
             }
         }
 
@@ -95,7 +95,7 @@ final class Tour {
         }
 
         var buttonLabel: String {
-            self == .finish ? "Start looking" : "Got it"
+            self == .finish ? "Set up my details" : "Got it"
         }
 
         /// Which screen this step belongs on.

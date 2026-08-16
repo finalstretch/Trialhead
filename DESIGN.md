@@ -129,7 +129,11 @@ Multi-step, one question per screen, progress dots. Every step skippable except 
 └───────────────────────────────────────┘
 ```
 
-**Steps as built (M5):** welcome → condition → age & sex → height & weight → location + travel radius → done.
+**First-run order (revised 2026-08-16):** welcome → **guided walkthrough (§5.1b)** → condition → age & sex → height & weight → location + travel radius → done.
+
+> **The walkthrough sits between the two halves of onboarding, not after them.** Someone who has seen the app work understands why it's asking for their height, and is far likelier to answer. Asking first and explaining later gets the order of persuasion backwards.
+>
+> Consequences worth knowing: the tour runs against the app's **default search** (an example location and condition), so its copy says so plainly rather than implying the results are the person's own. Whatever condition they pick during the tour is **carried into the setup field**, so nobody is asked the same question twice. And the first setup question has no Back button — behind it is the entire walkthrough, which belongs to an earlier phase.
 
 > **Treatments and medications are deliberately NOT asked during setup.** They sharpen the question lists more than anything else, but they're also the highest-friction fields in the app — asking someone to recall their treatment history *before* they've seen what a trial page even looks like is how you lose them at setup. They live in Profile, and the closing screen points there once the person has had a look around.
 
@@ -143,7 +147,7 @@ Condition should eventually autocomplete against a controlled vocabulary rather 
 
 ### 5.1b Guided walkthrough
 
-Runs once, immediately after setup — the two are one continuous first-run experience, not separate events. `Tour.swift` + `TourOverlay.swift`.
+Runs once, **between the welcome screen and profile setup** — see the order note in §5.1. `Tour.swift` + `TourOverlay.swift`.
 
 Each step blurs the screen except one component, ringed and sharp, with a card explaining what it does and a **Got it** button. Twelve steps in three acts:
 

@@ -10,6 +10,7 @@ final class TrialsStore {
     var profile: Profile { didSet { persist() } }
     var settings: SearchSettings { didSet { persist() } }
     var savedTrialIDs: Set<String> { didSet { persist() } }
+    var hasSeenWelcome: Bool { didSet { persist() } }
     var hasCompletedOnboarding: Bool { didSet { persist() } }
     var hasCompletedTour: Bool { didSet { persist() } }
 
@@ -33,6 +34,7 @@ final class TrialsStore {
         loaded.clampRadius()   // files saved before the 30-mile cap existed
         settings = loaded
         savedTrialIDs = Set(stored.savedTrialIDs)
+        hasSeenWelcome = stored.hasSeenWelcome
         hasCompletedOnboarding = stored.hasCompletedOnboarding
         hasCompletedTour = stored.hasCompletedTour
     }
@@ -67,8 +69,9 @@ final class TrialsStore {
         LocalStore.save(StoredState(profile: profile,
                                     settings: settings,
                                     savedTrialIDs: Array(savedTrialIDs).sorted(),
-                                    hasCompletedOnboarding: hasCompletedOnboarding,
-                                    hasCompletedTour: hasCompletedTour))
+                                    hasSeenWelcome: hasSeenWelcome,
+                                    hasCompletedTour: hasCompletedTour,
+                                    hasCompletedOnboarding: hasCompletedOnboarding))
     }
 
     /// Wipes stored details and returns the app to a blank slate.
@@ -82,8 +85,9 @@ final class TrialsStore {
         summaries = []
         studiesById = [:]
         // Back to a genuinely blank slate — including the introduction.
-        hasCompletedOnboarding = false
+        hasSeenWelcome = false
         hasCompletedTour = false
+        hasCompletedOnboarding = false
     }
 
     // MARK: - Saved trials

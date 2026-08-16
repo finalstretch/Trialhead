@@ -43,24 +43,35 @@ struct ContentView: View {
             }
             .ignoresSafeArea()
         }
-        .fullScreenCover(isPresented: .constant(!store.hasCompletedOnboarding)) {
-            OnboardingView(store: store)
+        .fullScreenCover(isPresented: .constant(firstRun != nil)) {
+            if let firstRun {
+                OnboardingView(store: store, mode: firstRun)
+            }
         }
-        // Start the walkthrough the moment setup finishes — the two are one
-        // continuous first-run experience, not separate events.
-        .onChange(of: store.hasCompletedOnboarding) { _, done in
-            if done && !store.hasCompletedTour { tour.start() }
+        // The walkthrough starts once the welcome screen is dismissed, and
+        // setup follows when it ends.
+        .onChange(of: store.hasSeenWelcome) { _, seen in
+            if seen && !store.hasCompletedTour { tour.start() }
         }
         // Also covers the app being killed part-way through the walkthrough —
         // it restarts rather than silently never appearing again.
         .onAppear {
-            if store.hasCompletedOnboarding && !store.hasCompletedTour && !tour.isRunning {
+            if store.hasSeenWelcome && !store.hasCompletedTour && !tour.isRunning {
                 tour.start()
             }
         }
         .onChange(of: tour.step) { previous, step in
             handleTourStep(from: previous, to: step)
         }
+    }
+
+    /// First run runs welcome → tour → setup. The tour sits *between* the two
+    /// halves of onboarding: someone who has seen how the app works understands
+    /// why it's asking for their height, and is far likelier to answer.
+    private var firstRun: OnboardingView.Mode? {
+        if !store.hasSeenWelcome { return .welcome }
+        if store.hasCompletedTour && !store.hasCompletedOnboarding { return .setup }
+        return nil
     }
 
     /// The tour spans two screens, so it has to drive navigation itself.
