@@ -27,9 +27,11 @@ struct TrialDetailView: View {
                         .id(TourTarget.contactButton)
                         .tourAnchor(.contactButton)
                     if !parseFailed {
+                        // Anchors live on the individual sections inside, not
+                        // here: an `anchorPreference` on a parent replaces
+                        // whatever its subtree published, so wrapping the whole
+                        // checklist silently erased the colour-key anchor.
                         checklist
-                            .id(TourTarget.requirements)
-                            .tourAnchor(.requirements)
                     } else {
                         rawCriteriaFallback
                     }
@@ -51,6 +53,11 @@ struct TrialDetailView: View {
             .onAppear {
                 // Opening a trial is the tour's second interactive step.
                 if tour?.step == .openTrial { tour?.completed(.openTrial) }
+                // `onChange` doesn't fire when the page opens with the step
+                // already set — going Back from Profile, or resuming mid-tour.
+                if let target = tour?.step?.target, tour?.step?.isOnDetailScreen == true {
+                    scroll.scrollTo(target, anchor: .center)
+                }
             }
         }
         .toolbar {
@@ -149,6 +156,8 @@ struct TrialDetailView: View {
     private var checklist: some View {
         VStack(alignment: .leading, spacing: 16) {
             colourKey
+                .id(TourTarget.colourKey)
+                .tourAnchor(.colourKey)
 
             if !evaluation.structured.isEmpty {
                 group(title: "From the trial record") {
@@ -173,6 +182,8 @@ struct TrialDetailView: View {
                                      isHeading: item.criterion.isHeading)
                     }
                 }
+                .id(TourTarget.requirements)
+                .tourAnchor(.requirements)
             }
 
             if !exclusion.isEmpty {

@@ -5,7 +5,7 @@ import Observation
 enum TourTarget: Hashable {
     case searchBar, locationRow, phaseFilter        // trials list
     case firstResult
-    case requirements, siteLocation, questions, contactButton   // trial detail
+    case colourKey, requirements, siteLocation, questions, contactButton   // trial detail
 }
 
 /// The guided walkthrough that runs once, straight after onboarding.
@@ -22,7 +22,7 @@ final class Tour {
         case pickCondition          // interactive
         case openTrial              // interactive
         // On a trial's page
-        case requirements, siteLocation, questions, contact
+        case colourKey, requirements, siteLocation, questions, contact
         // Back out
         case profileTab, savedTab, finish
 
@@ -33,6 +33,7 @@ final class Tour {
             case .phases:       return .phaseFilter
             case .pickCondition: return .searchBar
             case .openTrial:    return .firstResult
+            case .colourKey:    return .colourKey
             case .requirements: return .requirements
             case .siteLocation: return .siteLocation
             case .questions:    return .questions
@@ -50,6 +51,7 @@ final class Tour {
             case .phases:       return "Stage of testing"
             case .pickCondition: return "Let's try one"
             case .openTrial:    return "Open a trial"
+            case .colourKey:    return "What the colours mean"
             case .requirements: return "The trial's requirements"
             case .siteLocation: return "Where it happens"
             case .questions:    return "Questions to ask"
@@ -72,8 +74,10 @@ final class Tour {
                 return "Pick one below to see what results look like. This is just an example — you'll choose your own condition in a moment."
             case .openTrial:
                 return "Tap on the provided trial to see what's inside."
+            case .colourKey:
+                return "Green means your details already satisfy that rule. Amber means we can't tell — it needs bloodwork or a doctor's judgement, so it's worth asking about. Red means the trial record rules you out, which only happens for age and sex. Most rules are amber, and that's normal."
             case .requirements:
-                return "Every trial has pages of eligibility rules. We split them into requirements and disqualifiers. Green means you likely meet it; amber means it's worth asking about. Scroll through them — the list stays put."
+                return "The rules themselves, split into requirements — things you need — and disqualifiers, things that would rule you out. Scroll through them; the list stays put."
             case .siteLocation:
                 return "The nearest site that's still enrolling, and how many others there are. Sites can close while a trial keeps running elsewhere — we only point you at open ones."
             case .questions:
@@ -116,7 +120,7 @@ final class Tour {
 
         /// Which screen this step belongs on.
         var isOnDetailScreen: Bool {
-            (Step.requirements.rawValue...Step.contact.rawValue).contains(rawValue)
+            (Step.colourKey.rawValue...Step.contact.rawValue).contains(rawValue)
         }
     }
 

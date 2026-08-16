@@ -149,13 +149,15 @@ Condition should eventually autocomplete against a controlled vocabulary rather 
 
 Runs once, **between the welcome screen and profile setup** — see the order note in §5.1. `Tour.swift` + `TourOverlay.swift`.
 
-Each step marks one component with a **translucent blue highlighter** and shows a card explaining what it does, with **Back**, **Skip**, and **Got it**. Nothing is blurred or dimmed — the rest of the screen stays fully legible, so the marked part reads as *"this one"* rather than as the only thing that exists. Twelve steps in three acts:
+Each step marks one component with a **translucent blue highlighter** and shows a card explaining what it does, with **Back**, **Skip**, and **Got it**. Nothing is blurred or dimmed — the rest of the screen stays fully legible, so the marked part reads as *"this one"* rather than as the only thing that exists. Thirteen steps in three acts:
 
 **On the trials list** — search bar → search area → stage of testing.
 
 **Two interactive steps.** The person picks a condition from five suggestions, then taps a trial themselves. Reading about a feature and using it are different things; a tour nobody touches teaches very little. These steps show "Your turn" instead of a button and wait for the action.
 
-**On the trial page** — requirements → where it happens → questions to ask → contact the study team. The detail screen scrolls each target into view before the spotlight points at it.
+**On the trial page** — **what the colours mean** → requirements → where it happens → questions to ask → contact the study team. The detail screen scrolls each target into view before marking it.
+
+The colour-key step comes first on that page deliberately: the key is what makes every row beneath it readable, and explaining the rules before explaining the marking would be backwards.
 
 **Then out** — the Profile tab (where treatments live, deliberately not asked during setup) and the Saved tab, before returning to the list.
 
@@ -170,6 +172,8 @@ Skippable at every non-interactive step. Completion is stored, so it runs once; 
 **Back is available at every step.** Twelve steps is a lot to take in, and without it someone who missed something has to abandon the whole walkthrough. Navigation is written as *"put the app wherever this step needs it"* rather than *"handle moving forward"*, which is what makes going backwards work — stepping back from Profile to the contact step re-opens the trial the tour was using.
 
 **Implementation note.** Targets publish their frames with `anchorPreference`; the overlay resolves them through a `GeometryProxy` and draws the highlighter there. `ignoresSafeArea` must sit on the *GeometryReader*, not inside the overlay — applied inside it expands the drawing area after measurement and every highlight lands a status-bar height too high.
+
+**Anchors must not nest.** `anchorPreference` on a parent *replaces* whatever its subtree published, so wrapping the whole checklist in a `.requirements` anchor silently erased the colour-key anchor inside it. Each target now carries its own anchor on its own section.
 
 An **invisible** touch blocker covers the screen only where wandering off would strand the tour on the wrong screen. Steps expecting a tap, the scrollable requirements step, and the two tab steps all leave the app fully usable. Nothing about that blocker is visible — with no scrim, a visible barrier would be the confusing part.
 

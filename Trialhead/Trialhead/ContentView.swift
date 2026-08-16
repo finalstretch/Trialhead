@@ -55,6 +55,14 @@ struct ContentView: View {
         .onChange(of: tour.step) { _, step in
             syncNavigation(for: step)
         }
+        // A detail step can be reached before search results exist — stepping
+        // back from Profile, or resuming mid-tour. Retry once results arrive
+        // rather than leaving the tour describing a page that never opened.
+        .onChange(of: store.summaries.count) { _, _ in
+            if let step = tour.step, step.isOnDetailScreen, matchesPath.isEmpty {
+                syncNavigation(for: step)
+            }
+        }
     }
 
     /// First run runs welcome → tour → setup. The tour sits *between* the two
