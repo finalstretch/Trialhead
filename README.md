@@ -95,9 +95,16 @@ swift build
 
 ## Status
 
-Milestones M0–M3 complete: the API is verified, the parser is measured, and the app runs against live data.
+Milestones M0–M4 complete. The app runs against live data with:
 
-Next up — persisting the profile between launches, a proper first-run setup flow, saved trials, and a map of study sites.
+- **Search** by condition, by ZIP code or city, with a travel radius capped at 30 miles
+- **Filter by trial phase**, each option explained in plain English
+- **Eligibility checklist** — rules marked green or amber against an on-device profile
+- **Contact sheet** with a message drafted from the person's details
+- **Saved trials**, and a profile that persists between launches
+- **A guided first-run walkthrough** — thirteen steps introducing each part of the app, with two steps where the person drives
+
+Next up — a map of study sites, a stronger way to distinguish trials at a glance, and putting it in front of five real people.
 
 ## Data source
 
