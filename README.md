@@ -1,3 +1,5 @@
+<img src="docs/icon.png" width="88" align="left" alt="Trialhead icon" hspace="14">
+
 # Trialhead
 
 **An iOS app that helps patients and caregivers find nearby clinical trials — and walk into the conversation already knowing what to ask.**
@@ -77,6 +79,8 @@ The `Core/` files carry no UI framework imports, which is why they compiled into
 ## Running it
 
 **The app** — open `Trialhead/Trialhead.xcodeproj` in Xcode and press Run. Requires Xcode 16+.
+
+**Regenerating the app icon:** `swift tools/make-icon.swift Trialhead/Trialhead/Assets.xcassets/AppIcon.appiconset/AppIcon.png` — the mark is drawn in code rather than exported from a design tool, so it can be tweaked and rebuilt without hunting for a source file.
 
 **The research tool:**
 
