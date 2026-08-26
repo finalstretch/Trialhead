@@ -90,9 +90,13 @@ struct OnboardingView: View {
 
     private var welcome: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Image(systemName: "location.north.circle.fill")
-                .font(.system(size: 56))
-                .foregroundStyle(.tint)
+            // The app icon itself, so the first screen matches what the person
+            // just tapped on their home screen.
+            Image("Logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 72, height: 72)
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
 
             Text("Trialhead")
                 .font(.largeTitle.bold())

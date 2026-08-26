@@ -3,6 +3,14 @@ import CoreGraphics
 import ImageIO
 import UniformTypeIdentifiers
 
+// Trialhead's app icon, drawn in code so it can be tweaked and re-rendered
+// without a design tool. Run:
+//   swift tools/make-icon.swift <output.png>
+//
+// The mark is a map pin with a medical cross cut out of it: health, and finding
+// one near you. A cross alone would say "clinic"; a pin alone said nothing about
+// medicine at all.
+
 let S: CGFloat = 1024
 let space = CGColorSpaceCreateDeviceRGB()
 
@@ -14,55 +22,76 @@ guard let ctx = CGContext(data: nil, width: Int(S), height: Int(S),
                           bitsPerComponent: 8, bytesPerRow: 0, space: space,
                           bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue) else { exit(1) }
 
-// Background: a diagonal blue → indigo gradient. Deep enough that the white
-// mark stays legible at 60pt on a home screen, which is where it actually lives.
+// Teal rather than blue: it reads as health, and sidesteps looking like either
+// a maps app or a certain large health insurer.
 let bg = CGGradient(colorsSpace: space,
-                    colors: [rgb(0.20, 0.60, 1.00), rgb(0.04, 0.16, 0.68)] as CFArray,
+                    colors: [rgb(0.10, 0.82, 0.74), rgb(0.02, 0.38, 0.45)] as CFArray,
                     locations: [0, 1])!
 ctx.drawLinearGradient(bg, start: CGPoint(x: 0, y: S), end: CGPoint(x: S, y: 0), options: [])
 
-// A soft light source, top-left, so the flat square has some depth.
 let glow = CGGradient(colorsSpace: space,
-                      colors: [rgb(1, 1, 1, 0.22), rgb(1, 1, 1, 0)] as CFArray,
+                      colors: [rgb(1, 1, 1, 0.20), rgb(1, 1, 1, 0)] as CFArray,
                       locations: [0, 1])!
-ctx.saveGState()
 ctx.drawRadialGradient(glow,
                        startCenter: CGPoint(x: S * 0.26, y: S * 0.80), startRadius: 0,
-                       endCenter: CGPoint(x: S * 0.26, y: S * 0.80), endRadius: S * 0.72,
+                       endCenter: CGPoint(x: S * 0.26, y: S * 0.80), endRadius: S * 0.74,
                        options: [])
-ctx.restoreGState()
 
-// The mark: a navigation arrow with a notched base — a compass needle read as
-// forward motion. One shape, no text, so it survives being shrunk.
 func flip(_ y: CGFloat) -> CGFloat { S - y }
-let apex   = CGPoint(x: S / 2,  y: flip(258))
-let left   = CGPoint(x: 282,    y: flip(784))
-let notch  = CGPoint(x: S / 2,  y: flip(640))
-let right  = CGPoint(x: 742,    y: flip(784))
 
-let arrow = CGMutablePath()
-arrow.move(to: apex)
-arrow.addLine(to: right)
-arrow.addLine(to: notch)
-arrow.addLine(to: left)
-arrow.closeSubpath()
+// MARK: Pin outline — a circle joined to a point by its two tangent lines.
+let head = CGPoint(x: S / 2, y: flip(414))
+let radius: CGFloat = 238
+let tip = CGPoint(x: S / 2, y: flip(878))
+
+let span = head.y - tip.y                       // centre to tip
+let phi = acos(radius / span)                   // angle from the centre-tip axis
+                                                // to each tangent point
+let axis = -CGFloat.pi / 2                      // centre → tip points straight down
+let rightTangent = axis + phi
+let leftTangent = axis - phi
+
+let pin = CGMutablePath()
+pin.move(to: tip)
+pin.addLine(to: CGPoint(x: head.x + radius * cos(rightTangent),
+                        y: head.y + radius * sin(rightTangent)))
+// Sweep the long way over the top of the head, back round to the other tangent.
+pin.addArc(center: head, radius: radius,
+           startAngle: rightTangent, endAngle: leftTangent + 2 * .pi,
+           clockwise: false)
+pin.closeSubpath()
+
+// MARK: Cross — one closed twelve-point outline, so an even-odd fill punches it
+// cleanly out of the pin rather than cancelling itself where arms overlap.
+// Generous relative to the pin head: at home-screen size the cross is the
+// detail carrying the meaning, and a dainty one just reads as a dot.
+let arm: CGFloat = 150      // half length
+let thick: CGFloat = 52     // half thickness
+let crossPoints: [(CGFloat, CGFloat)] = [
+    (thick, thick), (arm, thick), (arm, -thick), (thick, -thick),
+    (thick, -arm), (-thick, -arm), (-thick, -thick), (-arm, -thick),
+    (-arm, thick), (-thick, thick), (-thick, arm), (thick, arm),
+]
+let cross = CGMutablePath()
+for (index, point) in crossPoints.enumerated() {
+    let at = CGPoint(x: head.x + point.0, y: head.y + point.1)
+    index == 0 ? cross.move(to: at) : cross.addLine(to: at)
+}
+cross.closeSubpath()
+
+let mark = CGMutablePath()
+mark.addPath(pin)
+mark.addPath(cross)
 
 ctx.saveGState()
-ctx.setShadow(offset: CGSize(width: 0, height: -18), blur: 46,
-              color: rgb(0, 0.04, 0.22, 0.35))
-// Composite fill and stroke into one layer before the shadow lands, otherwise
-// the stroke's own shadow is drawn over the fill and reads as a dark outline
-// inside the shape.
+ctx.setShadow(offset: CGSize(width: 0, height: -18), blur: 44,
+              color: rgb(0, 0.10, 0.14, 0.34))
+// One transparency layer, so the shadow falls behind the finished mark instead
+// of being drawn once per sub-path.
 ctx.beginTransparencyLayer(auxiliaryInfo: nil)
 ctx.setFillColor(rgb(1, 1, 1))
-ctx.setStrokeColor(rgb(1, 1, 1))
-// Stroking the same path with round joins is what softens the points —
-// razor-sharp corners look dated and alias badly when scaled down.
-ctx.setLineJoin(.round)
-ctx.setLineCap(.round)
-ctx.setLineWidth(58)
-ctx.addPath(arrow)
-ctx.drawPath(using: .fillStroke)
+ctx.addPath(mark)
+ctx.fillPath(using: .evenOdd)
 ctx.endTransparencyLayer()
 ctx.restoreGState()
 
