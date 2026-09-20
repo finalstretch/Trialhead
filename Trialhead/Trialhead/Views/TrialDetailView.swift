@@ -14,6 +14,7 @@ struct TrialDetailView: View {
     private var nctId: String { section?.identificationModule?.nctId ?? "" }
     private var evaluation: TrialEvaluation { TrialAnalyzer.evaluate(study, profile: profile) }
     private var parseFailed: Bool { TrialAnalyzer.parseFailed(study) }
+    private var cohortScoped: Bool { TrialAnalyzer.hasCohortScopedCriteria(study) }
 
     var body: some View {
         ScrollViewReader { scroll in
@@ -26,6 +27,10 @@ struct TrialDetailView: View {
                     contactButton
                         .id(TourTarget.contactButton)
                         .tourAnchor(.contactButton)
+                    // Shown above both branches: a study whose criteria are
+                    // split by treatment group needs the warning whether or not
+                    // the checklist built successfully.
+                    if cohortScoped { cohortBanner }
                     if !parseFailed {
                         // Anchors live on the individual sections inside, not
                         // here: an `anchorPreference` on a parent replaces
@@ -280,6 +285,29 @@ struct TrialDetailView: View {
                     .font(.caption).foregroundStyle(.secondary)
             }
         }
+    }
+
+    /// DESIGN.md §11.7, decided option (a): show every cohort's rules, behind a
+    /// banner saying they aren't one set. The alternative — asking a layperson
+    /// to work out which treatment arm they'd be assigned to — isn't a question
+    /// anyone outside the study team can answer.
+    private var cohortBanner: some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "rectangle.3.group")
+                .foregroundStyle(.orange)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Requirements vary by treatment group")
+                    .font(.subheadline.weight(.semibold))
+                Text("This study splits its rules across different treatment groups, and the list below shows all of them together. Some won't apply to you. Ask the study team which group you'd be considered for.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.orange.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+        .accessibilityElement(children: .combine)
     }
 
     private var provenance: some View {

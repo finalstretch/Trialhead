@@ -164,6 +164,16 @@ enum TrialAnalyzer {
             || (!parsed.foundInclusionHeader && !parsed.foundExclusionHeader)
     }
 
+    /// Some sponsors scope their criteria by treatment arm — "Inclusion Criteria
+    /// for Cohort 3:" — so one merged checklist silently mixes rules from groups
+    /// a person would never join. Measured at ~4% of studies (DESIGN.md §11.7).
+    /// Detected here; the checklist says so rather than implying one coherent set.
+    static func hasCohortScopedCriteria(_ study: Study) -> Bool {
+        let text = study.protocolSection?.eligibilityModule?.eligibilityCriteria ?? ""
+        guard !text.isEmpty else { return false }
+        return CriteriaParser.parse(text).cohortHeaderCount > 0
+    }
+
     /// A trial can be RECRUITING overall while individual sites have closed —
     /// 3 of 85 and 4 of 18 in sampled studies. Showing a closed site as "nearest"
     /// sends someone to a dead end, so prefer an enrolling site and only fall
