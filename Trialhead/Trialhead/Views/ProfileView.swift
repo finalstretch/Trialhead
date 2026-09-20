@@ -5,6 +5,10 @@ import SwiftUI
 struct ProfileView: View {
     @Bindable var store: TrialsStore
     @State private var confirmingDelete = false
+    @FocusState private var focusedField: Field?
+
+    /// The typing fields, so the keyboard's Done button knows what to put away.
+    private enum Field { case age, condition, medications, priorTreatments, weight }
 
     var body: some View {
         NavigationStack {
@@ -14,6 +18,7 @@ struct ProfileView: View {
                         TextField("Age", value: $store.profile.age, format: .number)
                             .keyboardType(.numberPad)
                             .multilineTextAlignment(.trailing)
+                            .focused($focusedField, equals: .age)
                     }
                     Picker("Sex", selection: $store.profile.sex) {
                         Text("Not set").tag(Profile.Sex?.none)
@@ -24,6 +29,7 @@ struct ProfileView: View {
 
                 Section {
                     TextField("e.g. breast cancer", text: list(\.conditions), axis: .vertical)
+                        .focused($focusedField, equals: .condition)
                 } header: {
                     Text("Your condition")
                 } footer: {
@@ -32,7 +38,9 @@ struct ProfileView: View {
 
                 Section {
                     TextField("e.g. metformin, pembrolizumab", text: list(\.medications), axis: .vertical)
+                        .focused($focusedField, equals: .medications)
                     TextField("e.g. mastectomy, chemotherapy", text: list(\.priorTreatments), axis: .vertical)
+                        .focused($focusedField, equals: .priorTreatments)
                 } header: {
                     Text("Treatments")
                 } footer: {
@@ -60,6 +68,7 @@ struct ProfileView: View {
                             TextField("Pounds", value: weightPounds, format: .number.precision(.fractionLength(0)))
                                 .keyboardType(.decimalPad)
                                 .multilineTextAlignment(.trailing)
+                                .focused($focusedField, equals: .weight)
                             Text("lb").foregroundStyle(.secondary)
                         }
                     }
@@ -83,6 +92,16 @@ struct ProfileView: View {
                 }
 
                 Section {
+                    Picker("Text size", selection: $store.textSize) {
+                        ForEach(TextSize.allCases) { Text($0.label).tag($0) }
+                    }
+                } header: {
+                    Text("Display")
+                } footer: {
+                    Text("\"Match my device\" follows the text size set in iOS Settings. The other options make this app larger without changing anything else on your phone.")
+                }
+
+                Section {
                     Toggle("Hide trials that rule me out", isOn: $store.hideIneligible)
                 } footer: {
                     Text("Only age and sex requirements, which come from exact fields in the trial record.")
@@ -95,8 +114,24 @@ struct ProfileView: View {
                 } footer: {
                     Text("\(LocalStore.fileDescription). There is no account and no server — nothing you type here is ever sent anywhere.")
                 }
+
+                Section {
+                    LabeledContent("Version", value: Self.versionString)
+                } footer: {
+                    Text("Quote this if you report a problem — it says which build you're running.")
+                }
             }
             .navigationTitle("Profile")
+            // Without these there is no way to put the keyboard away: the
+            // number pads have no return key at all, and the comma-separated
+            // fields are multi-line, so return inserts a newline instead.
+            .scrollDismissesKeyboard(.interactively)
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") { focusedField = nil }
+                }
+            }
             .onDisappear { Task { await store.search() } }
             .confirmationDialog("Delete everything?",
                                 isPresented: $confirmingDelete, titleVisibility: .visible) {
@@ -106,6 +141,14 @@ struct ProfileView: View {
                 Text("Your details and saved trials will be erased from this device. This can't be undone.")
             }
         }
+    }
+
+    /// Read from the app bundle, so it can never drift from what was installed.
+    private static var versionString: String {
+        let info = Bundle.main.infoDictionary
+        let version = info?["CFBundleShortVersionString"] as? String ?? "?"
+        let build = info?["CFBundleVersion"] as? String ?? "?"
+        return "\(version) (\(build))"
     }
 
     // Imperial on screen, metric in storage.

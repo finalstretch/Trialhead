@@ -184,14 +184,16 @@ struct OnboardingView: View {
                             ForEach(3...7, id: \.self) { Text("\($0) ft").tag($0) }
                         }
                         .pickerStyle(.wheel)
-                        .frame(height: 110)
+                        // minHeight, not height: at large text sizes the wheel's
+                        // rows grow and a fixed 110 clips them mid-letter.
+                        .frame(minHeight: 110)
                         .clipped()
 
                         Picker("Inches", selection: $heightInches) {
                             ForEach(0...11, id: \.self) { Text("\($0) in").tag($0) }
                         }
                         .pickerStyle(.wheel)
-                        .frame(height: 110)
+                        .frame(minHeight: 110)
                         .clipped()
                     }
                     .onChange(of: heightFeet) { _, _ in heightSet = true }

@@ -90,9 +90,16 @@ struct LocationSheet: View {
             }
             .navigationTitle("Search area")
             .navigationBarTitleDisplayMode(.inline)
+            // In ZIP mode the keyboard is a number pad with no return key, so
+            // it needs a Done button and a swipe-down of its own.
+            .scrollDismissesKeyboard(.interactively)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
+                }
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") { fieldFocused = false }
                 }
             }
             .onAppear {

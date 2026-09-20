@@ -25,6 +25,7 @@ struct ContentView: View {
                 .tag(Tab.profile)
         }
         .environment(tour)
+        .modifier(TextSizeOverride(size: store.textSize))
         .overlayPreferenceValue(TourAnchorKey.self) { anchors in
             // `ignoresSafeArea` belongs on the GeometryReader, not inside the
             // overlay. Applied inside, it expands the drawing area *after* the
@@ -128,6 +129,23 @@ struct ContentView: View {
                 }
                 selectedTab = tapped
             })
+    }
+}
+
+/// Applies the in-app text size, leaving the device's own setting alone unless
+/// the person picked something. `.dynamicTypeSize` can't be applied
+/// conditionally inline, which is why this is a modifier with a switch.
+private struct TextSizeOverride: ViewModifier {
+    let size: TextSize
+
+    @ViewBuilder
+    func body(content: Content) -> some View {
+        switch size {
+        case .device:  content
+        case .large:   content.dynamicTypeSize(.xLarge)
+        case .larger:  content.dynamicTypeSize(.xxxLarge)
+        case .largest: content.dynamicTypeSize(.accessibility2)
+        }
     }
 }
 

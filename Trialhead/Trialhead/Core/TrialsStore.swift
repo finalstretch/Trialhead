@@ -13,6 +13,7 @@ final class TrialsStore {
     var hasSeenWelcome: Bool { didSet { persist() } }
     var hasCompletedOnboarding: Bool { didSet { persist() } }
     var hasCompletedTour: Bool { didSet { persist() } }
+    var textSize: TextSize { didSet { persist() } }
 
     var summaries: [TrialSummary] = []
     var savedSummaries: [TrialSummary] = []
@@ -37,6 +38,7 @@ final class TrialsStore {
         hasSeenWelcome = stored.hasSeenWelcome
         hasCompletedOnboarding = stored.hasCompletedOnboarding
         hasCompletedTour = stored.hasCompletedTour
+        textSize = stored.textSize
     }
 
     // MARK: - Where to search
@@ -61,7 +63,7 @@ final class TrialsStore {
             settings.radiusMiles = radius
             await search()
         } catch {
-            locationError = error.localizedDescription
+            locationError = FriendlyError.message(for: error)
         }
     }
 
@@ -71,7 +73,8 @@ final class TrialsStore {
                                     savedTrialIDs: Array(savedTrialIDs).sorted(),
                                     hasSeenWelcome: hasSeenWelcome,
                                     hasCompletedTour: hasCompletedTour,
-                                    hasCompletedOnboarding: hasCompletedOnboarding))
+                                    hasCompletedOnboarding: hasCompletedOnboarding,
+                                    textSize: textSize))
     }
 
     /// Wipes stored details and returns the app to a blank slate.
@@ -189,7 +192,7 @@ final class TrialsStore {
             summaries = built.sorted { ($0.distanceMiles ?? .infinity) < ($1.distanceMiles ?? .infinity) }
             studiesById = byId
         } catch {
-            errorMessage = "\(error)"
+            errorMessage = FriendlyError.message(for: error)
         }
     }
 
