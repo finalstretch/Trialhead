@@ -10,6 +10,7 @@ struct ContactSheet: View {
 
     @Environment(\.dismiss) private var dismiss
     @State private var draft: String = ""
+    @FocusState private var editingDraft: Bool
 
     private var section: ProtocolSection? { study.protocolSection }
     private var nctId: String { section?.identificationModule?.nctId ?? "" }
@@ -78,6 +79,7 @@ struct ContactSheet: View {
 
                 Section {
                     TextEditor(text: $draft)
+                        .focused($editingDraft)
                         .frame(minHeight: 170)
                         .font(.footnote)
                 } header: {
@@ -88,9 +90,17 @@ struct ContactSheet: View {
             }
             .navigationTitle("Contact study team")
             .navigationBarTitleDisplayMode(.inline)
+            .scrollDismissesKeyboard(.interactively)
             .toolbar {
+                // "Close" rather than "Done": with a Done above the keyboard as
+                // well, two buttons of the same name did different things — one
+                // put the keyboard away, the other threw away the sheet.
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
+                    Button("Close") { dismiss() }
+                }
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") { editingDraft = false }
                 }
             }
             .onAppear { if draft.isEmpty { draft = defaultDraft } }

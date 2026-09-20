@@ -58,12 +58,21 @@ struct OnboardingView: View {
                     .padding(.top, step.questionIndex == nil ? 60 : 36)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
+            .scrollDismissesKeyboard(.interactively)
 
             controls
                 .padding(.horizontal, 28)
                 .padding(.bottom, 20)
         }
         .animation(.easeInOut(duration: 0.22), value: step)
+        // The age and weight steps use number pads, which carry no return key.
+        // Continue stays above the keyboard, but there was no way to simply put
+        // it away and look at the question again.
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                keyboardDismissBar
+            }
+        }
         .interactiveDismissDisabled()
         .onAppear {
             if mode == .setup {
@@ -358,6 +367,12 @@ struct OnboardingView: View {
     }
 
     // MARK: - Flow
+
+    @ViewBuilder
+    private var keyboardDismissBar: some View {
+        Spacer()
+        Button("Done") { focused = false }
+    }
 
     private func advance(skipping: Bool = false) {
         focused = false
