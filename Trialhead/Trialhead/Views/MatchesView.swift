@@ -6,21 +6,11 @@ struct MatchesView: View {
     @Binding var path: [String]
     @State private var showingLocation = false
     @State private var showPhaseFilter = false
+    @FocusState private var searchFocused: Bool
 
     var body: some View {
         NavigationStack(path: $path) {
-            Group {
-                if store.isLoading && store.summaries.isEmpty {
-                    ProgressView("Finding trials…")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else if let error = store.errorMessage {
-                    ErrorState(message: error) { Task { await store.search() } }
-                } else if store.summaries.isEmpty {
-                    EmptyState()
-                } else {
-                    list
-                }
-            }
+            list
             .navigationTitle("Trials")
             .task { if store.summaries.isEmpty { await store.search() } }
             .refreshable { await store.search() }
@@ -42,6 +32,11 @@ struct MatchesView: View {
         }
     }
 
+    /// The search box, location and phase filter are *always* on screen — they
+    /// used to sit inside the results section, so a search that found nothing
+    /// replaced the entire screen with "No trials found" and left no way to
+    /// search again. Loading, error and empty are rows underneath the controls
+    /// rather than states that replace them.
     private var list: some View {
         List {
             Section {
@@ -51,29 +46,71 @@ struct MatchesView: View {
 
             phaseFilterSection
 
-            Section {
-                ForEach(Array(store.visibleSummaries.enumerated()), id: \.element.id) { index, summary in
-                    NavigationLink(value: summary.nctId) {
-                        TrialCard(summary: summary)
-                    }
-                    // The tour points at the first result when it asks the
-                    // person to open one.
-                    .modifier(ConditionalAnchor(target: .firstResult, active: index == 0))
+            if store.isLoading && store.summaries.isEmpty {
+                statusRow {
+                    ProgressView("Finding trials…")
                 }
-            } header: {
-                Text("\(store.visibleSummaries.count) trials")
-            } footer: {
-                if store.hiddenCount > 0 {
-                    Text("\(store.hiddenCount) hidden — the trial record's age or sex requirements rule you out.")
+            } else if let error = store.errorMessage {
+                statusRow {
+                    ErrorState(message: error) { Task { await store.search() } }
                 }
+            } else if store.summaries.isEmpty {
+                statusRow {
+                    EmptyState(condition: store.settings.condition,
+                               phaseFiltered: !store.settings.selectedPhases.isEmpty,
+                               clearPhases: { store.clearPhaseFilter() })
+                }
+            } else {
+                resultsSection
             }
         }
         .listStyle(.plain)
+        // The search field has a Search key, but scrolling the results is the
+        // gesture people reach for first.
+        .scrollDismissesKeyboard(.immediately)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("Done") { searchFocused = false }
+            }
+        }
         .navigationDestination(for: String.self) { nctId in
 
             if let study = store.study(nctId) {
                 TrialDetailView(study: study, store: store)
             }
+        }
+    }
+
+    private var resultsSection: some View {
+        Section {
+            ForEach(Array(store.visibleSummaries.enumerated()), id: \.element.id) { index, summary in
+                NavigationLink(value: summary.nctId) {
+                    TrialCard(summary: summary)
+                }
+                // The tour points at the first result when it asks the
+                // person to open one.
+                .modifier(ConditionalAnchor(target: .firstResult, active: index == 0))
+            }
+        } header: {
+            Text("\(store.visibleSummaries.count) trials")
+        } footer: {
+            if store.hiddenCount > 0 {
+                Text("\(store.hiddenCount) hidden — the trial record's age or sex requirements rule you out.")
+            }
+        }
+    }
+
+    /// A full-width, separator-free row for the loading, error and empty states,
+    /// so they sit in the list under the controls instead of replacing them.
+    @ViewBuilder
+    private func statusRow<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        Section {
+            content()
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 28)
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.clear)
         }
     }
 }
@@ -89,6 +126,7 @@ extension MatchesView {
                 .foregroundStyle(.secondary)
             TextField("Condition", text: $store.settings.condition)
                 .autocorrectionDisabled()
+                .focused($searchFocused)
                 .submitLabel(.search)
                 .onSubmit { Task { await store.search() } }
             if !store.settings.condition.isEmpty {
@@ -309,11 +347,32 @@ struct StatusPill: View {
 // MARK: - Placeholder states
 
 private struct EmptyState: View {
+    let condition: String
+    let phaseFiltered: Bool
+    let clearPhases: () -> Void
+
+    /// Names the search back to the reader. "No trials found" alone leaves them
+    /// guessing which part to change — the wording, the distance, or the phases.
+    private var searched: String {
+        let trimmed = condition.trimmingCharacters(in: .whitespaces)
+        return trimmed.isEmpty ? "your search" : "\u{201C}\(trimmed)\u{201D}"
+    }
+
     var body: some View {
-        ContentUnavailableView(
-            "No trials found",
-            systemImage: "magnifyingglass",
-            description: Text("Try a different condition, or widen your search distance in Profile."))
+        ContentUnavailableView {
+            Label("No trials found", systemImage: "magnifyingglass")
+        } description: {
+            if phaseFiltered {
+                Text("Nothing matches \(searched) near you at the phases you've chosen. Showing every phase is the quickest thing to try.")
+            } else {
+                Text("Nothing recruiting matches \(searched) within your travel distance. Try different wording, a nearby city, or a wider distance — the search box and location are just above.")
+            }
+        } actions: {
+            if phaseFiltered {
+                Button("Show all phases", action: clearPhases)
+                    .buttonStyle(.borderedProminent)
+            }
+        }
     }
 }
 
